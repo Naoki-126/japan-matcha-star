@@ -1,0 +1,318 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Awaken Your Inner Glow.",
+            "heading_size": "h0"
+          }
+        },
+        "text_6crXxr": {
+          "type": "text",
+          "settings": {
+            "text": "内側から、美しさを目覚めさせる。",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_6crXxr",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/fv-img1.jpg",
+        "image_2": "shopify://shop_images/fv-img4.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "image_behavior": "ambient",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_PmzQKw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4EaAPV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Japan Matcha Starの概念",
+            "heading_size": "h1"
+          }
+        },
+        "text_fqT49X": {
+          "type": "text",
+          "settings": {
+            "text": "<p> Premium Japanese Matcha for Beauty & Wellness. <br/>「美容 × 科学 × 伝統」を融合した大人女性のための抹茶ブランド。</p>"
+          }
+        },
+        "text_g8FDMk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>"
+          }
+        },
+        "button_8YCMHY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Deatail",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4EaAPV",
+        "text_fqT49X",
+        "text_g8FDMk",
+        "button_8YCMHY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "商品ラインの紹介",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_wmiXXq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_z8Kxrf": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_e8B8pn": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3QdBAi": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_z8Kxrf",
+        "column_e8B8pn",
+        "column_3QdBAi"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "美容効果の紹介（科学的エビデンス）",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_BUX7MC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_q6F69J": {
+          "type": "heading",
+          "settings": {
+            "heading": "Brand story",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_q6F69J"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_j6TQLM": {
+      "type": "multirow",
+      "blocks": {
+        "row_GNQadr": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/platinum_class_ceremonial.jpg",
+            "caption": "肌の輝き・アンチエイジングを求める方へ。",
+            "heading": "<strong>Premiumセレモニアルグレード</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_AGnGh8": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/ceremonial.jpg",
+            "caption": "毎日の健康・心のバランスを整える万能抹茶。",
+            "heading": "<strong>セレモニアルグレード</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_NPbGUN": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/yuuki_ceremonial.jpg",
+            "caption": "ダイエット・集中力・運動に最適なオーガニック抹茶。",
+            "heading": "<strong>有機セレモニアルグレード</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_GNQadr",
+        "row_AGnGh8",
+        "row_NPbGUN"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_FKQN8Y": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_hMbYHG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "カスタマイズで作成",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_hMbYHG"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Matcha 診断（仮）",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_PmzQKw",
+    "featured_collection",
+    "multicolumn_wmiXXq",
+    "rich_text_BUX7MC",
+    "multirow_j6TQLM",
+    "collapsible_content_FKQN8Y"
+  ]
+}
