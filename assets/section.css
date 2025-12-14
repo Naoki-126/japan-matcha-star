@@ -1,2 +1,56 @@
 /* base.cssに適用 */
 @charset "UTF-8";
+
+/* fvセクション
+=========================== */
+
+
+/* jm-concept
+=========================== */
+.jm-concept {
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.jm-concept__ttlArea {
+  margin-bottom: 40px;
+}
+
+.jm-concept__title {
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.jm-concept__subtitle {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.jm-concept__txtArea {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.jm-concept__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.jm-concept__columnTitle {
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.jm-concept__columnText {
+  text-align-last: left;
+}
+
+@media screen and (max-width: 749px) {
+  .jm-concept__columns {
+    grid-template-columns: 1fr;
+  }
+}

@@ -58,6 +58,43 @@
         "show_text_below": false
       }
     },
+    "jm_concept_text_e8wypE": {
+      "type": "jm-concept-text",
+      "blocks": {
+        "concept_PxJ34g": {
+          "type": "concept",
+          "settings": {
+            "title": "Japanese Origin",
+            "description": "<p>日本の茶文化に根ざし、産地と製法にこだわった本物の抹茶だけを世界へ届けます。<br/>（例：日本語）</p>"
+          }
+        },
+        "concept_dPdFhR": {
+          "type": "concept",
+          "settings": {
+            "title": "Pure Matcha",
+            "description": "<p>厳選された茶葉を丁寧に石臼挽き。<br/>美容と健やかな毎日を支える純粋な抹茶です。</p>"
+          }
+        },
+        "concept_9yKXPW": {
+          "type": "concept",
+          "settings": {
+            "title": "Global Quality",
+            "description": "<p>日本品質をそのままに、<br/>世界基準の品質管理で安心と価値を提供します。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "concept_PxJ34g",
+        "concept_dPdFhR",
+        "concept_9yKXPW"
+      ],
+      "name": "Matcha Concepts",
+      "settings": {
+        "heading": "The Philosophy Behind Japan Matcha Star",
+        "subheading": "A balance of tradition, purity, and modern excellence.",
+        "text": "<p><strong>Japan Matcha Star is built on three core values.</strong></p>"
+      }
+    },
     "rich_text_PmzQKw": {
       "type": "rich-text",
       "blocks": {
@@ -308,6 +345,7 @@
   },
   "order": [
     "image_banner",
+    "jm_concept_text_e8wypE",
     "rich_text_PmzQKw",
     "featured_collection",
     "multicolumn_wmiXXq",

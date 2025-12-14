@@ -1,0 +1,104 @@
+{% comment %}
+  Section: Concept - Japan Matcha Star
+{% endcomment %}
+
+<section class="jm-concept section-{{ section.id }}">
+  <div class="page-width">
+
+    <div class="jm-concept__ttlArea">
+      {% if section.settings.heading != blank %}
+        <h2 class="jm-concept__title">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.subheading != blank %}
+        <p class="jm-concept__subtitle">
+          {{ section.settings.subheading }}
+        </p>
+      {% endif %}
+    </div>
+
+    {% if section.settings.text != blank %}
+      <div class="jm-concept__txtArea rte">
+        {{ section.settings.text }}
+      </div>
+    {% endif %}
+
+    <div class="jm-concept__columns">
+      {% for block in section.blocks %}
+        <div class="jm-concept__column">
+          {% if block.settings.title != blank %}
+            <h3 class="jm-concept__columnTitle">
+              {{ block.settings.title }}
+            </h3>
+          {% endif %}
+
+          {% if block.settings.description != blank %}
+            <div class="jm-concept__columnText rte">
+              {{ block.settings.description }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Matcha Concept",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Philosophy Behind Japan Matcha Star"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "A balance of tradition, purity, and modern excellence."
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Intro Text",
+      "default": "<p>Japan Matcha Star is built on three core values.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "concept",
+      "name": "Concept Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Japanese Origin"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Rooted in Japanese tea culture.</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Matcha Concepts",
+      "blocks": [
+        { "type": "concept" },
+        { "type": "concept" },
+        { "type": "concept" }
+      ]
+    }
+  ]
+}
+{% endschema %}

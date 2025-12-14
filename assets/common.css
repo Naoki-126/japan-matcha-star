@@ -78,3 +78,53 @@ input, select {
     vertical-align:middle;
 }
 
+/* 共通パーツ
+=========================== */
+html {
+  font-size: 62.5%; /*  1rem = 10px  */
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* 色 */
+  --color-primary: #464646;
+  --color-secondary: #666666;
+  --color-link: #0070f3;
+
+	/* バックグランドカラー */
+	--bg-primary: #EEE9E9;
+	--bg--secondary:#D8C3C3;
+	--bg--info:#FAFAFA;
+	--bg--info2:#DEE4ED;
+
+  /* フォント */
+  --ff-base:  'Noto Sans JP', 'Inter', sans-serif;
+  --ff-en:  "Alata", "Fuzzy Bubbles" , sans-serif;
+	--ff-label: 'Inter', sans-serif;
+
+  /* フォントサイズ */
+	--fz-sm:14px;
+  --fz-base: 16px;
+  --fz-ttl: 40px;
+}
+
+body {
+	font-size: var(--fz-base);
+	font-family: var(--ff-base);
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: .1em;
+	background: transparent;
+	color: var(--color-primary);
+	-webkit-font-smoothing: antialiased;
+}
+
+.page-inner {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+}
+
+.content-inner {
+	padding: 0 24px;
+}
