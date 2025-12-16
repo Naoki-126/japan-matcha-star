@@ -54,3 +54,69 @@
     grid-template-columns: 1fr;
   }
 }
+
+/*  JM Benefits
+=========================== */
+.jm-benefits {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.jm-benefits__title {
+  margin-top: 100px;
+  letter-spacing: 0.08em;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.jm-benefits__image {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+.jm-benefits__columns {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.jm-benefits__column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.jm-benefits__columnInner {
+  flex: 1;
+  background-color: #F6F7F4; /* 薄い抹茶系オフホワイト */
+  padding: 40px 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.jm-benefits__subTitle {
+  margin-top: 60px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.jm-benefits__columnTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jm-benefits__columnText {
+  margin-top: 16px;
+  flex-grow: 1;
+  line-height: 1.8;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 749px) {
+  .jm-benefits__columns {
+    grid-template-columns: 1fr;
+  }
+}

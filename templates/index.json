@@ -95,68 +95,18 @@
         "text": "<p><strong>Japan Matcha Star is built on three core values.</strong></p>"
       }
     },
-    "rich_text_PmzQKw": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_4EaAPV": {
-          "type": "heading",
-          "settings": {
-            "heading": "Japan Matcha Starの概念",
-            "heading_size": "h1"
-          }
-        },
-        "text_fqT49X": {
-          "type": "text",
-          "settings": {
-            "text": "<p> Premium Japanese Matcha for Beauty & Wellness. <br/>「美容 × 科学 × 伝統」を融合した大人女性のための抹茶ブランド。</p>"
-          }
-        },
-        "text_g8FDMk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>"
-          }
-        },
-        "button_8YCMHY": {
-          "type": "button",
-          "settings": {
-            "button_label": "Deatail",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_4EaAPV",
-        "text_fqT49X",
-        "text_g8FDMk",
-        "button_8YCMHY"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "商品ラインの紹介",
-        "heading_size": "h2",
-        "description": "",
+        "title": "Our Matcha Line",
+        "heading_size": "h0",
+        "description": "<p>Each blend is designed for a specific lifestyle and purpose.</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 3,
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -169,8 +119,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 0
       }
     },
     "multicolumn_wmiXXq": {
@@ -310,6 +260,42 @@
         "padding_bottom": 36
       }
     },
+    "jm_benefits_pqqtFp": {
+      "type": "jm-benefits",
+      "blocks": {
+        "benefit_fVRpPA": {
+          "type": "benefit",
+          "settings": {
+            "title": "Antioxidant Power",
+            "text": "<p>抹茶に豊富に含まれる抗酸化成分が、年齢とともに気になる内側のコンディションに働きかけ、健やかで美しい毎日をサポートします。<br/></p>"
+          }
+        },
+        "benefit_rNQtxQ": {
+          "type": "benefit",
+          "settings": {
+            "title": "Clear & Calm",
+            "text": "<p>日本の抹茶文化が育んできた一杯は、忙しい日常の中で心と身体を静かに整え、穏やかでクリアな時間をもたらします。</p>"
+          }
+        },
+        "benefit_cVx4RE": {
+          "type": "benefit",
+          "settings": {
+            "title": "Daily Wellness",
+            "text": "<p>毎日の生活に無理なく取り入れられる抹茶習慣。継続することで、日々のコンディション管理と心地よいウェルネスを支えます。<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_fVRpPA",
+        "benefit_rNQtxQ",
+        "benefit_cVx4RE"
+      ],
+      "name": "Benefits",
+      "settings": {
+        "image": "shopify://shop_images/benefits.webp",
+        "heading": "Beauty Begins from Within"
+      }
+    },
     "collapsible_content_FKQN8Y": {
       "type": "collapsible-content",
       "blocks": {
@@ -346,11 +332,11 @@
   "order": [
     "image_banner",
     "jm_concept_text_e8wypE",
-    "rich_text_PmzQKw",
     "featured_collection",
     "multicolumn_wmiXXq",
     "rich_text_BUX7MC",
     "multirow_j6TQLM",
+    "jm_benefits_pqqtFp",
     "collapsible_content_FKQN8Y"
   ]
 }
