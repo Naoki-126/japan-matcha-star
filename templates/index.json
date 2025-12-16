@@ -156,18 +156,31 @@
       "name": "Benefits",
       "settings": {
         "heading": "Beauty Begins from Within",
+        "subheading": "A balance of tradition, purity, and modern excellence.",
         "image": "shopify://shop_images/benefits.webp",
         "sub_title": "Nature-powered beauty from Japan"
       }
     },
-    "jm_brand_sc_RVtgzF": {
+    "jm_brand_sc_yAVbtc": {
       "type": "jm-brand-sc",
-      "name": "Brand",
+      "blocks": {
+        "brand_story_EtVJwc": {
+          "type": "brand_story",
+          "settings": {
+            "image": "shopify://shop_images/brand-story1.jpg",
+            "text_heading": "Crafted with Respect for Nature and Tradition",
+            "story": "<p>日本の抹茶は、単なる飲み物ではなく、土地の自然、職人の技、そして長い時間の積み重ねによって育まれてきた文化そのものです。私たちは、その背景にある価値を正しく理解し、表面的な流行やイメージだけで消費される存在にはしたくないと考えています。<br/><br/>原料となる茶葉は、産地や栽培環境によって香りや旨味が大きく異なります。私たちは品質の高さだけでなく、「なぜこの抹茶なのか」という理由を重視し、選定を行っています。その土地の風土や製法に敬意を払いながら、本来の魅力が最大限に引き出されるかどうかを基準にしています。<br/><br/>また、伝統を守ることだけが正解だとは考えていません。抹茶が現代のライフスタイルに自然に溶け込むためには、科学的な視点や品質管理も欠かせない要素です。成分分析や製造工程の検証を重ねることで、安心して日常に取り入れられる品質を追求しています。</p><p>忙しい毎日の中で、一杯の抹茶を点てる時間は、心と身体を静かに整えるひとときになります。特別な知識や形式がなくても、自分のペースで味わえること。それこそが、現代における新しい日本のラグジュアリーだと私たちは考えています。<br/><br/><br/>伝統と革新、そのどちらにも偏ることなく、日本の抹茶が持つ本質的な価値を、世界へ丁寧に届けていく。それが、このブランドに込めた私たちの想いです。</p><p></p><p></p>",
+            "reverse": false
+          }
+        }
+      },
+      "block_order": [
+        "brand_story_EtVJwc"
+      ],
+      "name": "Brand-story",
       "settings": {
-        "heading": "Brand Story",
-        "image": "shopify://shop_images/brand-story1.jpg",
-        "text_heading": "From Tradition to Modern Beauty",
-        "story": "<p>For centuries, Japanese matcha has been valued not only as a drink, but as a symbol of harmony between nature and people.<br/><br/>Japan Matcha Star carries this heritage forward, blending time-honored cultivation methods with modern science to create matcha that supports beauty from within.</p>"
+        "heading": "BRAND STORY",
+        "subheading": "Our Story"
       }
     },
     "jm_spacer_sc_J8eb9c": {
@@ -184,7 +197,7 @@
     "jm_concept_sct_prCywt",
     "featured_collection",
     "jm_benefits_sc_Pc8mm3",
-    "jm_brand_sc_RVtgzF",
+    "jm_brand_sc_yAVbtc",
     "jm_spacer_sc_J8eb9c"
   ]
 }

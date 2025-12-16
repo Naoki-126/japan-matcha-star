@@ -74,7 +74,7 @@
 .jm-benefits__image {
   margin: 36px auto 0;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
@@ -94,9 +94,11 @@
 }
 
 .jm-benefits__columns {
-  margin-top: 48px;
+  max-width: 1200px;
+  margin: 48px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   gap: 32px;
 }
 
@@ -144,41 +146,45 @@
   }
 }
 
-/* Brand
+/* Brand-story
 =========================== */
 .jm-brand {
-  margin: 100px auto 0;
+  margin: 0 auto;
   width: 100%;
 }
 
 .jm-brand__ttlArea {
+  margin-top: 100px;
   text-align: center;
 }
 
 .jm-brand__inner {
   width: 100%;
-  max-width: 1400px;
-  margin: 60px auto 0;
+  max-width: 1200px;
+  margin: 48px auto 0;
   display: flex;
-
   justify-content: center;
-  gap: 60px;
+  gap: 48px;
+}
+
+.jm-brand__inner.is-reverse {
+  flex-direction: row-reverse;
 }
 
 .jm-brand__image {
   width: 50%;
+  overflow: hidden;
 }
 
 .jm-brand__image img {
-  width: 50%;
-  max-width: 900px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
 .jm-brand__text {
   width: 50%;
-  line-height: 1.9;
 }
 
 .jm-brand__textTitle {
@@ -191,12 +197,22 @@
   margin-top: 24px;
 }
 
-/* SP */
 @media screen and (max-width: 749px) {
-  .jm-brand__inner {
-    flex-direction: column;
-    gap: 32px;
+  .jm-brand__ttlArea {
+    margin-top: 60px;
   }
 
+  .jm-brand__inner {
+    margin-top: 36px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .jm-brand__image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
 
+  .jm-brand__text {
+    width: 100%;
+  }
 }
