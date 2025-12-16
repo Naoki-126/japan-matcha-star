@@ -70,12 +70,12 @@ a {
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse:collapse;
+  border-spacing:0;
 }
 
 input, select {
-    vertical-align:middle;
+  vertical-align:middle;
 }
 
 /* 共通パーツ
@@ -87,20 +87,25 @@ html {
 
 :root {
   /* 色 */
-  --color-primary: #464646;
-  --color-secondary: #666666;
-  --color-link: #0070f3;
+  --color-base: #3F3F3F;
+  --color-heading: #4F6F52;
+  --color-sub: #6B6B6B;
+  --color-accent: #7BAE7F;
+  --color-link: #4F6F52;
+  --color-hover: #7BAE7F;
+  --color-footer: #5C5C5C;
 
 	/* バックグランドカラー */
-	--bg-primary: #EEE9E9;
-	--bg--secondary:#D8C3C3;
-	--bg--info:#FAFAFA;
-	--bg--info2:#DEE4ED;
+  --bg-main: #71b576;
+  --bg-accent: #C3E6A0;
+  --bg-base: #FAF7F0;
+  --bg-sub: #C8B08B;
+  --bg-link: #0070f3;
 
   /* フォント */
-  --ff-base:  'Noto Sans JP', 'Inter', sans-serif;
-  --ff-en:  "Alata", "Fuzzy Bubbles" , sans-serif;
-	--ff-label: 'Inter', sans-serif;
+  --ff-en:  "Playfair Display", "Noto Serif JP", serif;
+  --ff-jp:  'Noto Sans JP',system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--ff-label: 'Inter', 'Noto Sans JP',sans-serif;
 
   /* フォントサイズ */
 	--fz-sm:14px;
@@ -110,21 +115,55 @@ html {
 
 body {
 	font-size: var(--fz-base);
-	font-family: var(--ff-base);
+	font-family: var(--ff-en);
 	font-weight: 400;
-	line-height: normal;
-	letter-spacing: .1em;
+	line-height: 1.5;
+	letter-spacing: .08em;
 	background: transparent;
-	color: var(--color-primary);
+	color: var(--color-base);
 	-webkit-font-smoothing: antialiased;
 }
 
 .page-inner {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+	max-width: 1440px;
 }
 
 .content-inner {
-	padding: 0 24px;
+  padding-inline: 24px;
+}
+
+.jm-section__ttlArea {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.jm-section__title {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.jm-section__subtitle {
+  font-size: 18px;
+  color: #555;
+}
+
+@media screen and (max-width: 749px) {
+  .content-inner {
+    padding-inline: 16px;
+  }
+
+  .jm-section__ttlArea {
+    margin-top: 0;
+  }
+
+  .jm-section__title {
+    font-size: 28px;
+  }
+
+  .jm-section__subtitle {
+    font-size: 14px;
+  }
 }

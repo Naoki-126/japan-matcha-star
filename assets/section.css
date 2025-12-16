@@ -9,47 +9,51 @@
 =========================== */
 .jm-concept {
   margin: 0 auto;
-  text-align: center;
-  padding: 60px 0;
+  width: 100%;
 }
 
 .jm-concept__ttlArea {
-  margin-bottom: 40px;
-}
-
-.jm-concept__title {
-  letter-spacing: 0.08em;
-  margin-bottom: 0.8rem;
-  font-size: 48px;
-  font-weight: 700;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .jm-concept__subtitle {
-  font-size: 1.4rem;
+  font-size: 18px;
   color: #555;
 }
 
 .jm-concept__txtArea {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.jm-concept__paragraphs {
+  margin: 48px auto 0;
   max-width: 720px;
-  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.jm-concept__columns {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+.jm-concept__paraTitle {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.jm-concept__columnTitle {
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
-
-.jm-concept__columnText {
-  text-align-last: left;
+.jm-concept__paraText {
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 749px) {
+  .jm-concept__ttlArea {
+    margin-top: 60px;
+  }
+
+  .jm-concept__txtArea {
+    margin-top: 44px;
+  }
+
   .jm-concept__columns {
     grid-template-columns: 1fr;
   }
@@ -58,27 +62,42 @@
 /*  JM Benefits
 =========================== */
 .jm-benefits {
-  text-align: center;
   margin: 0 auto;
+  width: 100%;
 }
 
-.jm-benefits__title {
+.jm-benefits__ttlArea {
   margin-top: 100px;
-  letter-spacing: 0.08em;
-  font-size: 48px;
-  font-weight: 700;
+  text-align: center;
 }
 
 .jm-benefits__image {
-  margin-top: 30px;
+  margin: 36px auto 0;
   width: 100%;
   max-width: 1000px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
 }
-.jm-benefits__columns {
+
+.jm-benefits__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.jm-benefits__subTitle {
+  text-align: center;
   margin-top: 60px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.jm-benefits__columns {
+  margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 32px;
 }
 
 .jm-benefits__column {
@@ -89,17 +108,11 @@
 
 .jm-benefits__columnInner {
   flex: 1;
-  background-color: #F6F7F4; /* 薄い抹茶系オフホワイト */
+  background-color: var(--bg-base);
   padding: 40px 32px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-}
-
-.jm-benefits__subTitle {
-  margin-top: 60px;
-  font-size: 28px;
-  font-weight: 700;
 }
 
 .jm-benefits__columnTitle {
@@ -114,9 +127,76 @@
   text-align: left;
 }
 
-
 @media screen and (max-width: 749px) {
-  .jm-benefits__columns {
-    grid-template-columns: 1fr;
+  .jm-benefits__image {
+    aspect-ratio: 3 / 4;
   }
+
+  .jm-benefits__subTitle {
+    margin-top: 44px;
+    font-size: 24px;
+  }
+
+  .jm-benefits__columns {
+    margin-top: 36px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Brand
+=========================== */
+.jm-brand {
+  margin: 100px auto 0;
+  width: 100%;
+}
+
+.jm-brand__ttlArea {
+  text-align: center;
+}
+
+.jm-brand__inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 60px auto 0;
+  display: flex;
+
+  justify-content: center;
+  gap: 60px;
+}
+
+.jm-brand__image {
+  width: 50%;
+}
+
+.jm-brand__image img {
+  width: 50%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+}
+
+.jm-brand__text {
+  width: 50%;
+  line-height: 1.9;
+}
+
+.jm-brand__textTitle {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jm-brand__story {
+  margin-top: 24px;
+}
+
+/* SP */
+@media screen and (max-width: 749px) {
+  .jm-brand__inner {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+
 }

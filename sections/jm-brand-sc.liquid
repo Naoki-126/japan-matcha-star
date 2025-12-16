@@ -1,0 +1,73 @@
+<section class="jm-brand">
+
+  <div class="jm-brand__ttlArea">
+    {% if section.settings.heading != blank %}
+      <h2 class="jm-section__title">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+  </div>
+
+  <div class="jm-brand__inner">
+
+    {% if section.settings.image != blank %}
+      <div class="jm-brand__jmage">
+        {{ section.settings.image | image_url: width: 650 | image_tag }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.text_heading != blank or section.settings.story != blank %}
+      <div class="jm-brand__text">
+
+        {% if section.settings.text_heading != blank %}
+          <h3 class="jm-brand__textTitle">
+            {{ section.settings.text_heading }}
+          </h3>
+        {% endif %}
+
+        {% if section.settings.story != blank %}
+          <div class="jm-brand__story rte">
+            {{ section.settings.story }}
+          </div>
+        {% endif %}
+
+      </div>
+    {% endif %}
+
+  </div>
+
+</section>
+{% schema %}
+{
+  "name": "Brand",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Title",
+      "default": "Japan Matcha Star Concept"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "text_heading",
+      "label": "Text Area Heading",
+      "default": "From Tradition to Modern Beauty"
+    },
+    {
+      "type": "richtext",
+      "id": "story",
+      "label": "Brand Story"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand"
+    }
+  ]
+}
+{% endschema %}

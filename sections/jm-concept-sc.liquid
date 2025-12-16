@@ -3,46 +3,48 @@
 {% endcomment %}
 
 <section class="jm-concept section-{{ section.id }}">
-  <div class="page-width">
+  <div class="page-inner">
+    <div class="content-inner">
 
-    <div class="jm-concept__ttlArea">
-      {% if section.settings.heading != blank %}
-        <h2 class="jm-concept__title">
-          {{ section.settings.heading }}
-        </h2>
-      {% endif %}
-
-      {% if section.settings.subheading != blank %}
-        <p class="jm-concept__subtitle">
-          {{ section.settings.subheading }}
-        </p>
-      {% endif %}
-    </div>
-
-    {% if section.settings.text != blank %}
-      <div class="jm-concept__txtArea rte">
-        {{ section.settings.text }}
+      <div class="jm-concept__ttlArea">
+        {% if section.settings.heading != blank %}
+          <h2 class="jm-section__title">
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+        
+        {% if section.settings.subheading != blank %}
+          <p class="jm-section__subtitle">
+            {{ section.settings.subheading }}
+          </p>
+        {% endif %}
       </div>
-    {% endif %}
 
-    <div class="jm-concept__columns">
-      {% for block in section.blocks %}
-        <div class="jm-concept__column">
-          {% if block.settings.title != blank %}
-            <h3 class="jm-concept__columnTitle">
-              {{ block.settings.title }}
-            </h3>
-          {% endif %}
-
-          {% if block.settings.description != blank %}
-            <div class="jm-concept__columnText rte">
-              {{ block.settings.description }}
-            </div>
-          {% endif %}
+      {% if section.settings.text != blank %}
+        <div class="jm-concept__txtArea rte">
+          {{ section.settings.text }}
         </div>
-      {% endfor %}
-    </div>
+      {% endif %}
 
+      <div class="jm-concept__paragraphs">
+        {% for block in section.blocks %}
+          <div class="jm-concept__paragraph">
+            {% if block.settings.title != blank %}
+              <h3 class="jm-concept__paraTitle">
+                {{ block.settings.title }}
+              </h3>
+            {% endif %}
+
+            {% if block.settings.description != blank %}
+              <div class="jm-concept__paraText rte">
+                {{ block.settings.description }}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
   </div>
 </section>
 

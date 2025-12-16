@@ -58,41 +58,41 @@
         "show_text_below": false
       }
     },
-    "jm_concept_text_e8wypE": {
-      "type": "jm-concept-text",
+    "jm_concept_sct_prCywt": {
+      "type": "jm-concept-sc",
       "blocks": {
-        "concept_PxJ34g": {
+        "concept_QH7HLz": {
           "type": "concept",
           "settings": {
-            "title": "Japanese Origin",
-            "description": "<p>日本の茶文化に根ざし、産地と製法にこだわった本物の抹茶だけを世界へ届けます。<br/>（例：日本語）</p>"
+            "title": "Pure Origin from Japan",
+            "description": "<p>日本各地の抹茶は、気候や土壌、製法によって個性が大きく異なります。私たちは産地ごとの背景や歴史に目を向け、単なる「抹茶」ではなく、その土地が育んだ本来の価値を大切にしています。日本で受け継がれてきた抹茶文化を、現代のライフスタイルに自然に溶け込む形で届けたいと考えています。</p>"
           }
         },
-        "concept_dPdFhR": {
+        "concept_PMgd9Q": {
           "type": "concept",
           "settings": {
-            "title": "Pure Matcha",
-            "description": "<p>厳選された茶葉を丁寧に石臼挽き。<br/>美容と健やかな毎日を支える純粋な抹茶です。</p>"
+            "title": "Beauty Meets Science",
+            "description": "<p>抹茶が持つ美しさは、感覚だけのものではありません。私たちは成分や製法を科学的に検証し、美容と健康の観点から抹茶の可能性を見つめ直しています。伝統に頼るだけでなく、データと知見を重ねることで、日々の生活に安心して取り入れられる抹茶を目指しています。</p>"
           }
         },
-        "concept_9yKXPW": {
+        "concept_4cxtmP": {
           "type": "concept",
           "settings": {
-            "title": "Global Quality",
-            "description": "<p>日本品質をそのままに、<br/>世界基準の品質管理で安心と価値を提供します。</p>"
+            "title": "A New Luxury for Daily Life",
+            "description": "<p>ラグジュアリーとは、特別な日のためだけのものではありません。忙しい日常の中で、心と身体を整えるひとときこそが本当の贅沢だと私たちは考えます。一杯の抹茶が、日常を少し豊かに変える存在になるよう、品質と体験の両立を追求しています。</p>"
           }
         }
       },
       "block_order": [
-        "concept_PxJ34g",
-        "concept_dPdFhR",
-        "concept_9yKXPW"
+        "concept_QH7HLz",
+        "concept_PMgd9Q",
+        "concept_4cxtmP"
       ],
       "name": "Matcha Concepts",
       "settings": {
-        "heading": "The Philosophy Behind Japan Matcha Star",
+        "heading": "Philosophy behind JAPAN MACHA STAR",
         "subheading": "A balance of tradition, purity, and modern excellence.",
-        "text": "<p><strong>Japan Matcha Star is built on three core values.</strong></p>"
+        "text": "<p>Japan Matcha Star is built on three core values.</p>"
       }
     },
     "featured_collection": {
@@ -100,9 +100,9 @@
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "Our Matcha Line",
+        "title": "MATCHA LINEUP",
         "heading_size": "h0",
-        "description": "<p>Each blend is designed for a specific lifestyle and purpose.</p>",
+        "description": "<p>Pure. Authentic. Japan-made.<br/></p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 3,
@@ -123,220 +123,68 @@
         "padding_bottom": 0
       }
     },
-    "multicolumn_wmiXXq": {
-      "type": "multicolumn",
+    "jm_benefits_sc_Pc8mm3": {
+      "type": "jm-benefits-sc",
       "blocks": {
-        "column_z8Kxrf": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_e8B8pn": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3QdBAi": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_z8Kxrf",
-        "column_e8B8pn",
-        "column_3QdBAi"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "美容効果の紹介（科学的エビデンス）",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_BUX7MC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_q6F69J": {
-          "type": "heading",
-          "settings": {
-            "heading": "Brand story",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_q6F69J"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multirow_j6TQLM": {
-      "type": "multirow",
-      "blocks": {
-        "row_GNQadr": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/platinum_class_ceremonial.jpg",
-            "caption": "肌の輝き・アンチエイジングを求める方へ。",
-            "heading": "<strong>Premiumセレモニアルグレード</strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_AGnGh8": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/ceremonial.jpg",
-            "caption": "毎日の健康・心のバランスを整える万能抹茶。",
-            "heading": "<strong>セレモニアルグレード</strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_NPbGUN": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/yuuki_ceremonial.jpg",
-            "caption": "ダイエット・集中力・運動に最適なオーガニック抹茶。",
-            "heading": "<strong>有機セレモニアルグレード</strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_GNQadr",
-        "row_AGnGh8",
-        "row_NPbGUN"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "jm_benefits_pqqtFp": {
-      "type": "jm-benefits",
-      "blocks": {
-        "benefit_fVRpPA": {
+        "benefit_pPqzFx": {
           "type": "benefit",
           "settings": {
             "title": "Antioxidant Power",
-            "text": "<p>抹茶に豊富に含まれる抗酸化成分が、年齢とともに気になる内側のコンディションに働きかけ、健やかで美しい毎日をサポートします。<br/></p>"
+            "text": "<p>抹茶に豊富に含まれる抗酸化成分が、年齢とともに気になる内側のコンディションに働きかけ、健やかで美しい毎日をサポートします</p>"
           }
         },
-        "benefit_rNQtxQ": {
+        "benefit_NUJPXW": {
           "type": "benefit",
           "settings": {
             "title": "Clear & Calm",
             "text": "<p>日本の抹茶文化が育んできた一杯は、忙しい日常の中で心と身体を静かに整え、穏やかでクリアな時間をもたらします。</p>"
           }
         },
-        "benefit_cVx4RE": {
+        "benefit_rF4VTT": {
           "type": "benefit",
           "settings": {
             "title": "Daily Wellness",
-            "text": "<p>毎日の生活に無理なく取り入れられる抹茶習慣。継続することで、日々のコンディション管理と心地よいウェルネスを支えます。<br/></p>"
+            "text": "<p>毎日の生活に無理なく取り入れられる抹茶習慣。継続することで、日々のコンディション管理と心地よいウェルネスを支えます。</p>"
           }
         }
       },
       "block_order": [
-        "benefit_fVRpPA",
-        "benefit_rNQtxQ",
-        "benefit_cVx4RE"
+        "benefit_pPqzFx",
+        "benefit_NUJPXW",
+        "benefit_rF4VTT"
       ],
       "name": "Benefits",
       "settings": {
+        "heading": "Beauty Begins from Within",
         "image": "shopify://shop_images/benefits.webp",
-        "heading": "Beauty Begins from Within"
+        "sub_title": "Nature-powered beauty from Japan"
       }
     },
-    "collapsible_content_FKQN8Y": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_hMbYHG": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "カスタマイズで作成",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_hMbYHG"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
+    "jm_brand_sc_RVtgzF": {
+      "type": "jm-brand-sc",
+      "name": "Brand",
       "settings": {
-        "caption": "",
-        "heading": "Matcha 診断（仮）",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
-        "color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Brand Story",
+        "image": "shopify://shop_images/brand-story1.jpg",
+        "text_heading": "From Tradition to Modern Beauty",
+        "story": "<p>For centuries, Japanese matcha has been valued not only as a drink, but as a symbol of harmony between nature and people.<br/><br/>Japan Matcha Star carries this heritage forward, blending time-honored cultivation methods with modern science to create matcha that supports beauty from within.</p>"
+      }
+    },
+    "jm_spacer_sc_J8eb9c": {
+      "type": "jm-spacer-sc",
+      "name": "Spacer",
+      "settings": {
+        "padding_top": 100,
+        "bg_color": "#ffffff"
       }
     }
   },
   "order": [
     "image_banner",
-    "jm_concept_text_e8wypE",
+    "jm_concept_sct_prCywt",
     "featured_collection",
-    "multicolumn_wmiXXq",
-    "rich_text_BUX7MC",
-    "multirow_j6TQLM",
-    "jm_benefits_pqqtFp",
-    "collapsible_content_FKQN8Y"
+    "jm_benefits_sc_Pc8mm3",
+    "jm_brand_sc_RVtgzF",
+    "jm_spacer_sc_J8eb9c"
   ]
 }
