@@ -64,10 +64,13 @@
 .jm-benefits {
   margin: 0 auto;
   width: 100%;
+  background: var(--bg-soft);
+  padding-bottom: 60px;
 }
 
 .jm-benefits__ttlArea {
-  margin-top: 100px;
+  margin-top: 40px;
+  padding-top: 60px;
   text-align: center;
 }
 
@@ -84,6 +87,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
 }
 
 .jm-benefits__subTitle {
@@ -111,6 +115,8 @@
 .jm-benefits__columnInner {
   flex: 1;
   background-color: var(--bg-base);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
   padding: 40px 32px;
   border-radius: 8px;
   display: flex;
@@ -181,6 +187,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
 }
 
 .jm-brand__text {

@@ -100,6 +100,7 @@ html {
   --bg-accent: #C3E6A0;
   --bg-base: #FAF7F0;
   --bg-sub: #C8B08B;
+  --bg-soft: #F7F7F5;
   --bg-link: #0070f3;
 
   /* フォント */
@@ -148,6 +149,14 @@ body {
 .jm-section__subtitle {
   font-size: 18px;
   color: #555;
+}
+
+.jm-footer__bg {
+  background: var(--bg-main);
+  padding-bottom: 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 749px) {
