@@ -3,7 +3,20 @@
 
 /* fvセクション
 =========================== */
+.jm-fv {
+  height: 90vh;
+}
 
+.jm-fv__title{
+  font-family: var(--ff-en);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 749px) {
+  .jm-fv {
+    height: 80vh;
+  }
+}
 
 /* jm-concept
 =========================== */
