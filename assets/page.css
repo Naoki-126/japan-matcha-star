@@ -2,3 +2,105 @@
 
 /* About ページ
 =========================== */
+
+
+
+
+
+/* faqページ
+=========================== */
+.faq {
+  margin: 72px auto 0;
+  width: 100%;
+  max-width: 720px;
+}
+
+.faq-contents {
+  margin-top: 32px;
+}
+
+.faq-title {
+  margin-top: 24px;
+  width: 100%;
+  background: #292929;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 8px 8px 0 0;
+}
+
+.faq-content {
+  margin-top: 72px;
+}
+
+.faq-content:first-of-type {
+  margin-top: 0;
+}
+
+.faq-accordionArea {
+  width: 100%;
+}
+
+.accordion-q {
+  background: #DCD7CF;
+  padding: 14px 24px 14px 57px;
+  font-size: 14px;
+  line-height: 2;
+  border-bottom: 1px solid #959595;
+  position: relative;
+	cursor: pointer;
+}
+
+.accordion-q:first-of-type {
+  border-top: 1px solid #959595;
+}
+
+.accordion-q::before {
+  content: "";
+  position: absolute;
+  background: url(../assets/icon-q.png) no-repeat center center /contain;
+  width: 17px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+
+.accordion-q::after {
+  content: "";
+  position: absolute;
+  background: url(../assets/arrow-down.png)no-repeat center center /contain;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+	transition: transform 0.3s ease;
+}
+
+.accordion-a {
+	max-height: 0;
+	overflow: hidden;
+  background: #EDE8E2;
+  padding: 0px 24px 0px 57px;
+  font-size: 14px;
+  line-height: 2;
+  border-bottom: 1px solid #959595;
+  position: relative;
+	transition: max-height 0.5s ease, padding 0.3s ease;;
+}
+
+.accordion-a::before {
+  content: "";
+  position: absolute;
+  background: url(../assets/icon-a.png)no-repeat center center /contain;
+  width: 17px;
+  height: 24px;
+  top: 25%;
+  left: 16px;
+}
+
+.accordion-q.active::after {
+  transform: translateY(-50%) rotate(180deg);
+}

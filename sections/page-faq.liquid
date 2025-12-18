@@ -1,0 +1,140 @@
+<main class="faq-page" >
+  <div class="page-inner content-inner">
+    <div class="breadcrumbs-area">
+      <nav  role="navigation" aria-label="breadcrumb">
+        <ol class="breadcrumb-wrap">
+          <li class="breadcrumb-page"><a href="{{ routes.root_url }}">ホーム</a></li>
+          <li class="breadcrumb-page">{{ page.title }}</li>
+        </ol>
+      </nav>
+    </div>
+    <section id="js-faq" class="faq">
+      <div class="faq-contents">
+        <div class="new-ttlArea">
+      <div class="c-ttlArea">
+        <h2 class="c-title">{{ section.settings.title }}</h2>
+      </div>
+    </div>
+
+        {% for block in section.blocks %}
+          {% assign faq_block = block.settings %}
+          <div class="faq-content">
+            <h2 class="faq-title">{{ faq_block.sub-title }}</h2>
+            <div class="faq-accordionArea">
+              {% for i in (1..6) %}
+                {% assign question_key = "question" | append: i %}
+                {% assign answer_key = "answer" | append: i %}
+                {% assign question = faq_block[question_key] %}
+                {% assign answer = faq_block[answer_key] %}
+                {% if question != blank %}
+                  <div class="accordion-q">{{ question }}</div>
+                  {% if answer != blank %}
+                    <div class="accordion-a">{{ answer }}</div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+        
+      </div>
+    </section>
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "FAQセクション",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "タイトル",
+      "default": "よくあるご質問"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_group",
+      "name": "FAQカテゴリー",
+      "settings": [
+        {
+          "type": "text",
+          "id": "sub-title",
+          "label": "サブタイトル"
+        },
+        {
+          "type": "text",
+          "id": "question1",
+          "label": "質問1"
+        },
+        {
+          "type": "textarea",
+          "id": "answer1",
+          "label": "回答1"
+        },
+        {
+          "type": "text",
+          "id": "question2",
+          "label": "質問2"
+        },
+        {
+          "type": "textarea",
+          "id": "answer2",
+          "label": "回答2"
+        },
+        {
+          "type": "text",
+          "id": "question3",
+          "label": "質問3"
+        },
+        {
+          "type": "textarea",
+          "id": "answer3",
+          "label": "回答3"
+        },
+        {
+          "type": "text",
+          "id": "question4",
+          "label": "質問4"
+        },
+        {
+          "type": "textarea",
+          "id": "answer4",
+          "label": "回答4"
+        },
+        {
+          "type": "text",
+          "id": "question5",
+          "label": "質問5"
+        },
+        {
+          "type": "textarea",
+          "id": "answer5",
+          "label": "回答5"
+        },
+        {
+          "type": "text",
+          "id": "question6",
+          "label": "質問6"
+        },
+        {
+          "type": "textarea",
+          "id": "answer6",
+          "label": "回答6"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQセクション",
+      "category": "ページ"
+    }
+  ]
+}
+{% endschema %}

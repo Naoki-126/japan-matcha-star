@@ -9,15 +9,38 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "page_faq_mgyErt": {
+      "type": "page-faq",
+      "blocks": {
+        "faq_group_UNzRtq": {
+          "type": "faq_group",
+          "settings": {
+            "sub-title": "よくある質問",
+            "question1": "保存方法",
+            "answer1": "すずしいところ",
+            "question2": "飲むタイミング",
+            "answer2": "",
+            "question3": "カフェイン量",
+            "answer3": "",
+            "question4": "妊娠中の相談",
+            "answer4": "",
+            "question5": "海外配送",
+            "answer5": "",
+            "question6": "",
+            "answer6": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_group_UNzRtq"
+      ],
+      "name": "FAQセクション",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "title": "FAQ"
       }
     }
   },
   "order": [
-    "main"
+    "page_faq_mgyErt"
   ]
 }
