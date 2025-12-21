@@ -142,7 +142,6 @@ body {
 }
 
 .jm-section__ttlArea {
-  margin-top: 40px;
   text-align: center;
 }
 
@@ -155,6 +154,13 @@ body {
 .jm-section__subtitle {
   font-size: 18px;
   color: #555;
+}
+
+/* footer
+  =========================== */
+.jm-footer {
+  padding: 60px 0 0 !important;
+
 }
 
 .jm-footer__bg {
@@ -181,4 +187,16 @@ body {
   .jm-section__subtitle {
     font-size: 14px;
   }
+
+  /* footer
+  =========================== */
+  .jm-footer {
+  padding-top: 40px !important;
+}
+
+  /* jm-spacer
+  =========================== */
+    #shopify-section-{{ section.id }} .jm-spacer {
+      padding-top: {{ section.settings.padding_top_sp }}px;
+    }
 }

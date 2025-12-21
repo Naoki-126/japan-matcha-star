@@ -188,7 +188,8 @@
       "type": "jm-spacer",
       "name": "Spacer",
       "settings": {
-        "padding_top": 100,
+        "padding_top": 20,
+        "padding_top_sp": 12,
         "bg_color": "#ffffff"
       }
     }
