@@ -60,7 +60,7 @@
       }
     },
     "jm_concept_sct_prCywt": {
-      "type": "jm-concept-sc",
+      "type": "jm-concept",
       "blocks": {
         "concept_QH7HLz": {
           "type": "concept",
@@ -125,7 +125,7 @@
       }
     },
     "jm_benefits_sc_Pc8mm3": {
-      "type": "jm-benefits-sc",
+      "type": "jm-benefits",
       "blocks": {
         "benefit_pPqzFx": {
           "type": "benefit",
@@ -163,7 +163,7 @@
       }
     },
     "jm_brand_sc_yAVbtc": {
-      "type": "jm-brand-sc",
+      "type": "jm-brand",
       "blocks": {
         "brand_story_EtVJwc": {
           "type": "brand_story",
@@ -185,7 +185,7 @@
       }
     },
     "jm_spacer_sc_J8eb9c": {
-      "type": "jm-spacer-sc",
+      "type": "jm-spacer",
       "name": "Spacer",
       "settings": {
         "padding_top": 100,

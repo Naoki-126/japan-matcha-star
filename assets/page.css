@@ -1,13 +1,166 @@
 @charset "UTF-8";
 
-/* About ページ
+/* ===========================
+# 下層ページ共通
 =========================== */
 
+/* sub-hero
+=========================== */
+.jm-subHero {
+  width: 100%;
+}
 
+.jm-subHero__contents {
+  position: relative;
+}
 
+.jm-subHero__imgArea {
+  width: 100%;
+}
 
+.jm-subHero__imgArea-content {
+  width: 100%;
+}
 
-/* faqページ
+.jm-subHero__img {
+  width: 100%;
+  height: 80vh;
+  min-height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.jm-subHero__ttlArea {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.jm-subHero__imgArea::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.jm-subHero__ttlArea-content {
+  max-width: 960px;
+  text-align: center;
+  color: #fff;
+}
+
+.jm-subHero__title {
+  font-size: clamp(28px, 4vw, 56px);
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+  font-family: var(--ff-en);
+  font-weight: 400;
+  color: #fff;
+}
+
+.jm-subHero__text {
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: .04em;
+  opacity: 0.9;
+}
+
+@media (max-width: 749px) {
+  .jm-subHero__img {
+    height: 60vh;
+    min-height: 420px;
+  }
+
+  .jm-subHero__ttlArea {
+    padding: 60px 16px 40px;
+  }
+}
+
+/* ===========================
+# About ページ
+=========================== */
+
+/* jm-made
+=========================== */
+.jm-made {
+  background-color: var(--bg-base);
+}
+
+.jm-made__contents {
+  margin: 0 auto;
+  max-width: var(--width-base);
+  display: flex;
+  gap: 64px;
+  padding: 120px 0;
+  align-items: center;
+}
+
+.jm-made__contentArea {
+  width: 40%;
+}
+
+.jm-made__ttlArea {
+  text-align: left;
+}
+
+.jm-made__text {
+  margin-top: 32px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #333;
+  max-width: 520px;
+  letter-spacing: 0.02em;
+  word-break: break-word;
+}
+
+.jm-made__text p + p {
+  margin-top: 16px;
+}
+
+.jm-made__imgArea {
+  padding-top: 40px;
+  width: 60%;
+}
+
+.jm-made__image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.jm-made__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 749px) {
+  .jm-made__contents {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .jm-made__contentArea {
+    width: 100%;
+  }
+
+  .jm-made__imgArea {
+    width: 100%;
+  }
+
+  .jm-made__text {
+    font-size: 14px;
+    line-height: 1.85;
+    max-width: 100%;
+  }
+}
+
+/* ===========================
+# faqページ
 =========================== */
 .faq {
   margin: 72px auto 0;

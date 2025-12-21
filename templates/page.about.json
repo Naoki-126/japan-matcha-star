@@ -9,6 +9,25 @@
  */
 {
   "sections": {
+    "jm_sub_hero_4dCJUA": {
+      "type": "jm-sub-hero",
+      "name": "Sub Hero",
+      "settings": {
+        "img": "shopify://shop_images/sunrise.jpg",
+        "ttl": "ABOUT US",
+        "txt": "日本の抹茶、その本質と美しさを世界へ。"
+      }
+    },
+    "jm_made_rwhwCR": {
+      "type": "jm-made",
+      "name": "産地紹介（Origin）",
+      "settings": {
+        "ttl": "ORIGIN OF MATCHA",
+        "subttl": "抹茶が生まれる場所",
+        "text": "<p>日本には、抹茶づくりに適した風土があります。<br/><br/>昼夜の寒暖差、豊かな水、霧が立ち込める山あいの環境。<br/>そうした自然条件に加え、代々受け継がれてきた<br/>茶農家の知恵と技術が、抹茶の品質を支えています。<br/><br/>私たちが届けたいのは、単なる抹茶ではありません。<br/>土地の個性と、人の手仕事が生み出す<br/>日本ならではの価値そのものです。</p>",
+        "image": "shopify://shop_images/ridge.jpg"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -62,19 +81,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "jm_sub_hero_4dCJUA": {
-      "type": "jm-sub-hero",
-      "name": "Sub Hero",
-      "settings": {
-        "ttl": "ABOUT US",
-        "txt": "日本の抹茶、その本質と美しさを世界へ。",
-        "img": "shopify://shop_images/sunrise.jpg"
-      }
     }
   },
   "order": [
     "jm_sub_hero_4dCJUA",
+    "jm_made_rwhwCR",
     "main",
     "image_with_text_qiefJ9"
   ]

@@ -179,7 +179,7 @@
 
 .jm-brand__inner {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--width-base);
   margin: 48px auto 0;
   display: flex;
   justify-content: center;
@@ -234,73 +234,5 @@
 
   .jm-brand__text {
     width: 100%;
-  }
-}
-
-/* sub-hero
-=========================== */
-.jm-subHero {
-  width: 100%;
-}
-
-.jm-subHero__contents {
-  display: block;
-}
-
-/* =========================
-   Title Area
-========================= */
-.jm-subHero__ttlArea {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 20px 60px;
-}
-
-.jm-subHero__ttlArea__content {
-  max-width: 960px;
-  text-align: center;
-}
-
-.jm-subHero__ttl {
-  font-size: clamp(32px, 4vw, 56px);
-  letter-spacing: 0.08em;
-  margin-bottom: 16px;
-}
-
-.jm-subHero__txt {
-  font-size: 14px;
-  line-height: 1.8;
-  opacity: 0.85;
-}
-
-/* =========================
-   Image Area
-========================= */
-.jm-subHero__imgArea {
-  width: 100%;
-}
-
-.jm-subHero__imgArea__content {
-  width: 100%;
-}
-
-.jm-subHero__img {
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-  display: block;
-}
-
-/* =========================
-   SP
-========================= */
-@media (max-width: 749px) {
-  .jm-subHero__ttlArea {
-    padding: 60px 16px 40px;
-  }
-
-  .jm-subHero__img {
-    height: 45vh;
   }
 }

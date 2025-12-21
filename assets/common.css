@@ -112,6 +112,12 @@ html {
 	--fz-sm:14px;
   --fz-base: 16px;
   --fz-ttl: 40px;
+
+  /* 画像サイズ */
+  --width-base: 1200px;
+  --width-pc: 1920px;
+  --width-box: 1000px;
+  --width-sp: 749px;
 }
 
 body {
