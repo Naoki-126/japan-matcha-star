@@ -87,7 +87,8 @@
 /* jm-made
 =========================== */
 .jm-made {
-  background-color: var(--bg-base);
+  margin: 0 auto;
+  width: 100%;
 }
 
 .jm-made__contents {
@@ -158,6 +159,79 @@
     max-width: 100%;
   }
 }
+
+/* jm-history
+=========================== */
+.jm-history {
+  margin: 0 auto;
+  width: 100%;
+  background: var(--bg-history, #f7f7f5);
+  padding-bottom: 60px;
+}
+
+.jm-history__ttlArea {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.jm-history__contentArea {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--width-base);
+}
+
+.jm-history__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.jm-history__item {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.jm-history__imgArea {
+  margin-bottom: 16px;
+}
+
+.jm-history__imgArea {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.jm-history__img {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.jm-history__txtArea {
+  margin-top: 24px;
+  text-align: left;
+}
+
+@media (max-width: 749px) {
+    .jm-history {
+    padding: 80px 0;
+  }
+
+  .jm-history__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .jm-history__text {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+
+
+
+
+
 
 /* ===========================
 # faqページ

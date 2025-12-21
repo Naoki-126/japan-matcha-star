@@ -28,6 +28,42 @@
         "image": "shopify://shop_images/ridge.jpg"
       }
     },
+    "jm_history_QzNzqF": {
+      "type": "jm-history",
+      "blocks": {
+        "item_rt7wT3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/history.jpg",
+            "text": "歴史1"
+          }
+        },
+        "item_FFTNKh": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/history.jpg",
+            "text": "歴史2"
+          }
+        },
+        "item_6FALPW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/history.jpg",
+            "text": "歴史3"
+          }
+        }
+      },
+      "block_order": [
+        "item_rt7wT3",
+        "item_FFTNKh",
+        "item_6FALPW"
+      ],
+      "name": "Matcha History（抹茶の歴史）",
+      "settings": {
+        "heading": "THE HISTORY OF MATCHA",
+        "subheading": "Tradition refined by time."
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -81,12 +117,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "jm_history_3tmpq3": {
+      "type": "jm-history",
+      "name": "Matcha History（抹茶の歴史）",
+      "settings": {
+        "heading": "THE HISTORY OF MATCHA",
+        "subheading": "Tradition refined by time."
+      }
     }
   },
   "order": [
     "jm_sub_hero_4dCJUA",
     "jm_made_rwhwCR",
+    "jm_history_QzNzqF",
     "main",
-    "image_with_text_qiefJ9"
+    "image_with_text_qiefJ9",
+    "jm_history_3tmpq3"
   ]
 }
