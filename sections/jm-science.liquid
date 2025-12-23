@@ -1,8 +1,8 @@
-<section class="jm-craft">
+<section class="jm-science">
   <div class="page-inner">
     <div class="content-inner">
 
-      <div class="jm-craft__ttlArea">
+      <div class="jm-science__ttlArea">
         {% if section.settings.heading != blank %}
           <h2 class="jm-section__title">
             {{ section.settings.heading }}
@@ -15,28 +15,20 @@
         {% endif %}
       </div>
 
-      <div class="jm-craft__inner">
-        <div class="jm-craft__imgArea">
+      <div class="jm-science__inner">
+        <div class="jm-science__imgArea">
           {% if section.settings.image != blank %}
-            <div class="jm-craft__image">
+            <div class="jm-science__image">
               {{ section.settings.image | image_url: width: 576 | image_tag: loading: 'lazy'}}
-              <span class="jm-craft__overlay" style="opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></span>
+              <span class="jm-science__overlay" style="opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></span>
               </div>
           {% endif %}
         </div>
-        <div class="jm-craft__txtArea">
-          <ul class="jm-craft__points">
-            <li class="jm-craft__point">
-              <h3 class="jm-craft__ttl">{{ section.settings.point1_title }}</h3>
-              <p class="jm-craft__text">{{ section.settings.point1_text }}</p>
-            </li>
-            <li class="jm-craft__point">
-              <h3 class="jm-craft__ttl">{{ section.settings.point2_title }}</h3>
-              <p class="jm-craft__text">{{ section.settings.point2_text }}</p>
-            </li>
-            <li class="jm-craft__point">
-              <h3 class="jm-craft__ttl">{{ section.settings.point3_title }}</h3>
-              <p class="jm-craft__text">{{ section.settings.point3_text }}</p>
+        <div class="jm-science__txtArea">
+          <ul class="jm-science__points">
+            <li class="jm-science__point">
+              <h3 class="jm-science__ttl">{{ section.settings.title }}</h3>
+              <p class="jm-science__text">{{ section.settings.text }}</p>
             </li>
           </ul>
         </div>

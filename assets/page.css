@@ -259,9 +259,25 @@
 }
 
 .jm-craft__image {
+  position: relative;
   max-width: 600px;
-  object-fit: cover;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.jm-craft__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.85);
+}
+
+.jm-craft__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 .jm-craft__txtArea {
@@ -286,10 +302,6 @@
   font-weight: 600;
 }
 
-.jm-craft__text {
-
-}
-
 @media screen and (max-width: 749px) {
   .jm-craft {
     margin: 80px auto 60px;
@@ -305,15 +317,22 @@
     width: 100%;
   }
 
+  .jm-craft__image img {
+    aspect-ratio: 4 / 5;
+  }
+
   .jm-craft__txtArea {
     width: 100%;
   }
 }
 
-/*
+/* jm-science
 =========================== */
 
 
+
+/*
+=========================== */
 
 
 /* ===========================
