@@ -64,58 +64,26 @@
         "subheading": "Tradition refined by time."
       }
     },
+    "jm_craft_dmBDr6": {
+      "type": "jm-craft",
+      "name": "Craft & Philosophy",
+      "settings": {
+        "heading": "CRAFT & PHILOSOPHY",
+        "subheading": "Crafted slowly, with intention.",
+        "image": "shopify://shop_images/craft.jpg",
+        "point1_title": "Hand-picked leaves",
+        "point1_text": "Only young leaves are carefully selected by hand.",
+        "point2_title": "Stone-ground process",
+        "point2_text": "Ground slowly to preserve aroma and nutrients.",
+        "point3_title": "Freshness control",
+        "point3_text": "Processed and stored under strict conditions."
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "image_with_text_qiefJ9": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_jbMcbN": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_ETiyew": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_TT7KJx": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_jbMcbN",
-        "text_ETiyew",
-        "button_TT7KJx"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
@@ -123,7 +91,7 @@
     "jm_sub_hero_4dCJUA",
     "jm_made_rwhwCR",
     "jm_history_QzNzqF",
-    "main",
-    "image_with_text_qiefJ9"
+    "jm_craft_dmBDr6",
+    "main"
   ]
 }

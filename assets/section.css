@@ -87,7 +87,7 @@
 .jm-benefits__image {
   margin: 36px auto 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--width-base);
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
@@ -108,7 +108,7 @@
 }
 
 .jm-benefits__columns {
-  max-width: 1200px;
+  max-width: var(--width-base);
   margin: 48px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -167,7 +167,7 @@
   }
 }
 
-/* Brand-story
+/* jm-brand
 =========================== */
 .jm-brand {
   margin: 100px auto 80px;
