@@ -71,12 +71,49 @@
         "heading": "CRAFT & PHILOSOPHY",
         "subheading": "Crafted slowly, with intention.",
         "image": "shopify://shop_images/craft.jpg",
+        "overlay_opacity": 20,
         "point1_title": "Hand-picked leaves",
         "point1_text": "Only young leaves are carefully selected by hand.",
         "point2_title": "Stone-ground process",
         "point2_text": "Ground slowly to preserve aroma and nutrients.",
         "point3_title": "Freshness control",
         "point3_text": "Processed and stored under strict conditions."
+      }
+    },
+    "jm_science_bWwfiW": {
+      "type": "jm-science",
+      "blocks": {
+        "item_AWGEfq": {
+          "type": "item",
+          "settings": {
+            "title": "Antioxidant Power",
+            "text": "抹茶に含まれるカテキンなどの抗酸化成分は、年齢とともに気になる日々のコンディションを\n健やかに保つ働きがあるとされています。"
+          }
+        },
+        "item_wqWzde": {
+          "type": "item",
+          "settings": {
+            "title": "L-Theanine",
+            "text": "抹茶特有のアミノ酸「テアニン」は、穏やかな集中感とリラックスを同時にもたらす成分として知られています。"
+          }
+        },
+        "item_ptTdzn": {
+          "type": "item",
+          "settings": {
+            "title": "Vitamins & Minerals",
+            "text": "抹茶は茶葉をまるごと摂取するため、ビタミンやミネラルなどの栄養素を日常的に取り入れやすいのも特徴です。"
+          }
+        }
+      },
+      "block_order": [
+        "item_AWGEfq",
+        "item_wqWzde",
+        "item_ptTdzn"
+      ],
+      "name": "Science",
+      "settings": {
+        "heading": "WHY MATCHA WORKS",
+        "subheading": "The science behind its natural power"
       }
     },
     "main": {
@@ -92,6 +129,7 @@
     "jm_made_rwhwCR",
     "jm_history_QzNzqF",
     "jm_craft_dmBDr6",
+    "jm_science_bWwfiW",
     "main"
   ]
 }

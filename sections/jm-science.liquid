@@ -15,24 +15,23 @@
         {% endif %}
       </div>
 
-      <div class="jm-science__inner">
-        <div class="jm-science__imgArea">
-          {% if section.settings.image != blank %}
-            <div class="jm-science__image">
-              {{ section.settings.image | image_url: width: 576 | image_tag: loading: 'lazy'}}
-              <span class="jm-science__overlay" style="opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></span>
-              </div>
-          {% endif %}
-        </div>
-        <div class="jm-science__txtArea">
-          <ul class="jm-science__points">
-            <li class="jm-science__point">
-              <h3 class="jm-science__ttl">{{ section.settings.title }}</h3>
-              <p class="jm-science__text">{{ section.settings.text }}</p>
-            </li>
+      {% if section.blocks.size > 0 %}
+        <div class="jm-science__inner">
+          <ul class="jm-science__cardArea">
+            {% for block in section.blocks %}
+              <li class="jm-science__card" {{ block.shopify_attributes }}>
+                {% if block.settings.title != blank %}
+                  <h3 class="jm-science__ttl">{{ block.settings.title }}</h3>
+                {% endif %}
+                {% if block.settings.text != blank %}
+                  <p class="jm-science__text">{{ block.settings.text | newline_to_br }}</p>
+                {% endif %}
+              </li>
+            {% endfor %}
+
           </ul>
         </div>
-      </div>
+      {% endif %}
 
     </div>
   </div>
@@ -40,89 +39,43 @@
 
 {% schema %}
 {
-  "name": "Craft & Philosophy",
+  "name": "Science",
   "settings": [
     {
       "type": "text",
       "id": "heading",
       "label": "Section Title",
-      "default": "CRAFT & PHILOSOPHY"
+      "default": "WHY MATCHA WORKS"
     },
     {
       "type": "text",
       "id": "subheading",
       "label": "Sub Title",
-      "default": "Crafted slowly, with intention."
-    },
+      "default": "The science behind its natural power"
+    }
+  ],
+  "blocks": [
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "画像"
-    },
-    {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "画像の暗さ（オーバーレイ）",
-      "min": 0,
-      "max": 70,
-      "step": 5,
-      "unit": "%",
-      "default": 20
-    },
-    {
-      "type": "header",
-      "content": "こだわり①"
-    },
-    {
-      "type": "text",
-      "id": "point1_title",
-      "label": "見出し",
-      "default": "Hand-picked leaves"
-    },
-    {
-      "type": "textarea",
-      "id": "point1_text",
-      "label": "説明文",
-      "default": "Only young leaves are carefully selected by hand."
-    },
-
-    {
-      "type": "header",
-      "content": "こだわり②"
-    },
-    {
-      "type": "text",
-      "id": "point2_title",
-      "label": "見出し",
-      "default": "Stone-ground process"
-    },
-    {
-      "type": "textarea",
-      "id": "point2_text",
-      "label": "説明文",
-      "default": "Ground slowly to preserve aroma and nutrients."
-    },
-
-    {
-      "type": "header",
-      "content": "こだわり③"
-    },
-    {
-      "type": "text",
-      "id": "point3_title",
-      "label": "見出し",
-      "default": "Freshness control"
-    },
-    {
-      "type": "textarea",
-      "id": "point3_text",
-      "label": "説明文",
-      "default": "Processed and stored under strict conditions."
+      "type": "item",
+      "name": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Antioxidant Power"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Craft & Philosophy",
+      "name": "Science",
       "category": "ページ"
     }
   ]
