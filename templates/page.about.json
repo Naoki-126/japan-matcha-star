@@ -122,6 +122,27 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "jm_mission_hgXwGx": {
+      "type": "jm-mission",
+      "blocks": {
+        "text_qKcey6": {
+          "type": "text",
+          "settings": {
+            "text": "私たちは、毎日口にするものだからこそ、誠実でありたいと考えています。",
+            "style": "emphasis"
+          }
+        }
+      },
+      "block_order": [
+        "text_qKcey6"
+      ],
+      "name": "mission",
+      "settings": {
+        "heading": "Our Mission",
+        "subheading": "What we believe in",
+        "image": "shopify://shop_images/powder-1.jpg"
+      }
     }
   },
   "order": [
@@ -130,6 +151,7 @@
     "jm_history_QzNzqF",
     "jm_craft_dmBDr6",
     "jm_science_bWwfiW",
-    "main"
+    "main",
+    "jm_mission_hgXwGx"
   ]
 }
