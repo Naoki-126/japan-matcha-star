@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "jm_sub_hero_bVapDJ": {
+      "type": "jm-sub-hero",
+      "name": "Sub Hero",
+      "settings": {
+        "img": "shopify://shop_images/matcha_woman.jpg",
+        "hero_height_pc": 40,
+        "hero_height_sp": 30,
+        "ttl": "FAQ",
+        "txt": "Questions, gently answered."
+      }
+    },
     "page_faq_mgyErt": {
       "type": "page-faq",
       "blocks": {
@@ -41,6 +52,7 @@
     }
   },
   "order": [
+    "jm_sub_hero_bVapDJ",
     "page_faq_mgyErt"
   ]
 }

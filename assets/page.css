@@ -16,16 +16,17 @@
 
 .jm-subHero__imgArea {
   width: 100%;
+  height: var(--hero-height-pc);
 }
 
 .jm-subHero__imgArea-content {
   width: 100%;
+  height: 100%;
 }
 
 .jm-subHero__img {
   width: 100%;
-  height: 80vh;
-  min-height: 520px;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -70,9 +71,8 @@
 }
 
 @media screen and (max-width: 749px) {
-  .jm-subHero__img {
-    height: 60vh;
-    min-height: 420px;
+  .jm-subHero__imgArea {
+    height: var(--hero-height-sp);
   }
 
   .jm-subHero__ttlArea {
@@ -421,13 +421,26 @@
   display: block;
 }
 
+.jm-mission__image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.04),
+      rgba(0,0,0,0.12)
+    );
+  pointer-events: none;
+}
+
 .jm-mission__content {
-  margin-top: 48px;
+  margin-top: 56px;
   text-align: center;
 }
 
 .jm-mission__text {
-
+  font-weight:600;
 }
 
 @media screen and (max-width: 749px) {
@@ -441,6 +454,125 @@
 
   .jm-mission__image img {
     aspect-ratio: 4 / 5;
+  }
+  .jm-mission__content {
+    margin-top: 40px;
+  }
+}
+
+/* ===========================
+# How to use
+=========================== */
+.jm-use {
+  margin: 100px auto 80px;
+  width: 100%;
+}
+
+.jm-use__ttlArea {
+  text-align: center;
+}
+
+.jm-use__text {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.jm-use__inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--width-base);
+}
+
+.jm-use__contentArea {}
+
+.jm-use__contents {
+  margin: 48px auto 0;
+  width: 100%;
+  max-width: var(--width-base);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 4vw, 60px);
+}
+
+.jm-use__content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.jm-use__content.is-reverse {
+  flex-direction: row-reverse;
+}
+
+.jm-use__imgArea {
+  width: 50%;
+  overflow: hidden;
+}
+
+.jm-use__image {
+  position: relative;
+  max-width: 600px;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.jm-use__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.jm-use__txtArea {
+  width: 50%;
+}
+
+.jm-use__contTitle {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jm-use__contText {
+  margin-top: 24px;
+  line-height: 1.7;
+}
+
+.jm-use__contText ol {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.jm-use__contText ol li {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 749px) {
+  .jm-use {
+    margin: 80px auto 60px;
+  }
+
+  .jm-use__inner {
+    margin-top: 36px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .jm-use__content,
+  .jm-use__content.is-reverse {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .jm-use__imgArea,
+  .jm-use__txtArea {
+    width: 100%;
+  }
+
+  .jm-use__image {
+    aspect-ratio: 3 / 2;
   }
 }
 

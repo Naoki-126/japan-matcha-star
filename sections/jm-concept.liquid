@@ -12,7 +12,7 @@
             {{ section.settings.heading }}
           </h2>
         {% endif %}
-        
+
         {% if section.settings.subheading != blank %}
           <p class="jm-section__subtitle">
             {{ section.settings.subheading }}
@@ -51,6 +51,9 @@
 {% schema %}
 {
   "name": "Matcha Concept",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
   "settings": [
     {
       "type": "text",

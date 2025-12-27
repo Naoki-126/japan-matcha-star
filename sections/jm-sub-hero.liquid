@@ -1,4 +1,7 @@
-<section class="jm-subHero">
+<section class="jm-subHero"  style="
+    --hero-height-pc: {{ section.settings.hero_height_pc }}vh;
+    --hero-height-sp: {{ section.settings.hero_height_sp }}vh;
+  " >
   <div class="jm-subHero__contents">
 
     {%- if section.settings.img != blank -%}
@@ -38,11 +41,34 @@
 {% schema %}
 {
   "name": "Sub Hero",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
   "settings": [
     {
       "type": "image_picker",
       "id": "img",
       "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "hero_height_pc",
+      "label": "Hero height (PC)",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "hero_height_sp",
+      "label": "Hero height (SP)",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "default": 60
     },
     {
       "type": "text",

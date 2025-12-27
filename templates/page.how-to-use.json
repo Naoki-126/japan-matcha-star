@@ -9,8 +9,63 @@
  */
 {
   "sections": {
+    "jm_sub_hero_7dV9AT": {
+      "type": "jm-sub-hero",
+      "name": "Sub Hero",
+      "settings": {
+        "img": "shopify://shop_images/howto-fv2.jpg",
+        "hero_height_pc": 50,
+        "hero_height_sp": 40,
+        "ttl": "HOW TO USE",
+        "txt": "Simple ways to enjoy matcha at home."
+      }
+    },
+    "jm_use_dRGKHd": {
+      "type": "jm-use",
+      "blocks": {
+        "use_9TnqTz": {
+          "type": "use",
+          "settings": {
+            "image": "shopify://shop_images/latte.jpg",
+            "title": "Simple Matcha Latte",
+            "text": "<p><strong>1. Add matcha</strong><br/>Add 1–2 teaspoons of matcha powder to a cup.<br/><br/><strong>2. Mix with hot water</strong><br/>Pour in a small amount of hot water (about 70–80°C / 160–175°F) and whisk until smooth.<br/><br/><strong>3. Add milk</strong><br/>Heat milk separately, then pour it into the cup.<br/>(Dairy or plant-based milk both work well.)<br/><br/><strong>4. Sweeten if you like</strong><br/>Add honey or sugar to taste.</p>",
+            "reverse": false
+          }
+        },
+        "use_8eAhcL": {
+          "type": "use",
+          "settings": {
+            "image": "shopify://shop_images/smoothie.webp",
+            "title": "Easy Matcha Smoothie",
+            "text": "<p><strong>1. Add matcha</strong><br/>Add 1 teaspoon of matcha powder to a blender.<br/><br/><strong>2. Add fruits and liquid</strong><br/>Add your favorite fruits and milk or water.<br/>(Banana and berries work especially well.)<br/><br/><strong>3. Blend until smooth</strong><br/>Blend until creamy and well combined.<br/><br/><strong>4. Adjust to taste</strong><br/>Add sweetener or ice if desired, then blend again.</p>",
+            "reverse": true
+          }
+        },
+        "use_VVkKGJ": {
+          "type": "use",
+          "settings": {
+            "image": "shopify://shop_images/pancake.jpg",
+            "title": "Matcha Pancakes",
+            "text": "<p><strong>1. Prepare your batter</strong><br/>Make your pancake or baking batter as you normally do.<br/><strong><br/>2. Add matcha</strong><br/>Add matcha powder to the batter and mix gently.<br/><br/><strong>3. Cook as usual</strong><br/>Cook the pancakes on a pan until golden.<br/><br/><strong>4. Finish and enjoy</strong><br/>Serve with fruits, cream, or syrup to taste.</p>",
+            "reverse": false
+          }
+        }
+      },
+      "block_order": [
+        "use_9TnqTz",
+        "use_8eAhcL",
+        "use_VVkKGJ"
+      ],
+      "name": "How to use",
+      "settings": {
+        "heading": "Ways to Enjoy Matcha",
+        "subheading": "From traditional preparation to everyday recipes",
+        "text": "<p>Enjoy matcha in many ways, every day.</p>"
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -18,6 +73,8 @@
     }
   },
   "order": [
+    "jm_sub_hero_7dV9AT",
+    "jm_use_dRGKHd",
     "main"
   ]
 }
