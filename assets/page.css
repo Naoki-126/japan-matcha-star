@@ -484,8 +484,6 @@
   max-width: var(--width-base);
 }
 
-.jm-use__contentArea {}
-
 .jm-use__contents {
   margin: 48px auto 0;
   width: 100%;
@@ -579,41 +577,42 @@
 /* ===========================
 # faqページ
 =========================== */
-.faq {
+.page-faq {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--width-pc);
+}
+
+.jm-faq {
+  margin: 100px auto 80px;
+  width: 100%;
+}
+
+.jm-faq__ttlArea {
+  text-align: center;
+}
+
+.jm-faq__contents {
+  margin: 48px auto 0;
+  width: 100%;
+  max-width: var(--width-base);
+}
+
+.jm-faq__content {
+  max-width: 900px;
   margin: 72px auto 0;
-  width: 100%;
-  max-width: 720px;
 }
 
-.faq-contents {
-  margin-top: 32px;
-}
-
-.faq-title {
-  margin-top: 24px;
-  width: 100%;
-  background: #292929;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 14px 24px;
-  border-radius: 8px 8px 0 0;
-}
-
-.faq-content {
-  margin-top: 72px;
-}
-
-.faq-content:first-of-type {
+.jm-faq__content:first-of-type {
   margin-top: 0;
 }
 
-.faq-accordionArea {
+.jm-faq__accordionArea {
   width: 100%;
 }
 
-.accordion-q {
-  background: #DCD7CF;
+.jm-accordion__q {
+  background: var(--bg-accent);
   padding: 14px 24px 14px 57px;
   font-size: 14px;
   line-height: 2;
@@ -622,11 +621,11 @@
 	cursor: pointer;
 }
 
-.accordion-q:first-of-type {
+.jm-accordion__q:first-of-type {
   border-top: 1px solid #959595;
 }
 
-.accordion-q::before {
+.jm-accordion__q::before {
   content: "";
   position: absolute;
   background: url(../assets/icon-q.png) no-repeat center center /contain;
@@ -637,7 +636,7 @@
   left: 16px;
 }
 
-.accordion-q::after {
+.jm-accordion__q::after {
   content: "";
   position: absolute;
   background: url(../assets/arrow-down.png)no-repeat center center /contain;
@@ -649,10 +648,10 @@
 	transition: transform 0.3s ease;
 }
 
-.accordion-a {
+.jm-accordion__a {
 	max-height: 0;
 	overflow: hidden;
-  background: #EDE8E2;
+  background: var(--bg-base);
   padding: 0px 24px 0px 57px;
   font-size: 14px;
   line-height: 2;
@@ -661,7 +660,7 @@
 	transition: max-height 0.5s ease, padding 0.3s ease;;
 }
 
-.accordion-a::before {
+.jm-accordion__a::before {
   content: "";
   position: absolute;
   background: url(../assets/icon-a.png)no-repeat center center /contain;
@@ -671,6 +670,6 @@
   left: 16px;
 }
 
-.accordion-q.active::after {
+.jm-accordion__q.active::after {
   transform: translateY(-50%) rotate(180deg);
 }

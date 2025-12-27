@@ -9,6 +9,48 @@
  */
 {
   "sections": {
+    "jm_sub_hero_j49Ufx": {
+      "type": "jm-sub-hero",
+      "name": "Sub Hero",
+      "settings": {
+        "img": "shopify://shop_images/matcha_woman.jpg",
+        "hero_height_pc": 40,
+        "hero_height_sp": 30,
+        "ttl": "FAQ",
+        "txt": "Questions, gently answered."
+      }
+    },
+    "jm_faq_DXjpVn": {
+      "type": "jm-faq",
+      "blocks": {
+        "faq_group_H3AD9J": {
+          "type": "faq_group",
+          "settings": {
+            "sub-title": "サブタイトル",
+            "question1": "質問1",
+            "answer1": "回答1",
+            "question2": "質問2",
+            "answer2": "回答2",
+            "question3": "",
+            "answer3": "",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_group_H3AD9J"
+      ],
+      "name": "FAQ-section",
+      "settings": {
+        "heading": "AAAABBB",
+        "subheading": "From traditional preparation to everyday recipes"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -18,6 +60,8 @@
     }
   },
   "order": [
+    "jm_sub_hero_j49Ufx",
+    "jm_faq_DXjpVn",
     "main"
   ]
 }

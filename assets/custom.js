@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const faq = document.getElementById('js-faq');
     if (!faq) return; // ← FAQページ以外ではスキップ
 
-    faq.querySelectorAll('.accordion-a').forEach(content => {
+    faq.querySelectorAll('.jm-accordion__a').forEach(content => {
       content.style.maxHeight = '0px';
       content.style.paddingTop = '0';
       content.style.paddingBottom = '0';
     });
 
-    faq.querySelectorAll('.accordion-q').forEach(trigger => {
+    faq.querySelectorAll('.jm-accordion__q').forEach(trigger => {
       const content = trigger.nextElementSibling;
 
       trigger.addEventListener('click', function () {
