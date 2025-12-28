@@ -26,13 +26,85 @@
         "faq_group_H3AD9J": {
           "type": "faq_group",
           "settings": {
-            "sub-title": "サブタイトル",
-            "question1": "質問1",
-            "answer1": "回答1",
-            "question2": "質問2",
-            "answer2": "回答2",
-            "question3": "",
-            "answer3": "",
+            "sub_title": "Storage (保存方法)",
+            "question1": "How should I store matcha?",
+            "answer1": "Matcha is best kept in a cool, dry place, away from light and heat. Many people choose an airtight container to help preserve its aroma.",
+            "question2": "Should I keep matcha in the refrigerator?",
+            "answer2": "Some people do, especially in warmer climates. If you choose to refrigerate it, keeping it tightly sealed can help avoid moisture and odor transfer.",
+            "question3": "How long does matcha stay fresh after opening?",
+            "answer3": "While matcha does not spoil quickly, its flavor is often at its best within a few months after opening, depending on storage conditions.",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": ""
+          }
+        },
+        "faq_group_RYxBHj": {
+          "type": "faq_group",
+          "settings": {
+            "sub_title": "When to Drink (飲むタイミング)",
+            "question1": "When is the best time of day to drink matcha?",
+            "answer1": "Many people enjoy matcha in the morning or early afternoon, when a gentle sense of focus is welcome.",
+            "question2": "Is it okay to drink matcha on an empty stomach?",
+            "answer2": "Some find it comfortable, while others prefer to enjoy it after a light meal. Listening to your body is usually the best guide.",
+            "question3": "Can I drink matcha in the evening?",
+            "answer3": "Because matcha contains caffeine, some people choose to avoid it later in the day.",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": ""
+          }
+        },
+        "faq_group_x7xA7B": {
+          "type": "faq_group",
+          "settings": {
+            "sub_title": "Caffeine Content (カフェイン量)",
+            "question1": "How much caffeine does matcha contain?",
+            "answer1": "Matcha naturally contains caffeine, though the amount can vary depending on the type and how it is prepared.",
+            "question2": "Is matcha stronger than coffee?",
+            "answer2": "Many people feel matcha provides a more gradual sense of alertness compared to coffee, rather than a sharp spike.",
+            "question3": "Will matcha make me feel jittery?",
+            "answer3": "Experiences differ. Some people find matcha feels smoother, while others remain sensitive to caffeine.",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": ""
+          }
+        },
+        "faq_group_GCqGBb": {
+          "type": "faq_group",
+          "settings": {
+            "sub_title": "During Pregnancy (妊娠中の相談)",
+            "question1": "Is it safe to drink matcha during pregnancy?",
+            "answer1": "Caffeine intake during pregnancy is a personal and medical consideration. Many choose to enjoy matcha in moderation or consult a healthcare professional.",
+            "question2": "Does matcha contain more caffeine than green tea?",
+            "answer2": "Because matcha is made from powdered tea leaves, it can contain more caffeine than regular green tea, depending on preparation.",
+            "question3": "Are there alternatives to enjoy matcha flavor with less caffeine?",
+            "answer3": "Some people explore smaller servings or recipes that use less matcha powder.",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": ""
+          }
+        },
+        "faq_group_B3UNkU": {
+          "type": "faq_group",
+          "settings": {
+            "sub_title": "International Shipping (海外配送)",
+            "question1": "Do you ship internationally?",
+            "answer1": "Yes, international shipping is available to many regions.",
+            "question2": "How long does international delivery take?",
+            "answer2": "Delivery times vary by destination and shipping method, and are typically provided at checkout.",
+            "question3": "Will I need to pay customs duties or taxes?",
+            "answer3": "Customs fees and import taxes depend on local regulations and are generally the responsibility of the recipient.",
             "question4": "",
             "answer4": "",
             "question5": "",
@@ -43,16 +115,21 @@
         }
       },
       "block_order": [
-        "faq_group_H3AD9J"
+        "faq_group_H3AD9J",
+        "faq_group_RYxBHj",
+        "faq_group_x7xA7B",
+        "faq_group_GCqGBb",
+        "faq_group_B3UNkU"
       ],
       "name": "FAQ-section",
       "settings": {
-        "heading": "AAAABBB",
-        "subheading": "From traditional preparation to everyday recipes"
+        "heading": "Frequently Asked Questions",
+        "subheading": "A few things you may wonder before enjoying matcha."
       }
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28

@@ -27,8 +27,8 @@
           {% for block in section.blocks %}
             {% assign faq_block = block.settings %}
             <div class="jm-faq__content">
-              {% if block.settings.sub-title != blank %}
-                <h2 class="jm-faq__title">{{ faq_block.sub-title }}</h2>
+              {% if block.settings.sub_title != blank %}
+                <h2 class="jm-faq__title">{{ faq_block.sub_title }}</h2>
               {% endif %}
               <div class="jm-faq__accordionArea">
                 {% for i in (1..6) %}
@@ -65,13 +65,13 @@
       "type": "text",
       "id": "heading",
       "label": "見出し",
-      "default": "AAAABBB"
+      "default": "Frequently Asked Questions"
     },
     {
       "type": "text",
       "id": "subheading",
       "label": "サブ見出し",
-      "default": "From traditional preparation to everyday recipes"
+      "default": "A few things you may wonder before enjoying matcha."
     },
   ],
   "blocks": [
@@ -81,68 +81,68 @@
       "settings": [
         {
           "type": "text",
-          "id": "sub-title",
-          "label": "サブタイトル"
+          "id": "sub_title",
+          "label": "Category_タイトル"
         },
         {
           "type": "text",
           "id": "question1",
-          "label": "質問1"
+          "label": "Question_1"
         },
         {
           "type": "textarea",
           "id": "answer1",
-          "label": "回答1"
+          "label": "Answer_1"
         },
         {
           "type": "text",
           "id": "question2",
-          "label": "質問2"
+          "label": "Question_2"
         },
         {
           "type": "textarea",
           "id": "answer2",
-          "label": "回答2"
+          "label": "Answer_2"
         },
         {
           "type": "text",
           "id": "question3",
-          "label": "質問3"
+          "label": "Question_3"
         },
         {
           "type": "textarea",
           "id": "answer3",
-          "label": "回答3"
+          "label": "Answer_3"
         },
         {
           "type": "text",
           "id": "question4",
-          "label": "質問4"
+          "label": "Question_4"
         },
         {
           "type": "textarea",
           "id": "answer4",
-          "label": "回答4"
+          "label": "Answer_4"
         },
         {
           "type": "text",
           "id": "question5",
-          "label": "質問5"
+          "label": "Question_5"
         },
         {
           "type": "textarea",
           "id": "answer5",
-          "label": "回答5"
+          "label": "Answer_5"
         },
         {
           "type": "text",
           "id": "question6",
-          "label": "質問6"
+          "label": "Question_6"
         },
         {
           "type": "textarea",
           "id": "answer6",
-          "label": "回答6"
+          "label": "Answer_6"
         }
       ]
     }
