@@ -16,6 +16,7 @@
         "img": "shopify://shop_images/howto-fv2.jpg",
         "hero_height_pc": 50,
         "hero_height_sp": 40,
+        "overlay_opacity": 20,
         "ttl": "HOW TO USE",
         "txt": "Simple ways to enjoy matcha at home."
       }

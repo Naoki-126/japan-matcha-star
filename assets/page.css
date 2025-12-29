@@ -45,7 +45,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, var(--hero-overlay-opacity));
+  z-index: 1;
+  pointer-events: none;
 }
 
 .jm-subHero__ttlArea-content {
@@ -720,6 +722,12 @@
 /* ===========================
 # contact
 =========================== */
+.jm-contact__note {
+  font-size: 10px;
+  color: var(--color-sub);
+  margin-bottom: 8px;
+}
+
 .jm-contact__btnArea {
   text-align: center;
 }
@@ -781,4 +789,18 @@
   color: var(--text-main, #333);
   font-weight: 400;
   pointer-events: none;
+}
+
+/* ===========================
+# jm-page-head
+=========================== */
+.jm-pageHead {
+  margin: 100px auto 80px;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .jm-pageHead {
+    margin: 80px auto 60px;
+  }
 }

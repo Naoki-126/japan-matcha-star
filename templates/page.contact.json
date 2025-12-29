@@ -16,6 +16,7 @@
         "img": "shopify://shop_images/contact-img.jpg",
         "hero_height_pc": 50,
         "hero_height_sp": 40,
+        "overlay_opacity": 40,
         "ttl": "CONTACT",
         "txt": "We’re here to help, whenever you need."
       }

@@ -51,6 +51,8 @@
           </li>
         </ul>
       {%- endif -%}
+      <p class="jm-contact__note">Fields marked with * are required.</p>
+
       <div class="contact__fields">
         <div class="field">
           <input
@@ -61,8 +63,9 @@
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="{{ 'templates.contact.form.name' | t }}"
+            required aria-required="true"
           >
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}<span aria-hidden="true">*</span></label>
         </div>
         <div class="field field--with-error">
           <input
@@ -121,13 +124,30 @@
           class="text-area field__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
           placeholder="{{ 'templates.contact.form.comment' | t }}"
+          required aria-required="true"
         >
           {{- form.body -}}
         </textarea>
         <label class="form__label field__label" for="ContactForm-body">
           {{- 'templates.contact.form.comment' | t -}}
+          <span aria-hidden="true">*</span>
         </label>
       </div>
+
+      <div class="field">
+        <textarea
+          rows="4"
+          id="ContactForm-business"
+          class="text-area field__input"
+          name="contact[Business details]"
+          placeholder="If this is a wholesale or salon inquiry, please describe your business here. (Optional)"
+        ></textarea>
+
+        <label class="form__label field__label" for="ContactForm-business">
+          Business details (optional)
+        </label>
+      </div>
+
       <div class="contact__button jm-contact__btnArea">
         <button type="submit" class="button jm-contact__button">
           {{ 'templates.contact.form.send' | t }}

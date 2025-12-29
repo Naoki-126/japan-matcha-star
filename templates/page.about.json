@@ -14,6 +14,9 @@
       "name": "Sub Hero",
       "settings": {
         "img": "shopify://shop_images/sunrise.jpg",
+        "hero_height_pc": 80,
+        "hero_height_sp": 60,
+        "overlay_opacity": 25,
         "ttl": "ABOUT US",
         "txt": "日本の抹茶、その本質と美しさを世界へ。"
       }
@@ -116,14 +119,6 @@
         "subheading": "The science behind its natural power"
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "jm_mission_hgXwGx": {
       "type": "jm-mission",
       "blocks": {
@@ -143,6 +138,14 @@
         "heading": "Our Mission",
         "subheading": "What we believe in",
         "image": "shopify://shop_images/powder-1.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     }
   },

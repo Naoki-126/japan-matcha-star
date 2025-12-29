@@ -1,6 +1,7 @@
 <section class="jm-subHero"  style="
     --hero-height-pc: {{ section.settings.hero_height_pc }}vh;
     --hero-height-sp: {{ section.settings.hero_height_sp }}vh;
+    --hero-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
   " >
   <div class="jm-subHero__contents">
 
@@ -69,6 +70,16 @@
       "step": 5,
       "unit": "vh",
       "default": 60
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Image overlay darkness",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "%",
+      "default": 25
     },
     {
       "type": "text",
