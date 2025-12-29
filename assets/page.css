@@ -717,6 +717,22 @@
   }
 }
 
+/* ===========================
+# contact
+=========================== */
+.jm-contact__btnArea {
+  text-align: center;
+}
+
+.jm-contact__button {
+  border-radius: 8px;
+  background-color: var(--color-accent);
+
+  &:hover {
+    background-color: var(--bg-sub);
+  }
+}
+
 /* =========================
   Breadcrumbs
 ========================= */

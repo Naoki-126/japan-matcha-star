@@ -3595,3 +3595,28 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* 入力フィールドの角丸 */
+.field__input {
+  border-radius: 8px !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  box-shadow: none !important;
+}
+
+.field::after,
+.field::before {
+  content: none !important;
+  outline: none;
+}
+
+.field__label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 2;
+}
+
+.button::after,
+.button::before {
+  content: none !important;
+  outline: none;
+}
