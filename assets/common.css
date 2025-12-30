@@ -156,6 +156,18 @@ body {
   color: #555;
 }
 
+.jm-btn {
+  background: var(--bg-accent);
+  border: 1px solid var(--bg-accent);
+  padding: 6px;
+  border-radius: 4px;
+  color: var(--color-heading);
+}
+
+.jm-btn:hover {
+  background: var(--bg-soft) ;
+}
+
 /* footer
   =========================== */
 .jm-footer {
@@ -199,4 +211,57 @@ body {
     #shopify-section-{{ section.id }} .jm-spacer {
       padding-top: {{ section.settings.padding_top_sp }}px;
     }
+}
+
+/* pop-up
+=========================== */
+.jm-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.jm-popup.is-active {
+  display: block;
+}
+
+.jm-popup__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.jm-popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 2;
+  padding: 10px 20px 20px;
+  border-radius: 8px;
+  color: var(--color-base);
+}
+
+.jm-popup__close {
+  line-height: 1;
+  font-size: 20px;
+}
+
+.jm-popup__title {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.jm-popup__text {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.jm-popup__form {
+  margin-top: 12px;
+  font-size: 14px;
 }

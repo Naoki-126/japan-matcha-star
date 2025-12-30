@@ -139,6 +139,18 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "jm-popup": {
+        "type": "jm-popup",
+        "settings": {
+          "enable": true,
+          "home_only": true,
+          "delay": 2,
+          "title": "メール登録で〇％オフ",
+          "text": "<p>新商品やお得なお知らせを<br/>静かにお届けします。</p>",
+          "placeholder": "mail address",
+          "button_label": "Sign Up"
+        }
       }
     },
     "content_for_index": [],

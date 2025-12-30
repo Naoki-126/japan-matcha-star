@@ -1,9 +1,41 @@
 // alert("テスト");
 
 document.addEventListener('DOMContentLoaded', () => {
-  // --------------------------------------------------------
-  // FAQアコーディオン
-  // --------------------------------------------------------
+  /* ===========================
+  # pop-up
+  =========================== */
+  const popup = document.getElementById("jm-popup");
+  if (!popup) return;
+
+  // 一度表示したら出さない
+  // if (localStorage.getItem("jmPopupShown")) return;
+
+  // トップページ限定
+  const homeOnly = popup.dataset.homeOnly === "true";
+  if (homeOnly && window.location.pathname !== "/") return;
+
+  const delay = Number(popup.dataset.delay || 3) * 1000;
+
+  setTimeout(() => {
+    popup.classList.add("is-active");
+    popup.setAttribute("aria-hidden", "false");
+    localStorage.setItem("jmMailPopupShown", "true");
+  }, delay);
+
+  const closeBtn = popup.querySelector(".jm-popup__close");
+  const overlay = popup.querySelector(".jm-popup__overlay");
+
+  function closePopup() {
+    popup.classList.remove("is-active");
+    popup.setAttribute("aria-hidden", "true");
+  }
+
+  closeBtn.addEventListener("click", closePopup);
+  overlay.addEventListener("click", closePopup);
+
+  /* ===========================
+  # FAQアコーディオン
+  =========================== */
   const initFAQ = () => {
     const faq = document.getElementById('js-faq');
     if (!faq) return; // ← FAQページ以外ではスキップ

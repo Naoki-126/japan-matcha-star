@@ -1,0 +1,99 @@
+{%- if section.settings.enable -%}
+<div
+  id="jm-popup"
+  class="jm-popup"
+  aria-hidden="true"
+  data-delay="{{ section.settings.delay | default: 3 }}"
+  data-home-only="{{ section.settings.home_only }}"
+>
+  <div class="jm-popup__overlay"></div>
+
+  <div class="jm-popup__content">
+    <button
+      type="button"
+      class="jm-popup__close"
+      aria-label="閉じる"
+    >
+      ×
+    </button>
+
+    {%- if section.settings.title != blank -%}
+      <p class="jm-popup__title">
+        {{ section.settings.title | escape }}
+      </p>
+    {%- endif -%}
+
+    {%- if section.settings.text != blank -%}
+      <p class="jm-popup__text">
+        {{ section.settings.text }}
+      </p>
+    {%- endif -%}
+
+    <form class="jm-popup__form">
+      <input
+        type="email"
+        style="padding: 8px; border: 1px solid #4F6F52; border-radius: 4px;"
+        placeholder="{{ section.settings.placeholder | escape }}"
+        required
+      >
+      <button type="submit" class="jm-btn">
+        {{ section.settings.button_label | escape }}
+      </button>
+    </form>
+  </div>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Mail Popup",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "ポップアップを有効にする",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "home_only",
+      "label": "トップページのみ表示",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "delay",
+      "label": "表示までの遅延（秒）",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "タイトル",
+      "default": "メール登録で〇％オフ"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "説明文",
+      "default": "<p>新商品やお得なお知らせを、<br>静かにお届けします。</p>"
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "メール入力 placeholder",
+      "default": "メールアドレス"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "ボタン文言",
+      "default": "登録する"
+    }
+  ],
+  "presets": []
+}
+{% endschema %}
