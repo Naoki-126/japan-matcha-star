@@ -158,7 +158,7 @@
       "settings": {
         "heading": "Beauty Begins from Within",
         "subheading": "A balance of tradition, purity, and modern excellence.",
-        "image": "shopify://shop_images/benefits.webp",
+        "image": "shopify://shop_images/1f95363ea4390aa2e1d74a6929135d97.png",
         "sub_title": "Nature-powered beauty from Japan"
       }
     },
@@ -168,7 +168,7 @@
         "brand_story_EtVJwc": {
           "type": "brand_story",
           "settings": {
-            "image": "shopify://shop_images/brand-story1.jpg",
+            "image": "shopify://shop_images/IMG_2423.jpg",
             "text_heading": "Crafted with Respect for Nature and Tradition",
             "story": "<p>日本の抹茶は、単なる飲み物ではなく、土地の自然、職人の技、そして長い時間の積み重ねによって育まれてきた文化そのものです。私たちは、その背景にある価値を正しく理解し、表面的な流行やイメージだけで消費される存在にはしたくないと考えています。<br/><br/>原料となる茶葉は、産地や栽培環境によって香りや旨味が大きく異なります。私たちは品質の高さだけでなく、「なぜこの抹茶なのか」という理由を重視し、選定を行っています。その土地の風土や製法に敬意を払いながら、本来の魅力が最大限に引き出されるかどうかを基準にしています。<br/><br/>また、伝統を守ることだけが正解だとは考えていません。抹茶が現代のライフスタイルに自然に溶け込むためには、科学的な視点や品質管理も欠かせない要素です。成分分析や製造工程の検証を重ねることで、安心して日常に取り入れられる品質を追求しています。</p><p>忙しい毎日の中で、一杯の抹茶を点てる時間は、心と身体を静かに整えるひとときになります。特別な知識や形式がなくても、自分のペースで味わえること。それこそが、現代における新しい日本のラグジュアリーだと私たちは考えています。<br/><br/><br/>伝統と革新、そのどちらにも偏ることなく、日本の抹茶が持つ本質的な価値を、世界へ丁寧に届けていく。それが、このブランドに込めた私たちの想いです。</p><p></p><p></p>",
             "reverse": false
@@ -192,12 +192,45 @@
         "padding_top_sp": 12,
         "bg_color": "#ffffff"
       }
+    },
+    "jm_diagnosis_apw79g": {
+      "type": "jm-diagnosis",
+      "name": "Matcha Finder",
+      "settings": {
+        "intro_lead": "Not sure which matcha is right for you?",
+        "intro_text": "By answering a few simple questions,\nwe’ll guide you to the matcha that fits your taste and lifestyle.",
+        "intro_cta": "Find your matcha",
+        "q1_text": "how do you usually enjoy matcha?",
+        "q1_a1": "i often mix it into lattes, smoothies, or recipes",
+        "q1_a2": "i mostly enjoy it straight, with hot water only",
+        "q2_text": "is organic certification your top priority when choosing ingredients?",
+        "q2_a1": "yes, it matters a lot to me",
+        "q2_a2": "i care more about overall quality and taste balance",
+        "q3_text": "when drinking matcha straight, do you value clarity, smoothness, and depth of umami?",
+        "q3_a1": "yes, i want a clean and refined taste",
+        "q3_a2": "i am comfortable with a more balanced, everyday profile",
+        "q4_text": "which kind of enjoyment feels closer to what you want from matcha?",
+        "q4_a1": "experiencing aroma and umami clearly when enjoyed straight",
+        "q4_a2": "having a balanced, reliable flavor that works beautifully in lattes and recipes",
+        "result_label": "Your matcha",
+        "result_cta": "View product",
+        "organic_title": "Organic Matcha",
+        "organic_text": "A clean and dependable organic matcha, perfect for daily recipes and mindful choices.",
+        "organic_link": "",
+        "premium_title": "Premium Ceremonial Matcha",
+        "premium_text": "A refined ceremonial matcha with clear aroma and deep umami, best enjoyed straight.",
+        "premium_link": "",
+        "ceremonial_title": "Ceremonial Matcha",
+        "ceremonial_text": "A balanced ceremonial matcha that performs beautifully both straight and in recipes.",
+        "ceremonial_link": ""
+      }
     }
   },
   "order": [
     "image_banner",
     "jm_concept_sct_prCywt",
     "featured_collection",
+    "jm_diagnosis_apw79g",
     "jm_benefits_sc_Pc8mm3",
     "jm_brand_sc_yAVbtc",
     "jm_spacer_sc_J8eb9c"

@@ -13,10 +13,10 @@
       "type": "jm-sub-hero",
       "name": "Sub Hero",
       "settings": {
-        "img": "shopify://shop_images/sunrise.jpg",
+        "img": "shopify://shop_images/IMG_2424.jpg",
         "hero_height_pc": 80,
         "hero_height_sp": 60,
-        "overlay_opacity": 25,
+        "overlay_opacity": 40,
         "ttl": "ABOUT US",
         "txt": "日本の抹茶、その本質と美しさを世界へ。"
       }
@@ -137,7 +137,7 @@
       "settings": {
         "heading": "Our Mission",
         "subheading": "What we believe in",
-        "image": "shopify://shop_images/powder-1.jpg"
+        "image": "shopify://shop_images/IMG_2429.jpg"
       }
     },
     "main": {

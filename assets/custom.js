@@ -1,9 +1,8 @@
 // alert("テスト");
 
+/* popup
+=========================== */
 document.addEventListener('DOMContentLoaded', () => {
-  /* ===========================
-  # pop-up
-  =========================== */
   const popup = document.getElementById("jm-popup");
   if (!popup) return;
 
@@ -32,10 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   closeBtn.addEventListener("click", closePopup);
   overlay.addEventListener("click", closePopup);
+});
 
-  /* ===========================
-  # FAQアコーディオン
-  =========================== */
+
+/* FAQ
+=========================== */
+document.addEventListener('DOMContentLoaded', () => {
   const initFAQ = () => {
     const faq = document.getElementById('js-faq');
     if (!faq) return; // ← FAQページ以外ではスキップ
@@ -71,4 +72,98 @@ document.addEventListener('DOMContentLoaded', () => {
   // 初期化呼び出し（ページ存在チェック付き）
   // --------------------------------------------------------
   initFAQ();
+});
+
+/* jm-diagnosis
+=========================== */
+document.addEventListener('DOMContentLoaded', () => {
+  const diagnosis = document.querySelector('.jm-diagnosis');
+  if (!diagnosis) return;
+
+  const startBtn = diagnosis.querySelector('[data-action="start"]');
+  const questions = diagnosis.querySelectorAll('[data-question]');
+  const results = diagnosis.querySelectorAll('[data-result]');
+
+  const answers = {};
+
+  /* -----------------------
+    Utility
+  ----------------------- */
+  const show = (el) => {
+    if (!el) return;
+    el.classList.add('is-active');
+  };
+
+  const disableOptions = (questionEl) => {
+    const buttons = questionEl.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.disabled = true;
+      btn.style.cursor = 'default';
+      btn.style.opacity = '0.6';
+    });
+  };
+
+  const getQuestion = (id) =>
+    diagnosis.querySelector(`[data-question="${id}"]`);
+
+  const getResult = (id) =>
+    diagnosis.querySelector(`[data-result="${id}"]`);
+
+  /* -----------------------
+    Start
+  ----------------------- */
+  startBtn.addEventListener('click', () => {
+    show(getQuestion('q1'));
+    startBtn.disabled = true;
+  });
+
+  /* -----------------------
+    Answer handling
+  ----------------------- */
+  questions.forEach(question => {
+    question.addEventListener('click', (e) => {
+      const btn = e.target.closest('button');
+      if (!btn || btn.disabled) return;
+
+      const questionId = question.dataset.question;
+      const answer = btn.dataset.answer;
+
+      answers[questionId] = answer;
+
+      disableOptions(question);
+
+      /* ---- Branch logic ---- */
+      if (questionId === 'q1') {
+        if (answer === 'mix') {
+          show(getQuestion('q2'));
+        } else {
+          show(getQuestion('q3'));
+        }
+      }
+
+      if (questionId === 'q2') {
+        if (answer === 'yes') {
+          show(getResult('organic_matcha'));
+        } else {
+          show(getQuestion('q4'));
+        }
+      }
+
+      if (questionId === 'q3') {
+        if (answer === 'yes') {
+          show(getResult('premium_ceremonial'));
+        } else {
+          show(getQuestion('q4'));
+        }
+      }
+
+      if (questionId === 'q4') {
+        if (answer === 'clear') {
+          show(getResult('premium_ceremonial'));
+        } else {
+          show(getResult('ceremonial'));
+        }
+      }
+    });
+  });
 });

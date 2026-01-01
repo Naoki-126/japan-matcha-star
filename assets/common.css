@@ -157,7 +157,7 @@ body {
 }
 
 .jm-btn {
-  background: var(--bg-accent);
+  background: var(--bg-soft);
   border: 1px solid var(--bg-accent);
   padding: 6px;
   border-radius: 4px;
@@ -165,7 +165,7 @@ body {
 }
 
 .jm-btn:hover {
-  background: var(--bg-soft) ;
+  background: var(--bg-accent) ;
 }
 
 /* footer
