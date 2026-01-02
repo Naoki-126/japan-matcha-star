@@ -2,69 +2,67 @@
 
 /* popup
 =========================== */
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("jm-popup");
-  if(!popup) return;
+  if (!popup) return;
+
+  let isSuccessShown = false; // ★ success表示中フラグ
+
+  // ① 既に登録済みなら何もしない
+  if (localStorage.getItem("jmPopupRegistered") === "true") {
+    return;
+  }
 
   const form = document.getElementById("jm-popupForm");
   const success = document.getElementById("jm-popupSuccess");
-  const discountCode = document.getElementById("jm-discountCode");
-  const closeBtns = popup.querySelectorAll(".jm-popup__close, #jm-popupAfterSuccess");
+  const closeBtns = popup.querySelectorAll(
+    ".jm-popup__close, #jm-popupAfterSuccess"
+  );
   const overlay = popup.querySelector(".jm-popup__overlay");
 
-  // ポップアップ表示遅延
+  // ② 遅延表示
   const delay = parseInt(popup.dataset.delay || 2, 10) * 1000;
   setTimeout(() => {
+    if (isSuccessShown) return; // ★ success中は再表示しない
+
     popup.setAttribute("aria-hidden", "false");
     popup.style.display = "block";
   }, delay);
 
-  // 閉じるボタンとオーバーレイクリックで閉じる
-  closeBtns.forEach(btn => {
+  // ③ 閉じる（popup / success 共通）
+  closeBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       popup.setAttribute("aria-hidden", "true");
       popup.style.display = "none";
+
+      // successも閉じる
+      if (success) {
+        success.style.display = "none";
+      }
+
+      isSuccessShown = false;
     });
   });
+
   overlay.addEventListener("click", () => {
+    if (isSuccessShown) return; // ★ success表示中は閉じさせない
+
     popup.setAttribute("aria-hidden", "true");
     popup.style.display = "none";
   });
 
-  // フォーム送信
-  form.addEventListener("submit", function(e) {
+  // ④ フォーム送信
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
-    const emailInput = form.querySelector('input[name="email"]');
-    const email = emailInput.value.trim();
-    if(!email) return alert("メールアドレスを入力してください");
 
-    // Shopify 連携 or AJAX送信（例として /contact にPOST）
-    fetch('/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ contact: { email: email } })
-    })
-    .then(res => {
-      if(res.ok){
-        form.style.display = "none";
-        success.style.display = "block";
+    form.style.display = "none";
+    success.style.display = "block";
 
-        // 割引コード表示（動的生成する場合はAPI呼び出しに置換）
-        discountCode.textContent = "DISCOUNT10";
+    isSuccessShown = true; // ★ 閉じるまで表示固定
 
-        // 必要ならここでクッキーやlocalStorageに登録済フラグを保存して再表示防止
-        localStorage.setItem("jmPopupRegistered", "true");
-      } else {
-        alert("登録に失敗しました。もう一度お試しください。");
-      }
-    })
-    .catch(() => alert("ネットワークエラーです。"));
+    // ★ 登録済みフラグ（本番用）
+    localStorage.setItem("jmPopupRegistered", "true");
   });
-
-  // 既に登録済みなら再表示させない
-  if(localStorage.getItem("jmPopupRegistered") === "true") {
-    popup.style.display = "none";
-  }
 });
 
 /* FAQ
