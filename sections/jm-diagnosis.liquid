@@ -2,89 +2,96 @@
   <div class="page-inner">
     <div class="content-inner">
 
-      <!-- Intro -->
-      <div class="jm-diagnosis__intro is-active" data-step="intro">
-        <p class="jm-diagnosis__lead">
-          {{ section.settings.intro_lead }}
-        </p>
-        <p class="jm-diagnosis__text">
-          {{ section.settings.intro_text }}
-        </p>
-        <button class="jm-diagnosis__startBtn" data-action="start">
-          {{ section.settings.intro_cta }}
-        </button>
-      </div>
+      <div class="jm-diagnosis__contents">
+        <!-- Intro -->
+        <div class="jm-diagnosis__intro is-active" data-step="intro">
+          <p class="jm-diagnosis__lead">
+            {{ section.settings.intro_lead }}
+          </p>
+          <p class="jm-diagnosis__text">
+            {{ section.settings.intro_text }}
+          </p>
+          <button class="jm-diagnosis__startBtn" data-action="start">
+            {{ section.settings.intro_cta }}
+          </button>
+        </div>
 
-      <!-- Question 1 -->
-      <div class="jm-diagnosis__question" data-question="q1">
-        <p class="jm-diagnosis__questionText">
-          {{ section.settings.q1_text }}
-        </p>
-        <ul class="jm-diagnosis__options">
-          <li><button data-answer="mix">{{ section.settings.q1_a1 }}</button></li>
-          <li><button data-answer="straight">{{ section.settings.q1_a2 }}</button></li>
-        </ul>
-      </div>
+        <!-- Question 1 -->
+        <div class="jm-diagnosis__question" data-question="q1">
+          <p class="jm-diagnosis__questionText">
+            {{ section.settings.q1_text }}
+          </p>
+          <ul class="jm-diagnosis__options">
+            <li><button data-answer="mix">{{ section.settings.q1_a1 }}</button></li>
+            <li><button data-answer="straight">{{ section.settings.q1_a2 }}</button></li>
+          </ul>
+        </div>
 
-      <!-- Question 2 -->
-      <div class="jm-diagnosis__question" data-question="q2">
-        <p class="jm-diagnosis__questionText">
-          {{ section.settings.q2_text }}
-        </p>
-        <ul class="jm-diagnosis__options">
-          <li><button data-answer="yes">{{ section.settings.q2_a1 }}</button></li>
-          <li><button data-answer="no">{{ section.settings.q2_a2 }}</button></li>
-        </ul>
-      </div>
+        <!-- Question 2 -->
+        <div class="jm-diagnosis__question" data-question="q2">
+          <p class="jm-diagnosis__questionText">
+            {{ section.settings.q2_text }}
+          </p>
+          <ul class="jm-diagnosis__options">
+            <li><button data-answer="yes">{{ section.settings.q2_a1 }}</button></li>
+            <li><button data-answer="no">{{ section.settings.q2_a2 }}</button></li>
+          </ul>
+        </div>
 
-      <!-- Question 3 -->
-      <div class="jm-diagnosis__question" data-question="q3">
-        <p class="jm-diagnosis__questionText">
-          {{ section.settings.q3_text }}
-        </p>
-        <ul class="jm-diagnosis__options">
-          <li><button data-answer="yes">{{ section.settings.q3_a1 }}</button></li>
-          <li><button data-answer="no">{{ section.settings.q3_a2 }}</button></li>
-        </ul>
-      </div>
+        <!-- Question 3 -->
+        <div class="jm-diagnosis__question" data-question="q3">
+          <p class="jm-diagnosis__questionText">
+            {{ section.settings.q3_text }}
+          </p>
+          <ul class="jm-diagnosis__options">
+            <li><button data-answer="yes">{{ section.settings.q3_a1 }}</button></li>
+            <li><button data-answer="no">{{ section.settings.q3_a2 }}</button></li>
+          </ul>
+        </div>
 
-      <!-- Question 4 -->
-      <div class="jm-diagnosis__question" data-question="q4">
-        <p class="jm-diagnosis__questionText">
-          {{ section.settings.q4_text }}
-        </p>
-        <ul class="jm-diagnosis__options">
-          <li><button data-answer="clear">{{ section.settings.q4_a1 }}</button></li>
-          <li><button data-answer="balanced">{{ section.settings.q4_a2 }}</button></li>
-        </ul>
-      </div>
+        <!-- Question 4 -->
+        <div class="jm-diagnosis__question" data-question="q4">
+          <p class="jm-diagnosis__questionText">
+            {{ section.settings.q4_text }}
+          </p>
+          <ul class="jm-diagnosis__options">
+            <li><button data-answer="clear">{{ section.settings.q4_a1 }}</button></li>
+            <li><button data-answer="balanced">{{ section.settings.q4_a2 }}</button></li>
+          </ul>
+        </div>
 
-      <!-- Results -->
-      <div class="jm-diagnosis__result" data-result="organic_matcha">
-        <p class="jm-diagnosis__resultLabel">{{ section.settings.result_label }}</p>
-        <h3>{{ section.settings.organic_title }}</h3>
-        <p>{{ section.settings.organic_text }}</p>
-        <a href="{{ section.settings.organic_link }}">
-          {{ section.settings.result_cta }}
-        </a>
-      </div>
+        <!-- Results -->
+        <div class="jm-diagnosis__result" data-result="organic_matcha">
+          <p class="jm-diagnosis__resultLabel">{{ section.settings.result_label }}</p>
+          <h3>{{ section.settings.organic_title }}</h3>
+          <p>{{ section.settings.organic_text }}</p>
+          <a href="{{ section.settings.organic_link }}">
+            {{ section.settings.result_cta }}
+          </a>
+        </div>
 
-      <div class="jm-diagnosis__result" data-result="premium_ceremonial">
-        <p class="jm-diagnosis__resultLabel">{{ section.settings.result_label }}</p>
-        <h3>{{ section.settings.premium_title }}</h3>
-        <p>{{ section.settings.premium_text }}</p>
-        <a href="{{ section.settings.premium_link }}">
-          {{ section.settings.result_cta }}
-        </a>
-      </div>
+        <div class="jm-diagnosis__result" data-result="premium_ceremonial">
+          <p class="jm-diagnosis__resultLabel">{{ section.settings.result_label }}</p>
+          <h3>{{ section.settings.premium_title }}</h3>
+          <p>{{ section.settings.premium_text }}</p>
+          <a href="{{ section.settings.premium_link }}">
+            {{ section.settings.result_cta }}
+          </a>
+        </div>
 
-      <div class="jm-diagnosis__result" data-result="ceremonial">
-        <p class="jm-diagnosis__resultLabel">{{ section.settings.result_label }}</p>
-        <h3>{{ section.settings.ceremonial_title }}</h3>
-        <p>{{ section.settings.ceremonial_text }}</p>
-        <a href="{{ section.settings.ceremonial_link }}">
-          {{ section.settings.result_cta }}
-        </a>
+        <div class="jm-diagnosis__result" data-result="ceremonial">
+          <p class="jm-diagnosis__resultLabel">{{ section.settings.result_label }}</p>
+          <h3>{{ section.settings.ceremonial_title }}</h3>
+          <p>{{ section.settings.ceremonial_text }}</p>
+          <a href="{{ section.settings.ceremonial_link }}">
+            {{ section.settings.result_cta }}
+          </a>
+        </div>
+
+        <!-- Retry -->
+        <div class="jm-diagnosis__resetArea">
+          <button class="jm-diagnosis__reset" data-action="reset">Try again</button>
+        </div>
       </div>
 
     </div>

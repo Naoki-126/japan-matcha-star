@@ -74,7 +74,8 @@
 /*  im-benefits
 =========================== */
 .jm-benefits {
-  margin: 80px auto 0;
+  /* margin: 80px auto 0; */
+  margin: 0 auto;
   width: 100%;
   background: var(--bg-soft);
   padding: 100px 0 80px;
@@ -147,7 +148,7 @@
 
 @media screen and (max-width: 749px) {
   .jm-benefits {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     padding: 80px 0 60px;
   }
 
@@ -255,8 +256,6 @@
 .jm-diagnosis button {
   appearance: none;
   background: none;
-  border: none;
-  padding: 0;
   cursor: pointer;
   font-family: inherit;
   color: inherit;
@@ -264,20 +263,82 @@
 
 /*  Layout
 =========================== */
-.jm-diagnosis__intro,
-.jm-diagnosis__question,
-.jm-diagnosis__result {
-  max-width: 720px;
-  margin: 0 auto;
+.jm-diagnosis__contents {
+  max-width: var(--width-box);
+  margin: 100px auto 80px;
 }
 
-.jm-diagnosis__question,
-.jm-diagnosis__result {
-  margin-top: 64px;
+.jm-diagnosis__intro {
+  text-align: center;
 }
 
-/*   visibility control
-=========================== */
+.jm-diagnosis__lead {
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.jm-diagnosis__text {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.jm-diagnosis__startBtn {
+  margin-top: 32px;
+  display: inline-block;
+  padding: 14px 32px;
+  font-family: var(--ff-label);
+  color: var(--color-base);
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(63, 63, 63, 0.6);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.jm-diagnosis__startBtn:hover {
+  background-color: var(--bg-soft);
+  border-color: var(--color-accent);
+  color: var(--color-heading);
+}
+
+/* question
+  =========================== */
+.jm-diagnosis__question {
+  margin-top: 32px;
+}
+
+.jm-diagnosis__questionText {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.jm-diagnosis__options {
+  list-style: none;
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.jm-diagnosis__options button {
+  width: 100%;
+  text-align: left;
+  padding: 16px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  line-height: 1.6;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.jm-diagnosis__options button:hover {
+  background-color: var(--bg-soft);
+  border-color: var(--color-accent);
+  color: var(--color-heading);
+}
+
 .jm-diagnosis__question,
 .jm-diagnosis__result {
   display: none;
@@ -294,110 +355,120 @@
   transform: translateY(0);
 }
 
-/*  intro
-=========================== */
-.jm-diagnosis__lead {
-  font-size: 20px;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
-  margin-bottom: 12px;
-}
-
-.jm-diagnosis__text {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #555;
-  margin-bottom: 32px;
-}
-
-.jm-diagnosis__startBtn {
-  display: inline-block;
-  padding: 14px 32px;
-  border: 1px solid #222;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-.jm-diagnosis__startBtn:hover {
-  background-color: #222;
-  color: #fff;
-}
-
-  /* question
-  =========================== */
-.jm-diagnosis__questionText {
-  font-size: 18px;
-  line-height: 1.7;
-  margin-bottom: 32px;
-}
-
-.jm-diagnosis__options {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 16px;
-}
-
-.jm-diagnosis__options button {
-  width: 100%;
-  text-align: left;
-  padding: 16px 20px;
-  border: 1px solid #ddd;
-  font-size: 14px;
-  line-height: 1.6;
-  transition: border-color 0.25s ease, background-color 0.25s ease;
-}
-
-.jm-diagnosis__options button:hover {
-  border-color: #222;
-  background-color: #fafafa;
-}
-
 /* result
 =========================== */
+.jm-diagnosis__result {
+  margin-top: 60px;
+  text-align: center;
+}
+
 .jm-diagnosis__resultLabel {
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #777;
-  margin-bottom: 8px;
+
 }
 
 .jm-diagnosis__result h3 {
-  font-size: 22px;
-  margin-bottom: 16px;
+  margin-top: 28px;
+  font-size: 36px;
+  color: var(--color-accent);
+  font-weight: 600;
+
 }
 
 .jm-diagnosis__result p {
-  font-size: 15px;
+  margin-top: 24px;
   line-height: 1.8;
-  color: #555;
-  margin-bottom: 32px;
 }
 
 .jm-diagnosis__result a {
+  margin-top: 16px;
   display: inline-block;
   font-size: 14px;
   letter-spacing: 0.08em;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid var(--color-heading);
   padding-bottom: 4px;
+}
+
+/* reset
+=========================== */
+.jm-diagnosis__resetArea {
+  margin: 32px auto 0;
+  text-align: right;
+}
+
+.jm-diagnosis button.jm-diagnosis__reset {
+  background: var(--bg-base);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+.jm-diagnosis button.jm-diagnosis__reset:hover {
+  background: var(--bg-accent);
 }
 
 /* responsive
 =========================== */
 @media screen and (max-width: 749px) {
-  .jm-diagnosis__question,
-  .jm-diagnosis__result {
-    margin-top: 48px;
+  .jm-diagnosis__contents{
+    margin: 80px auto 60px;
   }
 
   .jm-diagnosis__lead {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .jm-diagnosis__text {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .jm-diagnosis__startBtn {
+    margin-top: 28px;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .jm-diagnosis__question {
+    margin-top: 28px;
   }
 
   .jm-diagnosis__questionText {
     font-size: 16px;
+    line-height: 1.7;
   }
+
+  .jm-diagnosis__options {
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  .jm-diagnosis__options button {
+    padding: 14px 16px;
+  }
+
+  .jm-diagnosis__result {
+    margin-top: 48px;
+  }
+
+  .jm-diagnosis__result h3 {
+    font-size: 28px;
+  }
+
+  .jm-diagnosis__result p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+    .jm-diagnosis__resetArea {
+    margin-top: 24px;
+    text-align: center;
+  }
+
 }

@@ -129,6 +129,7 @@ body {
 	background: transparent;
 	color: var(--color-base);
 	-webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
 }
 
 .page-inner {
@@ -157,15 +158,16 @@ body {
 }
 
 .jm-btn {
-  background: var(--bg-soft);
-  border: 1px solid var(--bg-accent);
-  padding: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
   border-radius: 4px;
-  color: var(--color-heading);
-}
+  background: var(--bg-main);
+  color: #fff;
 
-.jm-btn:hover {
-  background: var(--bg-accent) ;
+  &:hover {
+    background-color: var(--bg-sub);
+  }
 }
 
 /* footer

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!popup) return;
 
   // 一度表示したら出さない
-  // if (localStorage.getItem("jmPopupShown")) return;
+  if (localStorage.getItem("jmPopupShown")) return;
 
   // トップページ限定
   const homeOnly = popup.dataset.homeOnly === "true";
@@ -74,7 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
 });
 
-/* jm-diagnosis
+
+/* ===========================
+# jm-diagnosis
 =========================== */
 document.addEventListener('DOMContentLoaded', () => {
   const diagnosis = document.querySelector('.jm-diagnosis');
@@ -83,12 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const startBtn = diagnosis.querySelector('[data-action="start"]');
   const questions = diagnosis.querySelectorAll('[data-question]');
   const results = diagnosis.querySelectorAll('[data-result]');
+  const resetBtn = diagnosis.querySelector('[data-action="reset"]');
 
   const answers = {};
 
-  /* -----------------------
-    Utility
-  ----------------------- */
+  /* utility
+  =========================== */
   const show = (el) => {
     if (!el) return;
     el.classList.add('is-active');
@@ -109,17 +111,45 @@ document.addEventListener('DOMContentLoaded', () => {
   const getResult = (id) =>
     diagnosis.querySelector(`[data-result="${id}"]`);
 
-  /* -----------------------
-    Start
-  ----------------------- */
+  const resetDiagnosis = () => {
+    // answersを空にする
+    for (const key in answers) {
+      delete answers[key];
+    }
+
+    // 質問リセット
+    questions.forEach(question => {
+      question.classList.remove('is-active');
+
+      const buttons = question.querySelectorAll('button');
+      buttons.forEach(btn => {
+        btn.disabled = false;
+        btn.style.cursor = '';
+        btn.style.opacity = '';
+      });
+    });
+
+    // 結果リセット
+    results.forEach(result => {
+      result.classList.remove('is-active');
+    });
+
+    // Startボタン復活
+    startBtn.disabled = false;
+
+    // 上へ戻す（任意）
+    diagnosis.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  /* start
+  =========================== */
   startBtn.addEventListener('click', () => {
     show(getQuestion('q1'));
     startBtn.disabled = true;
   });
 
-  /* -----------------------
-    Answer handling
-  ----------------------- */
+  /* answer handling
+  =========================== */
   questions.forEach(question => {
     question.addEventListener('click', (e) => {
       const btn = e.target.closest('button');
@@ -166,4 +196,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  /* reset
+  =========================== */
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      resetDiagnosis();
+    });
+  }
+
 });
