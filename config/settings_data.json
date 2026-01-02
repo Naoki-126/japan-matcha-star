@@ -146,10 +146,10 @@
           "enable": true,
           "home_only": true,
           "delay": 2,
-          "title": "メール登録で〇％オフ",
-          "text": "<p>新商品やお得なお知らせを<br/>静かにお届けします。</p>",
-          "placeholder": "mail address",
-          "button_label": "Sign Up"
+          "title": "Want ◯% Off the World's Best Tasting Matcha",
+          "text": "Get ◯% Off Your First Order\nGet ◯% off the best matcha on the planet and be the first to know about new products and special offers.",
+          "button_label": "Email Registration",
+          "button_url": "shopify://pages/contact-1"
         }
       }
     },

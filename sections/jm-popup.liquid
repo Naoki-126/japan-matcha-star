@@ -3,44 +3,26 @@
   id="jm-popup"
   class="jm-popup"
   aria-hidden="true"
-  data-delay="{{ section.settings.delay | default: 3 }}"
+  data-delay="{{ section.settings.delay | default: 2 }}"
   data-home-only="{{ section.settings.home_only }}"
 >
   <div class="jm-popup__overlay"></div>
-
   <div class="jm-popup__content">
-    <button
-      type="button"
-      class="jm-popup__close"
-      aria-label="閉じる"
-    >
-      ×
-    </button>
-
-    {%- if section.settings.title != blank -%}
-      <p class="jm-popup__title">
-        {{ section.settings.title | escape }}
-      </p>
-    {%- endif -%}
-
-    {%- if section.settings.text != blank -%}
-      <p class="jm-popup__text">
-        {{ section.settings.text }}
-      </p>
-    {%- endif -%}
-
-    <form class="jm-popup__form">
-      <input
-        type="email"
-        style="padding: 8px; border: 1px solid  #3F3F3F; border-radius: 4px;"
-        placeholder="{{ section.settings.placeholder | escape }}"
-        required
-      >
-      <button type="submit" class="jm-btn">
-        {{ section.settings.button_label | escape }}
-      </button>
+    <button type="button" class="jm-popup__close" aria-label="閉じる">×</button>
+    <h2 class="jm-popup__title">{{ section.settings.title }}</h2>
+    <div class="jm-popup__text">{{ section.settings.text | newline_to_br }}</div>
+    <form id="jm-popupForm" class="jm-popup__btnArea">
+      <input type="email" name="email" placeholder="example@mail.com" class="jm-popup__form" required>
+      <button type="submit" class="jm-btn">{{ section.settings.button_label }}</button>
     </form>
+    <div id="jm-popupSuccess" class="jm-popup__success" style="display:none;">
+      <p>登録ありがとうございます！</p>
+      <p>割引コード: <strong id="jm-discountCode">DISCOUNT10</strong></p>
+      <p>今すぐカートに適用してお買い物をお楽しみください！</p>
+      <button id="jm-popupAfterSuccess">閉じる</button>
+    </div>
   </div>
+
 </div>
 {%- endif -%}
 
@@ -67,31 +49,25 @@
       "min": 0,
       "max": 10,
       "step": 1,
-      "default": 3
+      "default": 2
     },
     {
       "type": "text",
       "id": "title",
-      "label": "タイトル",
-      "default": "メール登録で〇％オフ"
+      "label": "Title",
+      "default": "Want ◯% Off the World's Best Tasting Matcha"
     },
     {
-      "type": "richtext",
+      "type": "textarea",
       "id": "text",
-      "label": "説明文",
-      "default": "<p>新商品やお得なお知らせを、<br>静かにお届けします。</p>"
-    },
-    {
-      "type": "text",
-      "id": "placeholder",
-      "label": "メール入力 placeholder",
-      "default": "メールアドレス"
+      "label": "Text",
+      "default": "Get ◯% Off Your First Order"
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "ボタン文言",
-      "default": "登録する"
+      "default": "登録して割引を受け取る"
     }
   ],
   "presets": []

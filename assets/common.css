@@ -157,19 +157,6 @@ body {
   color: #555;
 }
 
-.jm-btn {
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 4px;
-  background: var(--bg-main);
-  color: #fff;
-
-  &:hover {
-    background-color: var(--bg-sub);
-  }
-}
-
 /* footer
   =========================== */
 .jm-footer {
@@ -236,6 +223,8 @@ body {
 }
 
 .jm-popup__content {
+  width: 100%;
+  max-width: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -257,8 +246,9 @@ body {
 
 .jm-popup__title {
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
+  text-align: center;
 }
 
 .jm-popup__text {
@@ -266,7 +256,40 @@ body {
   font-size: 14px;
 }
 
+.jm-popup__btnArea {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
 .jm-popup__form {
-  margin-top: 12px;
+  padding: 7px 10px;
+  width: 180px;
+}
+
+.jm-btn {
+  display: inline-block;
   font-size: 14px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: var(--bg-main);
+  color: #fff;
+}
+
+.jm-btn:hover {
+  background-color: var(--bg-sub);
+}
+
+
+@media screen and (max-width: 749px) {
+  .jm-popup__content {
+    max-width: 300px;
+  }
+
+  .jm-popup__btnArea  {
+    flex-direction: column;
+  }
 }
