@@ -46,7 +46,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/fv-img1.jpg",
-        "image_2": "shopify://shop_images/fv-img4.jpg",
+        "image_2": "shopify://shop_images/fv-woman3.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "ambient",
@@ -54,7 +54,7 @@
         "desktop_content_alignment": "center",
         "show_text_box": false,
         "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
+        "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
