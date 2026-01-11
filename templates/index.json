@@ -15,14 +15,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Awaken Your Inner Glow.",
+            "heading": "Designed for balance — inside and out",
             "heading_size": "h0"
           }
         },
         "text_6crXxr": {
           "type": "text",
           "settings": {
-            "text": "内側から、美しさを目覚めさせる。",
+            "text": "A refined Japanese matcha crafted for beauty and calm.",
             "text_style": "body"
           }
         },
@@ -65,12 +65,13 @@
         "concept_QH7HLz": {
           "type": "concept",
           "settings": {
-            "title": "Pure Origin from Japan",
-            "description": "<p>日本各地の抹茶は、気候や土壌、製法によって個性が大きく異なります。私たちは産地ごとの背景や歴史に目を向け、単なる「抹茶」ではなく、その土地が育んだ本来の価値を大切にしています。日本で受け継がれてきた抹茶文化を、現代のライフスタイルに自然に溶け込む形で届けたいと考えています。</p>"
+            "title": "",
+            "description": "<p>Japan Matcha Star reimagines matcha as more than a drink. Inspired by the stillness of Japanese tea culture and refined through modern beauty science, our matcha is crafted to support both appearance and inner balance.</p>"
           }
         },
         "concept_PMgd9Q": {
           "type": "concept",
+          "disabled": true,
           "settings": {
             "title": "Beauty Meets Science",
             "description": "<p>抹茶が持つ美しさは、感覚だけのものではありません。私たちは成分や製法を科学的に検証し、美容と健康の観点から抹茶の可能性を見つめ直しています。伝統に頼るだけでなく、データと知見を重ねることで、日々の生活に安心して取り入れられる抹茶を目指しています。</p>"
@@ -78,6 +79,7 @@
         },
         "concept_4cxtmP": {
           "type": "concept",
+          "disabled": true,
           "settings": {
             "title": "A New Luxury for Daily Life",
             "description": "<p>ラグジュアリーとは、特別な日のためだけのものではありません。忙しい日常の中で、心と身体を整えるひとときこそが本当の贅沢だと私たちは考えます。一杯の抹茶が、日常を少し豊かに変える存在になるよう、品質と体験の両立を追求しています。</p>"
@@ -91,9 +93,9 @@
       ],
       "name": "Matcha Concepts",
       "settings": {
-        "heading": "Philosophy behind JAPAN MACHA STAR",
-        "subheading": "A balance of tradition, purity, and modern excellence.",
-        "text": "<p>Japan Matcha Star is built on three core values.</p>"
+        "heading": "肌に、美しさを。 心に、静けさを。",
+        "subheading": "Beauty for the skin. Calm for the mind.",
+        "text": "<p>Redefining matcha as inner beauty</p>"
       }
     },
     "featured_collection": {
@@ -124,36 +126,45 @@
         "padding_bottom": 0
       }
     },
-    "jm_diagnosis_apw79g": {
+    "jm_diagnosis_myM3hd": {
       "type": "jm-diagnosis",
       "name": "Matcha Finder",
       "settings": {
         "intro_lead": "Not sure which matcha is right for you?",
         "intro_text": "By answering a few simple questions,\nwe’ll guide you to the matcha that fits your taste and lifestyle.",
-        "intro_cta": "Find your matcha",
-        "q1_text": "how do you usually enjoy matcha?",
-        "q1_a1": "i often mix it into lattes, smoothies, or recipes",
-        "q1_a2": "i mostly enjoy it straight, with hot water only",
-        "q2_text": "is organic certification your top priority when choosing ingredients?",
-        "q2_a1": "yes, it matters a lot to me",
-        "q2_a2": "i care more about overall quality and taste balance",
-        "q3_text": "when drinking matcha straight, do you value clarity, smoothness, and depth of umami?",
-        "q3_a1": "yes, i want a clean and refined taste",
-        "q3_a2": "i am comfortable with a more balanced, everyday profile",
-        "q4_text": "which kind of enjoyment feels closer to what you want from matcha?",
-        "q4_a1": "experiencing aroma and umami clearly when enjoyed straight",
-        "q4_a2": "having a balanced, reliable flavor that works beautifully in lattes and recipes",
+        "q0_text": "What are you looking for today??",
+        "q0_a1": "Calm focus & balance",
+        "q0_a2": "Gentle beauty & steady",
+        "q1_text": "How do you want to enjoy matcha most?",
+        "q1_a1": "Mix (lattes / recipes)",
+        "q1_a2": "Straight (hot water only)",
+        "q1_a3": "Both (straight + lattes)",
+        "q2_text": "Is organic peace-of-mind your top priority",
+        "q2_a1": "Yes",
+        "q2_a2": "No",
+        "q3_text": "What kind of experience feels closer?",
+        "q3_a1": "Gentle & steady (daily, no drama)",
+        "q3_a2": "Refined clarity (clean finish, deeper taste)",
+        "q4_text": "Do you want refined umami with a clean finish?",
+        "q4_a1": "Yes",
+        "q4_a2": "No",
+        "q5_text": "Which matters more right now?",
+        "q5_a1": "Stability & versatility (easy to keep)",
+        "q5_a2": "Light & easy (simple daily use)",
+        "q6_text": "What do you want more often?",
+        "q6_a1": "Daily balance (fits any moment)",
+        "q6_a2": "Occasional deep focus (pure, refined)",
         "result_label": "Your matcha",
         "result_cta": "View product",
         "organic_title": "Organic Matcha",
         "organic_text": "A clean and dependable organic matcha, perfect for daily recipes and mindful choices.",
-        "organic_link": "shopify://products/yuuki_ceremonial",
+        "organic_link": "",
         "premium_title": "Premium Ceremonial Matcha",
         "premium_text": "A refined ceremonial matcha with clear aroma and deep umami, best enjoyed straight.",
-        "premium_link": "shopify://products/platinum_class_ceremonial",
+        "premium_link": "",
         "ceremonial_title": "Ceremonial Matcha",
         "ceremonial_text": "A balanced ceremonial matcha that performs beautifully both straight and in recipes.",
-        "ceremonial_link": "shopify://products/ceremonial"
+        "ceremonial_link": ""
       }
     },
     "jm_benefits_sc_Pc8mm3": {
@@ -202,7 +213,7 @@
           "settings": {
             "image": "shopify://shop_images/IMG_2423.jpg",
             "text_heading": "Crafted with Respect for Nature and Tradition",
-            "story": "<p>日本の抹茶は、単なる飲み物ではなく、土地の自然、職人の技、そして長い時間の積み重ねによって育まれてきた文化そのものです。私たちは、その背景にある価値を正しく理解し、表面的な流行やイメージだけで消費される存在にはしたくないと考えています。<br/><br/>原料となる茶葉は、産地や栽培環境によって香りや旨味が大きく異なります。私たちは品質の高さだけでなく、「なぜこの抹茶なのか」という理由を重視し、選定を行っています。その土地の風土や製法に敬意を払いながら、本来の魅力が最大限に引き出されるかどうかを基準にしています。<br/><br/>また、伝統を守ることだけが正解だとは考えていません。抹茶が現代のライフスタイルに自然に溶け込むためには、科学的な視点や品質管理も欠かせない要素です。成分分析や製造工程の検証を重ねることで、安心して日常に取り入れられる品質を追求しています。</p><p>忙しい毎日の中で、一杯の抹茶を点てる時間は、心と身体を静かに整えるひとときになります。特別な知識や形式がなくても、自分のペースで味わえること。それこそが、現代における新しい日本のラグジュアリーだと私たちは考えています。<br/><br/><br/>伝統と革新、そのどちらにも偏ることなく、日本の抹茶が持つ本質的な価値を、世界へ丁寧に届けていく。それが、このブランドに込めた私たちの想いです。</p><p></p><p></p>",
+            "story": "<p>日本の抹茶は、単なる飲み物ではなく、土地の自然や職人の技、そして長い時間の積み重ねによって育まれてきた文化そのものです。私たちは、その背景にある価値を正しく理解し、表面的な流行やイメージだけで消費される存在にはしたくないと考えています。</p><p>原料となる茶葉は、産地や栽培環境によって香りや旨味が大きく異なります。私たちは品質の高さだけでなく、「なぜこの抹茶なのか」という理由を大切にし、その土地の風土や製法に敬意を払いながら、本来の魅力が最大限に引き出されるかを基準に選定しています。</p><p>また、伝統を守ることだけが正解だとは考えていません。抹茶が現代のライフスタイルに溶け込むためには、科学的な視点や品質管理も欠かせません。成分分析や製造工程の検証を重ね、安心して日常に取り入れられる品質を追求しています。</p><p>忙しい毎日の中で、一杯の抹茶を点てる時間は、心と身体を静かに整えるひとときになります。特別な知識や形式がなくても、自分のペースで味わえること。それこそが、現代における新しい日本のラグジュアリーだと私たちは考えています。</p><p>伝統と革新、そのどちらにも偏ることなく、日本の抹茶が持つ本質的な価値を、世界へ丁寧に届けていく。それが、このブランドに込めた私たちの想いです。<br/><br/>また、伝統を守ることだけが正解だとは考えていません。抹茶が現代のライフスタイルに自然に溶け込むためには、科学的な視点や品質管理も欠かせない要素です。成分分析や製造工程の検証を重ねることで、安心して日常に取り入れられる品質を追求しています。</p><p>忙しい毎日の中で、一杯の抹茶を点てる時間は、心と身体を静かに整えるひとときになります。特別な知識や形式がなくても、自分のペースで味わえること。それこそが、現代における新しい日本のラグジュアリーだと私たちは考えています。<br/><br/>伝統と革新、そのどちらにも偏ることなく、日本の抹茶が持つ本質的な価値を、世界へ丁寧に届けていく。それが、このブランドに込めた私たちの想いです。</p><p></p><p></p>",
             "reverse": false
           }
         }
@@ -230,7 +241,7 @@
     "image_banner",
     "jm_concept_sct_prCywt",
     "featured_collection",
-    "jm_diagnosis_apw79g",
+    "jm_diagnosis_myM3hd",
     "jm_benefits_sc_Pc8mm3",
     "jm_brand_sc_yAVbtc",
     "jm_spacer_sc_J8eb9c"

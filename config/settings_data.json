@@ -146,10 +146,9 @@
           "enable": true,
           "home_only": true,
           "delay": 2,
-          "title": "Want ◯% Off the World's Best Tasting Matcha",
-          "text": "Get ◯% Off Your First Order\nGet ◯% off the best matcha on the planet and be the first to know about new products and special offers.",
-          "button_label": "Email Registration",
-          "button_url": "shopify://pages/contact-1"
+          "title": "Want 15% Off the World's Best Tasting Matcha",
+          "text": "Get 15% Off Your First Order\nGet 15% off the best matcha on the planet and be the first to know about new products and special offers.",
+          "button_label": "Email Registration"
         }
       }
     },

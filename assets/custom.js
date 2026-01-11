@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const diagnosis = document.querySelector('.jm-diagnosis');
   if (!diagnosis) return;
 
-  const startBtn = diagnosis.querySelector('[data-action="start"]');
   const questions = diagnosis.querySelectorAll('[data-question]');
   const results = diagnosis.querySelectorAll('[data-result]');
   const resetBtn = diagnosis.querySelector('[data-action="reset"]');
@@ -127,12 +126,17 @@ document.addEventListener('DOMContentLoaded', () => {
     el.classList.add('is-active');
   };
 
-  const disableOptions = (questionEl) => {
+  const disableOptions = (questionEl, selectedBtn) => {
     const buttons = questionEl.querySelectorAll('button');
     buttons.forEach(btn => {
       btn.disabled = true;
       btn.style.cursor = 'default';
-      btn.style.opacity = '0.6';
+      if (btn === selectedBtn) {
+        btn.classList.add('is-selected');
+        btn.style.opacity = '1';
+      } else {
+        btn.style.opacity = '.4';
+      }
     });
   };
 
@@ -157,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.disabled = false;
         btn.style.cursor = '';
         btn.style.opacity = '';
+        btn.classList.remove('is-selected');
       });
     });
 
@@ -166,18 +171,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Startボタン復活
-    startBtn.disabled = false;
+    const firstQuestion = getQuestion('q0');
+    if (firstQuestion) {
+      firstQuestion.classList.add('is-active')
+    }
 
     // 上へ戻す（任意）
     diagnosis.scrollIntoView({ behavior: 'smooth' });
   };
-
-  /* start
-  =========================== */
-  startBtn.addEventListener('click', () => {
-    show(getQuestion('q1'));
-    startBtn.disabled = true;
-  });
 
   /* answer handling
   =========================== */
@@ -191,40 +192,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
       answers[questionId] = answer;
 
-      disableOptions(question);
+      disableOptions(question, btn);
 
       /* ---- Branch logic ---- */
+      if (questionId === 'q0') {
+        show(getQuestion('q1'));
+      }
+
       if (questionId === 'q1') {
-        if (answer === 'mix') {
-          show(getQuestion('q2'));
-        } else {
-          show(getQuestion('q3'));
-        }
+        if (answer === 'mix') show(getQuestion('q2'));
+        if (answer === 'straight') show(getQuestion('q4'));
+        if (answer === 'both') show(getQuestion('q6'));
       }
 
       if (questionId === 'q2') {
         if (answer === 'yes') {
           show(getResult('organic_matcha'));
         } else {
-          show(getQuestion('q4'));
+          show(getQuestion('q3'));
         }
       }
 
       if (questionId === 'q3') {
-        if (answer === 'yes') {
-          show(getResult('premium_ceremonial'));
+        if (answer === 'gentle') {
+          show(getResult('ceremonial'));
         } else {
-          show(getQuestion('q4'));
+          show(getResult('premium_ceremonial'));
         }
       }
 
       if (questionId === 'q4') {
-        if (answer === 'clear') {
+        if (answer === 'yes') {
           show(getResult('premium_ceremonial'));
         } else {
-          show(getResult('ceremonial'));
+          show(getQuestion('q5'));
         }
       }
+
+      if (questionId === 'q5') {
+        if (answer === 'stability') {
+          show(getResult('ceremonial'));
+        } else {
+          show(getResult('organic_matcha'));
+        }
+      }
+
+      if (questionId === 'q6') {
+        if (answer === 'daily') {
+          show(getResult('ceremonial'));
+        } else {
+          show(getResult('premium_ceremonial'));
+        }
+      }
+
     });
   });
 

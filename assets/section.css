@@ -42,7 +42,7 @@
 
 .jm-concept__paragraphs {
   margin: 48px auto 0;
-  max-width: 720px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -55,6 +55,8 @@
 
 .jm-concept__paraText {
   margin-top: 8px;
+  font-size: 18px;
+  line-height: 2.5;
 }
 
 @media screen and (max-width: 749px) {
@@ -217,6 +219,7 @@
 
 .jm-brand__story {
   margin-top: 24px;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 749px) {
@@ -255,10 +258,8 @@
 
 .jm-diagnosis button {
   appearance: none;
-  background: none;
   cursor: pointer;
   font-family: inherit;
-  color: inherit;
 }
 
 /*  Layout
@@ -266,6 +267,11 @@
 .jm-diagnosis__contents {
   max-width: var(--width-box);
   margin: 100px auto 80px;
+}
+
+.jm-diagnosis__content {
+  margin: 60px auto 0;
+  max-width: 720px;
 }
 
 .jm-diagnosis__intro {
@@ -292,23 +298,26 @@
   display: inline-block;
   padding: 14px 32px;
   font-family: var(--ff-label);
-  color: var(--color-base);
-  background-color: transparent;
   border-radius: 4px;
-  border: 1px solid rgba(63, 63, 63, 0.6);
+  background: var(--bg-main);
+  color: #fff;
+  border: 1px solid var(--bg-main);
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 .jm-diagnosis__startBtn:hover {
-  background-color: var(--bg-soft);
-  border-color: var(--color-accent);
-  color: var(--color-heading);
+  background-color: var(--bg-sub);
+  border-color: var(--bg-sub);
 }
 
 /* question
   =========================== */
 .jm-diagnosis__question {
   margin-top: 32px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .jm-diagnosis__questionText {
@@ -323,7 +332,7 @@
   gap: 16px;
 }
 
-.jm-diagnosis__options button {
+.answer-btn {
   width: 100%;
   text-align: left;
   padding: 16px 20px;
@@ -333,11 +342,13 @@
   transition: border-color 0.25s ease, background-color 0.25s ease;
 }
 
-.jm-diagnosis__options button:hover {
+.answer-btn:hover,
+.answer-btn.is-selected {
   background-color: var(--bg-soft);
   border-color: var(--color-accent);
   color: var(--color-heading);
 }
+
 
 .jm-diagnosis__question,
 .jm-diagnosis__result {
@@ -395,7 +406,7 @@
 /* reset
 =========================== */
 .jm-diagnosis__resetArea {
-  margin: 32px auto 0;
+  margin: 60px auto 0;
   text-align: right;
 }
 

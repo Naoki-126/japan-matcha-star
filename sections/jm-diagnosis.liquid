@@ -11,53 +11,73 @@
           <p class="jm-diagnosis__text">
             {{ section.settings.intro_text }}
           </p>
-          <button class="jm-diagnosis__startBtn" data-action="start">
-            {{ section.settings.intro_cta }}
-          </button>
         </div>
 
-        <!-- Question 1 -->
-        <div class="jm-diagnosis__question" data-question="q1">
-          <p class="jm-diagnosis__questionText">
-            {{ section.settings.q1_text }}
-          </p>
-          <ul class="jm-diagnosis__options">
-            <li><button data-answer="mix">{{ section.settings.q1_a1 }}</button></li>
-            <li><button data-answer="straight">{{ section.settings.q1_a2 }}</button></li>
-          </ul>
-        </div>
+        <div class="jm-diagnosis__content">
+          <!-- Question 0 -->
+          <div class="jm-diagnosis__question is-active" data-question="q0">
+            <p class="jm-diagnosis__questionText">{{ section.settings.q0_text }}</p>
+            <ul class="jm-diagnosis__options">
+              <li><button class="answer-btn" data-answer="a">{{ section.settings.q0_a1 }}</button></li>
+              <li><button class="answer-btn" data-answer="b">{{ section.settings.q0_a2 }}</button></li>
+            </ul>
+          </div>
 
-        <!-- Question 2 -->
-        <div class="jm-diagnosis__question" data-question="q2">
-          <p class="jm-diagnosis__questionText">
-            {{ section.settings.q2_text }}
-          </p>
-          <ul class="jm-diagnosis__options">
-            <li><button data-answer="yes">{{ section.settings.q2_a1 }}</button></li>
-            <li><button data-answer="no">{{ section.settings.q2_a2 }}</button></li>
-          </ul>
-        </div>
+          <!-- Question 1 -->
+          <div class="jm-diagnosis__question" data-question="q1">
+            <p class="jm-diagnosis__questionText">{{ section.settings.q1_text }}</p>
+            <ul class="jm-diagnosis__options">
+              <li><button class="answer-btn" data-answer="mix">{{ section.settings.q1_a1 }}</button></li>
+              <li><button class="answer-btn" data-answer="straight">{{ section.settings.q1_a2 }}</button></li>
+              <li><button class="answer-btn" data-answer="both">{{ section.settings.q1_a3 }}</button></li>
+            </ul>
+          </div>
 
-        <!-- Question 3 -->
-        <div class="jm-diagnosis__question" data-question="q3">
-          <p class="jm-diagnosis__questionText">
-            {{ section.settings.q3_text }}
-          </p>
-          <ul class="jm-diagnosis__options">
-            <li><button data-answer="yes">{{ section.settings.q3_a1 }}</button></li>
-            <li><button data-answer="no">{{ section.settings.q3_a2 }}</button></li>
-          </ul>
-        </div>
+          <!-- Question 2 -->
+          <div class="jm-diagnosis__question" data-question="q2">
+            <p class="jm-diagnosis__questionText">{{ section.settings.q2_text }}</p>
+            <ul class="jm-diagnosis__options">
+              <li><button class="answer-btn" data-answer="yes">{{ section.settings.q2_a1 }}</button></li>
+              <li><button class="answer-btn" data-answer="no">{{ section.settings.q2_a2 }}</button></li>
+            </ul>
+          </div>
 
-        <!-- Question 4 -->
-        <div class="jm-diagnosis__question" data-question="q4">
-          <p class="jm-diagnosis__questionText">
-            {{ section.settings.q4_text }}
-          </p>
-          <ul class="jm-diagnosis__options">
-            <li><button data-answer="clear">{{ section.settings.q4_a1 }}</button></li>
-            <li><button data-answer="balanced">{{ section.settings.q4_a2 }}</button></li>
-          </ul>
+          <!-- Question 3 -->
+          <div class="jm-diagnosis__question" data-question="q3">
+            <p class="jm-diagnosis__questionText">{{ section.settings.q3_text }}</p>
+            <ul class="jm-diagnosis__options">
+              <li><button class="answer-btn" data-answer="gentle">{{ section.settings.q3_a1 }}</button></li>
+              <li><button class="answer-btn" data-answer="refind">{{ section.settings.q3_a2 }}</button></li>
+            </ul>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="jm-diagnosis__question" data-question="q4">
+            <p class="jm-diagnosis__questionText">{{ section.settings.q4_text }}</p>
+            <ul class="jm-diagnosis__options">
+              <li><button class="answer-btn" data-answer="yes">{{ section.settings.q4_a1 }}</button></li>
+              <li><button class="answer-btn" data-answer="no">{{ section.settings.q4_a2 }}</button></li>
+            </ul>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="jm-diagnosis__question" data-question="q5">
+            <p class="jm-diagnosis__questionText">{{ section.settings.q5_text }}</p>
+            <ul class="jm-diagnosis__options">
+              <li><button class="answer-btn" data-answer="stability">{{ section.settings.q5_a1 }}</button></li>
+              <li><button class="answer-btn" data-answer="light">{{ section.settings.q5_a2 }}</button></li>
+            </ul>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="jm-diagnosis__question" data-question="q6">
+            <p class="jm-diagnosis__questionText">{{ section.settings.q6_text }}</p>
+            <ul class="jm-diagnosis__options">
+              <li><button class="answer-btn" data-answer="daily">{{ section.settings.q6_a1 }}</button></li>
+              <li><button class="answer-btn" data-answer="occasional">{{ section.settings.q6_a2 }}</button></li>
+            </ul>
+          </div>
+
         </div>
 
         <!-- Results -->
@@ -104,23 +124,35 @@
   "settings": [
     { "type": "text", "id": "intro_lead", "label": "Intro lead", "default": "Not sure which matcha is right for you?" },
     { "type": "textarea", "id": "intro_text", "label": "Intro text", "default": "By answering a few simple questions,\nwe’ll guide you to the matcha that fits your taste and lifestyle." },
-    { "type": "text", "id": "intro_cta", "label": "Intro CTA", "default": "Find your matcha" },
 
-    { "type": "text", "id": "q1_text", "label": "Q1 text", "default": "how do you usually enjoy matcha?" },
-    { "type": "text", "id": "q1_a1", "label": "Q1 option 1", "default": "i often mix it into lattes, smoothies, or recipes" },
-    { "type": "text", "id": "q1_a2", "label": "Q1 option 2", "default": "i mostly enjoy it straight, with hot water only" },
+    { "type": "text", "id": "q0_text", "label": "Q0 text", "default": "What are you looking for today??" },
+    { "type": "text", "id": "q0_a1", "label": "Q0 option 1", "default": "Calm focus & balance" },
+    { "type": "text", "id": "q0_a2", "label": "Q0 option 2", "default": "Gentle beauty & steady" },
 
-    { "type": "text", "id": "q2_text", "label": "Q2 text", "default": "is organic certification your top priority when choosing ingredients?" },
-    { "type": "text", "id": "q2_a1", "label": "Q2 option 1", "default": "yes, it matters a lot to me" },
-    { "type": "text", "id": "q2_a2", "label": "Q2 option 2", "default": "i care more about overall quality and taste balance" },
+    { "type": "text", "id": "q1_text", "label": "Q1 text", "default": "How do you want to enjoy matcha most?" },
+    { "type": "text", "id": "q1_a1", "label": "Q1 option 1", "default": "Mix (lattes / recipes)" },
+    { "type": "text", "id": "q1_a2", "label": "Q1 option 2", "default": "Straight (hot water only)" },
+    { "type": "text", "id": "q1_a3", "label": "Q1 option 3", "default": "Both (straight + lattes)" },
 
-    { "type": "text", "id": "q3_text", "label": "Q3 text", "default": "when drinking matcha straight, do you value clarity, smoothness, and depth of umami?" },
-    { "type": "text", "id": "q3_a1", "label": "Q3 option 1", "default": "yes, i want a clean and refined taste" },
-    { "type": "text", "id": "q3_a2", "label": "Q3 option 2", "default": "i am comfortable with a more balanced, everyday profile" },
+    { "type": "text", "id": "q2_text", "label": "Q2 text", "default": "Is organic peace-of-mind your top priority" },
+    { "type": "text", "id": "q2_a1", "label": "Q2 option 1", "default": "Yes" },
+    { "type": "text", "id": "q2_a2", "label": "Q2 option 2", "default": "No" },
 
-    { "type": "text", "id": "q4_text", "label": "Q4 text", "default": "which kind of enjoyment feels closer to what you want from matcha?" },
-    { "type": "text", "id": "q4_a1", "label": "Q4 option 1", "default": "experiencing aroma and umami clearly when enjoyed straight" },
-    { "type": "text", "id": "q4_a2", "label": "Q4 option 2", "default": "having a balanced, reliable flavor that works beautifully in lattes and recipes" },
+    { "type": "text", "id": "q3_text", "label": "Q3 text", "default": "What kind of experience feels closer?" },
+    { "type": "text", "id": "q3_a1", "label": "Q3 option 1", "default": "Gentle & steady (daily, no drama)" },
+    { "type": "text", "id": "q3_a2", "label": "Q3 option 2", "default": "Refined clarity (clean finish, deeper taste)" },
+
+    { "type": "text", "id": "q4_text", "label": "Q4 text", "default": "Do you want refined umami with a clean finish?" },
+    { "type": "text", "id": "q4_a1", "label": "Q4 option 1", "default": "Yes" },
+    { "type": "text", "id": "q4_a2", "label": "Q4 option 2", "default": "No" },
+
+    { "type": "text", "id": "q5_text", "label": "Q5 text", "default": "Which matters more right now?" },
+    { "type": "text", "id": "q5_a1", "label": "Q5 option 1", "default": "Stability & versatility (easy to keep)" },
+    { "type": "text", "id": "q5_a2", "label": "Q5 option 2", "default": "Light & easy (simple daily use)" },
+
+    { "type": "text", "id": "q6_text", "label": "Q6 text", "default": "What do you want more often?" },
+    { "type": "text", "id": "q6_a1", "label": "Q6 option 1", "default": "Daily balance (fits any moment)" },
+    { "type": "text", "id": "q6_a2", "label": "Q6 option 2", "default": "Occasional deep focus (pure, refined)" },
 
     { "type": "text", "id": "result_label", "label": "Result label", "default": "Your matcha" },
     { "type": "text", "id": "result_cta", "label": "Result CTA", "default": "View product" },
