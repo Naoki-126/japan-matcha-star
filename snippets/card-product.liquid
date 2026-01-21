@@ -58,7 +58,21 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {%- if card_product.featured_media -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+          {% comment %} <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}"> {% endcomment %}
+
+          {% assign subscription_label = '' %}
+          {% for tag in card_product.tags %}
+            {% if tag contains 'label_' %}
+              {% assign subscription_label = tag | split: 'label_' | last %}
+            {% endif %}
+          {% endfor %}
+
+          <div
+            class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}{% if subscription_label != blank %} has-subscription-badge{% endif %}"
+            {% if subscription_label != blank %}
+              data-subscription-label="{{ subscription_label | upcase }}"
+            {% endif %}
+          >
 
 
             <div class="media media--transparent media--hover-effect">

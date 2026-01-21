@@ -38,6 +38,18 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "subscriptions_app_block_ULwmND": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "color_text_body": "#6D7175",
+            "dividers_color": "#8F8D8D",
+            "bacgkround_color": "#FFFFFF",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "subscription_policy_url": "",
+            "product": "{{product}}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -62,6 +74,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "subscriptions_app_block_ULwmND",
         "buy_buttons",
         "description",
         "share"
@@ -106,10 +119,13 @@
       "settings": {
         "intro_lead": "Not sure which matcha is right for you?",
         "intro_text": "By answering a few simple questions,\nwe’ll guide you to the matcha that fits your taste and lifestyle.",
-        "intro_cta": "Find your matcha",
+        "q0_text": "What are you looking for today??",
+        "q0_a1": "Calm focus & balance",
+        "q0_a2": "Gentle beauty & steady",
         "q1_text": "how do you usually enjoy matcha?",
         "q1_a1": "i often mix it into lattes, smoothies, or recipes",
         "q1_a2": "i mostly enjoy it straight, with hot water only",
+        "q1_a3": "Both (straight + lattes)",
         "q2_text": "is organic certification your top priority when choosing ingredients?",
         "q2_a1": "yes, it matters a lot to me",
         "q2_a2": "i care more about overall quality and taste balance",
@@ -119,6 +135,12 @@
         "q4_text": "which kind of enjoyment feels closer to what you want from matcha?",
         "q4_a1": "experiencing aroma and umami clearly when enjoyed straight",
         "q4_a2": "having a balanced, reliable flavor that works beautifully in lattes and recipes",
+        "q5_text": "Which matters more right now?",
+        "q5_a1": "Stability & versatility (easy to keep)",
+        "q5_a2": "Light & easy (simple daily use)",
+        "q6_text": "What do you want more often?",
+        "q6_a1": "Daily balance (fits any moment)",
+        "q6_a2": "Occasional deep focus (pure, refined)",
         "result_label": "Your matcha",
         "result_cta": "View product",
         "organic_title": "Organic Matcha",
@@ -131,11 +153,18 @@
         "ceremonial_text": "A balanced ceremonial matcha that performs beautifully both straight and in recipes.",
         "ceremonial_link": ""
       }
+    },
+    "176882368201545581": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "jm_diagnosis_nFEb4t"
+    "jm_diagnosis_nFEb4t",
+    "176882368201545581"
   ]
 }

@@ -5,6 +5,7 @@
   aria-hidden="true"
   data-delay="{{ section.settings.delay | default: 2 }}"
   data-home-only="{{ section.settings.home_only }}"
+  data-is-home="{% if request.page_type == 'index' %}true{% else %}false{% endif %}"
 >
   <div class="jm-popup__overlay"></div>
   <div class="jm-popup__content">

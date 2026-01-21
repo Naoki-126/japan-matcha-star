@@ -293,3 +293,25 @@ body {
     flex-direction: column;
   }
 }
+
+/* subscription
+=========================== */
+.card__media {
+  position: relative;
+}
+
+.card__media.has-subscription-badge::before {
+  content: attr(data-subscription-label);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  z-index: 2;
+  pointer-events: none;
+}

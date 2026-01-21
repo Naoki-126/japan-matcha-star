@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("jm-popup");
   if (!popup) return;
 
+  const homeOnly = popup.dataset.homeOnly === "true";
+  const isHome = popup.dataset.isHome === "true";
+
+  if (homeOnly && !isHome) {
+    return;
+  }
+
   let isSuccessShown = false; // ★ success表示中フラグ
 
   // ① 既に登録済みなら何もしない
