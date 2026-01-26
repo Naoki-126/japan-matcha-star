@@ -38,6 +38,10 @@
               <h3 class="jm-craft__ttl">{{ section.settings.point3_title }}</h3>
               <p class="jm-craft__text">{{ section.settings.point3_text }}</p>
             </li>
+            <li class="jm-craft__point">
+              <h3 class="jm-craft__ttl">{{ section.settings.point4_title }}</h3>
+              <p class="jm-craft__text">{{ section.settings.point4_text }}</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -127,6 +131,22 @@
     {
       "type": "textarea",
       "id": "point3_text",
+      "label": "説明文",
+      "default": "Processed and stored under strict conditions."
+    },
+      {
+      "type": "header",
+      "content": "こだわり④"
+    },
+    {
+      "type": "text",
+      "id": "point4_title",
+      "label": "見出し",
+      "default": "Freshness control"
+    },
+    {
+      "type": "textarea",
+      "id": "point4_text",
       "label": "説明文",
       "default": "Processed and stored under strict conditions."
     }

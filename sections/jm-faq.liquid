@@ -39,7 +39,7 @@
                   {% if question != blank %}
                     <div class="jm-accordion__q">{{ question }}</div>
                     {% if answer != blank %}
-                      <div class="jm-accordion__a">{{ answer }}</div>
+                      <div class="jm-accordion__a">{{ answer |  newline_to_br }}</div>
                     {% endif %}
                   {% endif %}
                 {% endfor %}

@@ -29,6 +29,9 @@
                 {% endif %}
 
                 <div class="jm-history__txtArea">
+                  {% if block.settings.item_title != blank %}
+                    <h3 class="jm-history__itemTitle">{{ block.settings.item_title }}</h3>
+                  {% endif %}
                   {% if block.settings.text != blank %}
                     <p class="jm-history__text">{{ block.settings.text | newline_to_br }}</p>
                   {% endif %}
@@ -74,6 +77,12 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "item_title",
+          "label": "Title",
+          "default": "Year / Event Name"
         },
         {
           "type": "textarea",

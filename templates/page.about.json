@@ -27,7 +27,7 @@
       "settings": {
         "ttl": "ORIGIN OF MATCHA",
         "subttl": "抹茶が生まれる場所",
-        "text": "<p>日本には、抹茶づくりに適した風土があります。<br/><br/>昼夜の寒暖差、豊かな水、霧が立ち込める山あいの環境。<br/>そうした自然条件に加え、代々受け継がれてきた<br/>茶農家の知恵と技術が、抹茶の品質を支えています。<br/><br/>私たちが届けたいのは、単なる抹茶ではありません。<br/>土地の個性と、人の手仕事が生み出す<br/>日本ならではの価値そのものです。</p>",
+        "text": "<p>matcha doesn’t grow just anywhere. it requires a rare balance — cool mountain air, clean water, morning fog, and land shaped by time rather than speed.<br/>japan offers more than ideal conditions. it offers continuity.<br/><br/>for generations, tea farmers have refined their craft through quiet repetition — shading the leaves to guide their character, waiting for the precise moment of harvest, and stone grinding slowly, with patience and restraint.<br/><br/>this is not mass production. it is cultivation.<br/>at matcha star japan, we preserve that origin — not as nostalgia, but as a living standard.</p><p><br/>every cup carries the character of its land, the precision of human hands, and the calm strength that defines japanese craftsmanship. <br/></p>",
         "image": "shopify://shop_images/ridge.jpg"
       }
     },
@@ -38,21 +38,24 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/history.jpg",
-            "text": "歴史1"
+            "item_title": "Song Dynasty (960–1279) → Japan",
+            "text": "whisked powdered tea began in song china — and later disappeared there. in japan, it didn’t. the method was preserved, refined, and repeated, until japan became the only place where this tradition survived without interruption."
           }
         },
         "item_FFTNKh": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/history.jpg",
-            "text": "歴史2"
+            "image": "shopify://shop_images/history-2.png",
+            "item_title": "Late 12th Century · Kamakura Period",
+            "text": "matcha arrived as a tool, not a treat. in the late 12th century,  brought tea seeds and preparation methods from song china. in kissa yōjōki, tea was described in terms of alertness, focus, and internal balance. early drinkers were monks and warriors — matcha was never meant to entertain."
           }
         },
         "item_6FALPW": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/history.jpg",
-            "text": "歴史3"
+            "image": "shopify://shop_images/history-3.png",
+            "item_title": "15th–16th Century · Japan",
+            "text": "matcha was never poured — it is whisked in the bowl. that is why the bowl became the centre: a space for presence. when imported bowls became status symbols, sen no rikyu reversed the value — choosing quiet, imperfect bowls that carry the trace of the hand. earth softens heat and absorbs sound. glass reflects. metal asserts. only earth disappears."
           }
         }
       },
@@ -72,15 +75,17 @@
       "name": "Craft & Philosophy",
       "settings": {
         "heading": "CRAFT & PHILOSOPHY",
-        "subheading": "Crafted slowly, with intention.",
+        "subheading": "our craft exists to protect what history taught us — balance, restraint, and integrity.",
         "image": "shopify://shop_images/craft.jpg",
         "overlay_opacity": 20,
         "point1_title": "Hand-picked leaves",
-        "point1_text": "Only young leaves are carefully selected by hand.",
-        "point2_title": "Stone-ground process",
-        "point2_text": "Ground slowly to preserve aroma and nutrients.",
-        "point3_title": "Freshness control",
-        "point3_text": "Processed and stored under strict conditions."
+        "point1_text": "We select and pick only the leaves suited for matcha, with careful grading at harvest. Philosophy: precision begins before processing — it begins in selection.",
+        "point2_title": "Shaded cultivation",
+        "point2_text": "Before harvest, the tea plants are shaded to reduce direct sunlight and guide the leaf’s balance. Philosophy: we protect the leaf first, so nothing needs to be forced later.",
+        "point3_title": "Stone-ground, slowly",
+        "point3_text": "Tencha is ground on stone mills at a controlled pace to preserve texture and character. Philosophy: speed is the easiest way to lose what matters.",
+        "point4_title": "Freshness controlled, released in small batches",
+        "point4_text": "We manage storage and release timing carefully, producing in smaller batches to protect freshness. Philosophy: quality is not only made — it is maintained."
       }
     },
     "jm_science_bWwfiW": {
@@ -89,22 +94,22 @@
         "item_AWGEfq": {
           "type": "item",
           "settings": {
-            "title": "Antioxidant Power",
-            "text": "抹茶に含まれるカテキンなどの抗酸化成分は、年齢とともに気になる日々のコンディションを\n健やかに保つ働きがあるとされています。"
+            "title": "Polyphenols (Including Catechins) ",
+            "text": "Matcha contains tea polyphenols, including catechins. Polyphenols are naturally occurring plant compounds found in many foods and beverages, and they are commonly discussed in nutrition science for their antioxidant properties. "
           }
         },
         "item_wqWzde": {
           "type": "item",
           "settings": {
             "title": "L-Theanine",
-            "text": "抹茶特有のアミノ酸「テアニン」は、穏やかな集中感とリラックスを同時にもたらす成分として知られています。"
+            "text": "Matcha contains L-theanine, a naturally occurring amino acid found in tea. It is often described in research and consumer literature in relation to the typical “tea character” — a more steady, less sharp experience compared with some other caffeinated drinks. "
           }
         },
         "item_ptTdzn": {
           "type": "item",
           "settings": {
             "title": "Vitamins & Minerals",
-            "text": "抹茶は茶葉をまるごと摂取するため、ビタミンやミネラルなどの栄養素を日常的に取り入れやすいのも特徴です。"
+            "text": "Because matcha is made from finely milled whole tea leaves, you consume the leaf itself rather than an infusion only. As a result, matcha can contribute small amounts of naturally present vitamins and minerals as part of a varied diet.  できることだけを、正確に。\nNote: Nutrient composition can vary by harvest, region, and processing, and matcha is not intended to diagnose, treat, cure, or prevent disease."
           }
         }
       },
@@ -116,7 +121,7 @@
       "name": "Science",
       "settings": {
         "heading": "WHY MATCHA WORKS",
-        "subheading": "The science behind its natural power"
+        "subheading": "What matcha naturally contains "
       }
     },
     "jm_mission_hgXwGx": {
@@ -125,18 +130,27 @@
         "text_qKcey6": {
           "type": "text",
           "settings": {
-            "text": "私たちは、毎日口にするものだからこそ、誠実でありたいと考えています。",
+            "text": "we choose small-batch craft over scale, because matcha quality is defined by time, disciplined work, and freshness. we do not promise quick transformation — we offer a quieter, more deliberate ritual that supports balance, and allows beauty to emerge as a natural result.",
+            "style": "normal"
+          }
+        },
+        "text_RqTiKK": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "matcha was never created to make you beautiful.\nit was refined to keep the body balanced through time, pressure, and repetition.\nbeauty is simply what happens when balance is protected.",
             "style": "emphasis"
           }
         }
       },
       "block_order": [
-        "text_qKcey6"
+        "text_qKcey6",
+        "text_RqTiKK"
       ],
       "name": "mission",
       "settings": {
         "heading": "Our Mission",
-        "subheading": "What we believe in",
+        "subheading": " Our Mission return to balance — beauty follows",
         "image": "shopify://shop_images/IMG_2429.jpg"
       }
     },
