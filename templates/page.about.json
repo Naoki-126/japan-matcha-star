@@ -17,8 +17,8 @@
         "hero_height_pc": 80,
         "hero_height_sp": 60,
         "overlay_opacity": 40,
-        "ttl": "ABOUT US",
-        "txt": "日本の抹茶、その本質と美しさを世界へ。"
+        "ttl": "Built for Balance. Not Beauty.",
+        "txt": "Matcha was refined to protect the body’s rhythm—beauty is simply the result.\n美しさは結果である"
       }
     },
     "jm_made_rwhwCR": {
@@ -26,7 +26,7 @@
       "name": "産地紹介（Origin）",
       "settings": {
         "ttl": "ORIGIN OF MATCHA",
-        "subttl": "抹茶が生まれる場所",
+        "subttl": "受け継がれてきたもの",
         "text": "<p>matcha doesn’t grow just anywhere. it requires a rare balance — cool mountain air, clean water, morning fog, and land shaped by time rather than speed.<br/>japan offers more than ideal conditions. it offers continuity.<br/><br/>for generations, tea farmers have refined their craft through quiet repetition — shading the leaves to guide their character, waiting for the precise moment of harvest, and stone grinding slowly, with patience and restraint.<br/><br/>this is not mass production. it is cultivation.<br/>at matcha star japan, we preserve that origin — not as nostalgia, but as a living standard.</p><p><br/>every cup carries the character of its land, the precision of human hands, and the calm strength that defines japanese craftsmanship. <br/></p>",
         "image": "shopify://shop_images/ridge.jpg"
       }
@@ -70,24 +70,6 @@
         "subheading": "Tradition refined by time."
       }
     },
-    "jm_craft_dmBDr6": {
-      "type": "jm-craft",
-      "name": "Craft & Philosophy",
-      "settings": {
-        "heading": "CRAFT & PHILOSOPHY",
-        "subheading": "our craft exists to protect what history taught us — balance, restraint, and integrity.",
-        "image": "shopify://shop_images/craft.jpg",
-        "overlay_opacity": 20,
-        "point1_title": "Hand-picked leaves",
-        "point1_text": "We select and pick only the leaves suited for matcha, with careful grading at harvest. Philosophy: precision begins before processing — it begins in selection.",
-        "point2_title": "Shaded cultivation",
-        "point2_text": "Before harvest, the tea plants are shaded to reduce direct sunlight and guide the leaf’s balance. Philosophy: we protect the leaf first, so nothing needs to be forced later.",
-        "point3_title": "Stone-ground, slowly",
-        "point3_text": "Tencha is ground on stone mills at a controlled pace to preserve texture and character. Philosophy: speed is the easiest way to lose what matters.",
-        "point4_title": "Freshness controlled, released in small batches",
-        "point4_text": "We manage storage and release timing carefully, producing in smaller batches to protect freshness. Philosophy: quality is not only made — it is maintained."
-      }
-    },
     "jm_science_bWwfiW": {
       "type": "jm-science",
       "blocks": {
@@ -120,8 +102,26 @@
       ],
       "name": "Science",
       "settings": {
-        "heading": "WHY MATCHA WORKS",
-        "subheading": "What matcha naturally contains "
+        "heading": "Why matcha works",
+        "subheading": "Support, not stimulation. Rhythm, not rush. "
+      }
+    },
+    "jm_craft_dmBDr6": {
+      "type": "jm-craft",
+      "name": "Craft & Philosophy",
+      "settings": {
+        "heading": "CRAFT & PHILOSOPHY",
+        "subheading": "our craft exists to protect what history taught us — balance, restraint, and integrity.",
+        "image": "shopify://shop_images/craft.jpg",
+        "overlay_opacity": 20,
+        "point1_title": "Hand-picked leaves",
+        "point1_text": "We select and pick only the leaves suited for matcha, with careful grading at harvest. Philosophy: precision begins before processing — it begins in selection.",
+        "point2_title": "Shaded cultivation",
+        "point2_text": "Before harvest, the tea plants are shaded to reduce direct sunlight and guide the leaf’s balance. Philosophy: we protect the leaf first, so nothing needs to be forced later.",
+        "point3_title": "Stone-ground, slowly",
+        "point3_text": "Tencha is ground on stone mills at a controlled pace to preserve texture and character. Philosophy: speed is the easiest way to lose what matters.",
+        "point4_title": "Freshness controlled, released in small batches",
+        "point4_text": "We manage storage and release timing carefully, producing in smaller batches to protect freshness. Philosophy: quality is not only made — it is maintained."
       }
     },
     "jm_mission_hgXwGx": {
@@ -166,10 +166,10 @@
   "order": [
     "jm_sub_hero_4dCJUA",
     "jm_made_rwhwCR",
-    "jm_history_QzNzqF",
-    "jm_craft_dmBDr6",
     "jm_science_bWwfiW",
+    "jm_craft_dmBDr6",
     "jm_mission_hgXwGx",
+    "jm_history_QzNzqF",
     "main"
   ]
 }

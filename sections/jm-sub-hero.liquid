@@ -29,7 +29,7 @@
 
           {%- if section.settings.txt != blank -%}
             <p class="jm-subHero__text">
-              {{ section.settings.txt }}
+              {{ section.settings.txt | newline_to_br }}
             </p>
           {%- endif -%}
         </div>

@@ -348,6 +348,35 @@
   text-align: center;
 }
 
+.jm-science__headArea {
+  margin: 32px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.jm-science__intro {
+  padding: 10px 18px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  color: var(--color-base-text);
+  background: var(--bg-base);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 999px; /* pill */
+  white-space: nowrap;
+}
+
+/* subtle emphasis */
+.jm-science__intro::before {
+  content: "•";
+  margin-right: 6px;
+  opacity: 0.5;
+}
+
+
 .jm-science__inner {
   margin: 0 auto;
   width: 100%;
@@ -389,6 +418,16 @@
 @media screen and (max-width: 749px) {
   .jm-science {
     padding: 80px 0 60px;
+  }
+
+  .jm-science__headArea {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .jm-science__intro {
+    font-size: 13px;
+    padding: 8px 16px;
   }
 
   .jm-science__card {

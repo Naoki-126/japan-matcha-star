@@ -5,6 +5,7 @@
 =========================== */
 .jm-fv {
   height: 90vh;
+  color: var(--bg-soft);
 }
 
 .jm-fv__title{

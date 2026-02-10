@@ -15,6 +15,25 @@
         {% endif %}
       </div>
 
+      {%- assign b1 = section.settings.intro_bullet_1 | strip -%}
+      {%- assign b2 = section.settings.intro_bullet_2 | strip -%}
+      {%- assign b3 = section.settings.intro_bullet_3 | strip -%}
+
+      {%- if b1 != blank or b2 != blank or b3 != blank -%}
+        <ul class="jm-science__headArea">
+          {%- if b1 != blank -%}
+            <li class="jm-science__intro">{{ b1 }}</li>
+          {%- endif -%}
+          {%- if b2 != blank -%}
+            <li class="jm-science__intro">{{ b2 }}</li>
+          {%- endif -%}
+          {%- if b3 != blank -%}
+            <li class="jm-science__intro">{{ b3 }}</li>
+          {%- endif -%}
+        </ul>
+      {%- endif -%}
+
+
       {% if section.blocks.size > 0 %}
         <div class="jm-science__inner">
           <ul class="jm-science__cardArea">
@@ -54,6 +73,24 @@
       "id": "subheading",
       "label": "Sub Title",
       "default": "The science behind its natural power"
+    },
+    {
+      "type": "text",
+      "id": "intro_bullet_1",
+      "label": "Intro bullet 1",
+      "default": "calm focus"
+    },
+    {
+      "type": "text",
+      "id": "intro_bullet_2",
+      "label": "Intro bullet 2",
+      "default": "clean energy"
+    },
+    {
+      "type": "text",
+      "id": "intro_bullet_3",
+      "label": "Intro bullet 3",
+      "default": "daily balance"
     }
   ],
   "blocks": [
