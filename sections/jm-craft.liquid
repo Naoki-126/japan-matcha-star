@@ -8,6 +8,11 @@
             {{ section.settings.heading }}
           </h2>
         {% endif %}
+        {% if section.settings.sub_jp != blank %}
+          <p class="jm-section__subJp">
+            {{ section.settings.sub_jp }}
+          </p>
+        {% endif %}
         {% if section.settings.subheading != blank %}
           <p class="jm-section__subtitle">
             {{ section.settings.subheading }}
@@ -62,6 +67,12 @@
       "id": "heading",
       "label": "Section Title",
       "default": "CRAFT & PHILOSOPHY"
+    },
+    {
+      "type": "text",
+      "id": "sub_jp",
+      "label": "JP Title",
+      "default": "美しさは結果である"
     },
     {
       "type": "text",

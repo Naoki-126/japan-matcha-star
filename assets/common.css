@@ -152,6 +152,11 @@ body {
   color: var(--color-heading);
 }
 
+.jm-section__subJp {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
 .jm-section__subtitle {
   font-size: 18px;
   color: #555;

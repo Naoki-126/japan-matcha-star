@@ -221,6 +221,12 @@
 
 .jm-history__itemTitle {
   font-size: 20px;
+  text-align: center;
+}
+
+.jm-history__jp {
+  font-size: 14px;
+  text-align: center;
 }
 
 .jm-history__text {
@@ -353,35 +359,30 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   list-style: none;
 }
 
 .jm-science__intro {
   padding: 10px 18px;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.04em;
   line-height: 1.4;
   color: var(--color-base-text);
-  background: var(--bg-base);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 999px; /* pill */
   white-space: nowrap;
 }
 
-/* subtle emphasis */
 .jm-science__intro::before {
   content: "•";
   margin-right: 6px;
   opacity: 0.5;
 }
 
-
 .jm-science__inner {
   margin: 0 auto;
   width: 100%;
   max-width: var(--width-base);
-
 }
 
 .jm-science__cardArea {
@@ -409,10 +410,28 @@
   letter-spacing: 0.02em;
 }
 
+.jm-science__jp {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
 .jm-science__text {
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
   line-height: 1.8;
+}
+
+.jm-science__note {
+  margin: 28px auto 0;
+  width: 100%;
+  max-width: 720px;
+  padding: 16px 18px;
+}
+
+.jm-science__noteText {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(0,0,0,0.72);
 }
 
 @media screen and (max-width: 749px) {
@@ -421,12 +440,13 @@
   }
 
   .jm-science__headArea {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 12px;
+
   }
 
   .jm-science__intro {
-    font-size: 13px;
+    font-size: 16px;
     padding: 8px 16px;
   }
 

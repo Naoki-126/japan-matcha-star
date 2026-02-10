@@ -32,6 +32,9 @@
                   {% if block.settings.item_title != blank %}
                     <h3 class="jm-history__itemTitle">{{ block.settings.item_title }}</h3>
                   {% endif %}
+                  {% if block.settings.title_jp != blank %}
+                    <p class="jm-history__jp">{{ block.settings.title_jp }}</p>
+                  {% endif %}
                   {% if block.settings.text != blank %}
                     <p class="jm-history__text">{{ block.settings.text | newline_to_br }}</p>
                   {% endif %}
@@ -83,6 +86,12 @@
           "id": "item_title",
           "label": "Title",
           "default": "Year / Event Name"
+        },
+        {
+          "type": "text",
+          "id": "title_jp",
+          "label": "Title(JP)",
+          "default": "断絶しなかった文化"
         },
         {
           "type": "textarea",

@@ -31,79 +31,56 @@
         "image": "shopify://shop_images/ridge.jpg"
       }
     },
-    "jm_history_QzNzqF": {
-      "type": "jm-history",
-      "blocks": {
-        "item_rt7wT3": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/history.jpg",
-            "item_title": "Song Dynasty (960–1279) → Japan",
-            "text": "whisked powdered tea began in song china — and later disappeared there. in japan, it didn’t. the method was preserved, refined, and repeated, until japan became the only place where this tradition survived without interruption."
-          }
-        },
-        "item_FFTNKh": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/history-2.png",
-            "item_title": "Late 12th Century · Kamakura Period",
-            "text": "matcha arrived as a tool, not a treat. in the late 12th century,  brought tea seeds and preparation methods from song china. in kissa yōjōki, tea was described in terms of alertness, focus, and internal balance. early drinkers were monks and warriors — matcha was never meant to entertain."
-          }
-        },
-        "item_6FALPW": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/history-3.png",
-            "item_title": "15th–16th Century · Japan",
-            "text": "matcha was never poured — it is whisked in the bowl. that is why the bowl became the centre: a space for presence. when imported bowls became status symbols, sen no rikyu reversed the value — choosing quiet, imperfect bowls that carry the trace of the hand. earth softens heat and absorbs sound. glass reflects. metal asserts. only earth disappears."
-          }
-        }
-      },
-      "block_order": [
-        "item_rt7wT3",
-        "item_FFTNKh",
-        "item_6FALPW"
-      ],
-      "name": "Matcha History（抹茶の歴史）",
-      "settings": {
-        "heading": "THE HISTORY OF MATCHA",
-        "subheading": "Tradition refined by time."
-      }
-    },
     "jm_science_bWwfiW": {
       "type": "jm-science",
       "blocks": {
+        "item_UteGYM": {
+          "type": "item",
+          "settings": {
+            "title": "Vitamins & Minerals",
+            "title_jp": "ビタミン·ミネラル",
+            "text": "Nutrients that support everyday cellular function."
+          }
+        },
         "item_AWGEfq": {
           "type": "item",
           "settings": {
-            "title": "Polyphenols (Including Catechins) ",
-            "text": "Matcha contains tea polyphenols, including catechins. Polyphenols are naturally occurring plant compounds found in many foods and beverages, and they are commonly discussed in nutrition science for their antioxidant properties. "
+            "title": "Polyphenols, Including Catechins",
+            "title_jp": "カテキン等のポリフェノール",
+            "text": "Naturally occurring antioxidants found in tea leaves."
           }
         },
         "item_wqWzde": {
           "type": "item",
           "settings": {
             "title": "L-Theanine",
-            "text": "Matcha contains L-theanine, a naturally occurring amino acid found in tea. It is often described in research and consumer literature in relation to the typical “tea character” — a more steady, less sharp experience compared with some other caffeinated drinks. "
+            "title_jp": "L-テアニン",
+            "text": "An amino acid known for supporting calm alertness."
           }
         },
         "item_ptTdzn": {
           "type": "item",
           "settings": {
-            "title": "Vitamins & Minerals",
-            "text": "Because matcha is made from finely milled whole tea leaves, you consume the leaf itself rather than an infusion only. As a result, matcha can contribute small amounts of naturally present vitamins and minerals as part of a varied diet.  できることだけを、正確に。\nNote: Nutrient composition can vary by harvest, region, and processing, and matcha is not intended to diagnose, treat, cure, or prevent disease."
+            "title": "Caffeine (Naturally Present)",
+            "title_jp": "天然のカフェイン",
+            "text": "A measured lift—often perceived as smoother in matcha."
           }
         }
       },
       "block_order": [
+        "item_UteGYM",
         "item_AWGEfq",
         "item_wqWzde",
         "item_ptTdzn"
       ],
       "name": "Science",
       "settings": {
-        "heading": "Why matcha works",
-        "subheading": "Support, not stimulation. Rhythm, not rush. "
+        "heading": "WHY MATCHA WORKS",
+        "subheading": "Support, not stimulation. Rhythm, not rush. ",
+        "intro_bullet_1": "calm focus",
+        "intro_bullet_2": "clean energy",
+        "intro_bullet_3": "daily balance",
+        "note_text": "Note: Nutrient composition can vary by harvest, region, and processing, and matcha is not intended to diagnose, treat, cure, or prevent disease."
       }
     },
     "jm_craft_dmBDr6": {
@@ -111,7 +88,8 @@
       "name": "Craft & Philosophy",
       "settings": {
         "heading": "CRAFT & PHILOSOPHY",
-        "subheading": "our craft exists to protect what history taught us — balance, restraint, and integrity.",
+        "sub_jp": "美しさは結果である",
+        "subheading": "our craft exists to protect what history told us — balance, restraint, and integrity.",
         "image": "shopify://shop_images/craft.jpg",
         "overlay_opacity": 20,
         "point1_title": "Hand-picked leaves",
@@ -149,9 +127,51 @@
       ],
       "name": "mission",
       "settings": {
-        "heading": "Our Mission",
-        "subheading": " Our Mission return to balance — beauty follows",
+        "heading": "OUR MISSION",
+        "subheading": "return to balance — beauty follows",
         "image": "shopify://shop_images/IMG_2429.jpg"
+      }
+    },
+    "jm_history_QzNzqF": {
+      "type": "jm-history",
+      "blocks": {
+        "item_rt7wT3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/history.jpg",
+            "item_title": "Song Dynasty (960–1279) → Japan",
+            "title_jp": "断絶しなかった文化",
+            "text": "whisked powdered tea began in song china — and later disappeared there. in japan, it didn’t. the method was preserved, refined, and repeated, until japan became the only place where this tradition survived without interruption."
+          }
+        },
+        "item_FFTNKh": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/history-2.png",
+            "item_title": "Late 12th Century · Kamakura Period",
+            "title_jp": "養生",
+            "text": "matcha arrived as a tool, not a treat. in the late 12th century,  brought tea seeds and preparation methods from song china. in kissa yōjōki, tea was described in terms of alertness, focus, and internal balance. early drinkers were monks and warriors — matcha was never meant to entertain."
+          }
+        },
+        "item_6FALPW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/history-3.png",
+            "item_title": "15th–16th Century · Japan",
+            "title_jp": "向き合うための器",
+            "text": "matcha was never poured — it is whisked in the bowl. that is why the bowl became the centre: a space for presence. when imported bowls became status symbols, sen no rikyu reversed the value — choosing quiet, imperfect bowls that carry the trace of the hand. earth softens heat and absorbs sound. glass reflects. metal asserts. only earth disappears."
+          }
+        }
+      },
+      "block_order": [
+        "item_rt7wT3",
+        "item_FFTNKh",
+        "item_6FALPW"
+      ],
+      "name": "Matcha History（抹茶の歴史）",
+      "settings": {
+        "heading": "THE HISTORY OF MATCHA",
+        "subheading": "Tradition refined by time."
       }
     },
     "main": {

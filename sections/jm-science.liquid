@@ -33,7 +33,6 @@
         </ul>
       {%- endif -%}
 
-
       {% if section.blocks.size > 0 %}
         <div class="jm-science__inner">
           <ul class="jm-science__cardArea">
@@ -42,12 +41,22 @@
                 {% if block.settings.title != blank %}
                   <h3 class="jm-science__ttl">{{ block.settings.title }}</h3>
                 {% endif %}
+                {% if block.settings.title_jp != blank %}
+                  <p class="jm-science__jp">{{ block.settings.title_jp }}</p>
+                {% endif %}
                 {% if block.settings.text != blank %}
                   <p class="jm-science__text">{{ block.settings.text | newline_to_br }}</p>
                 {% endif %}
               </li>
             {% endfor %}
           </ul>
+
+          {%- if section.settings.note_text != blank -%}
+            <div class="jm-science__note" role="note">
+              <p class="jm-science__noteText">{{ section.settings.note_text | newline_to_br }}</p>
+            </div>
+          {%- endif -%}
+
         </div>
       {% endif %}
 
@@ -91,7 +100,13 @@
       "id": "intro_bullet_3",
       "label": "Intro bullet 3",
       "default": "daily balance"
-    }
+    },
+    {
+    "type": "textarea",
+    "id": "note_text",
+    "label": "Note (C)",
+    "default": "Note: Nutrient composition can vary by harvest, region, and processing, and matcha is not intended to diagnose, treat, cure, or prevent disease."
+  }
   ],
   "blocks": [
     {
@@ -103,6 +118,12 @@
           "id": "title",
           "label": "Title",
           "default": "Antioxidant Power"
+        },
+        {
+          "type": "text",
+          "id": "title_jp",
+          "label": "Title (JP)",
+          "default": "カテキン等のポリフェノール"
         },
         {
           "type": "textarea",
