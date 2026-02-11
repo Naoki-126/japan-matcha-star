@@ -33,6 +33,12 @@
                 </h3>
               {% endif %}
 
+              {% if block.settings.text_jp != blank %}
+                <h3 class="jm-brand__textJp">
+                  {{ block.settings.text_jp }}
+                </h3>
+              {% endif %}
+
               {% if block.settings.story != blank %}
                 <div class="jm-brand__story rte">
                   {{ block.settings.story | newline_to_br }}
@@ -44,6 +50,48 @@
 
         </div>
       {% endfor %}
+
+      {%- if section.settings.inv_heading != blank
+        or section.settings.inv_tag_ja != blank
+        or section.settings.inv_text != blank
+        or section.settings.cta_1_label != blank
+        or section.settings.cta_2_label != blank
+      -%}
+        <div class="jm-brand__invitation">
+          {% if section.settings.inv_heading != blank %}
+            <h3 class="jm-brand__invTitle">{{ section.settings.inv_heading }}</h3>
+          {% endif %}
+
+          {% if section.settings.inv_tag_ja != blank %}
+            <p class="jm-brand__invTag">{{ section.settings.inv_tag_ja }}</p>
+          {% endif %}
+
+          {% if section.settings.inv_text != blank %}
+            <div class="jm-brand__invText rte">
+              {{ section.settings.inv_text }}
+            </div>
+          {% endif %}
+
+          {% if section.settings.cta_1_label != blank or section.settings.cta_2_label != blank %}
+            <div class="jm-brand__cta">
+              {% if section.settings.cta_1_label != blank %}
+                <a class="jm-brand__ctaBtn" href="{{ section.settings.cta_1_url | default: '#' }}">
+                  {{ section.settings.cta_1_label }}
+                </a>
+              {% endif %}
+
+              {% if section.settings.cta_2_label != blank %}
+                <a class="jm-brand__ctaBtn" href="{{ section.settings.cta_2_url | default: '#' }}">
+                  {{ section.settings.cta_2_label }}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {%- endif -%}
+
+
+
 
     </div>
   </div>
@@ -67,7 +115,51 @@
       "id": "subheading",
       "label": "Subheading",
       "default": "Our Story"
+    },
+    {
+      "type": "header",
+      "content": "Invitation (Text + CTA)"
+    },
+    {
+      "type": "text",
+      "id": "inv_heading",
+      "label": "Invitation Heading (EN)",
+      "default": "Invitation"
+    },
+    {
+      "type": "text",
+      "id": "inv_tag_ja",
+      "label": "Invitation Tag (JA, 1 line)",
+    },
+    {
+      "type": "richtext",
+      "id": "inv_text",
+      "label": "Invitation Text (EN)",
+      "default": "<p>If you’re looking for a beauty trick, we may not be the right brand.</p><p>But if you want something real—rooted in Japan-grown matcha, refined with care, and built for daily rhythm—welcome.</p>"
+    },
+    {
+      "type": "text",
+      "id": "cta_1_label",
+      "label": "CTA 1 Label",
+      "default": "Explore Our Matcha →"
+    },
+    {
+      "type": "url",
+      "id": "cta_1_url",
+      "label": "CTA 1 Link",
+    },
+    {
+      "type": "text",
+      "id": "cta_2_label",
+      "label": "CTA 2 Label",
+      "default": "Learn About Our Craft →"
+    },
+    {
+      "type": "url",
+      "id": "cta_2_url",
+      "label": "CTA 2 Link"
     }
+
   ],
   "blocks": [
     {
@@ -83,6 +175,11 @@
           "type": "text",
           "id": "text_heading",
           "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "text_jp",
+          "label": "Heading(JP)"
         },
         {
           "type": "richtext",

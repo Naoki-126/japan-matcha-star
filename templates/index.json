@@ -174,21 +174,24 @@
           "type": "benefit",
           "settings": {
             "title": "Antioxidant Power",
-            "text": "<p>抹茶に豊富に含まれる抗酸化成分が、年齢とともに気になる内側のコンディションに働きかけ、健やかで美しい毎日をサポートします</p>"
+            "sub-jp": "抗酸化",
+            "text": "<p>Rich in naturally occurring antioxidants, matcha supports a clean, vibrant daily routine.</p>"
           }
         },
         "benefit_NUJPXW": {
           "type": "benefit",
           "settings": {
             "title": "Clear & Calm",
-            "text": "<p>日本の抹茶文化が育んできた一杯は、忙しい日常の中で心と身体を静かに整え、穏やかでクリアな時間をもたらします。</p>"
+            "sub-jp": "静けさと集中",
+            "text": "<p>A quiet moment that clears the mind and resets the day.</p>"
           }
         },
         "benefit_rF4VTT": {
           "type": "benefit",
           "settings": {
             "title": "Daily Wellness",
-            "text": "<p>毎日の生活に無理なく取り入れられる抹茶習慣。継続することで、日々のコンディション管理と心地よいウェルネスを支えます。</p>"
+            "sub-jp": "毎日の抹茶習慣",
+            "text": "<p>An easy daily ritual—designed to fit naturally into modern life.</p>"
           }
         }
       },
@@ -200,6 +203,7 @@
       "name": "Benefits",
       "settings": {
         "heading": "Beauty Begins from Within",
+        "sub_jp": "美しさは、内側のバランスから。",
         "subheading": "A balance of tradition, purity, and modern excellence.",
         "image": "shopify://shop_images/morning-sun.jpg",
         "sub_title": "Nature-powered beauty from Japan"
@@ -212,19 +216,87 @@
           "type": "brand_story",
           "settings": {
             "image": "shopify://shop_images/IMG_2423.jpg",
-            "text_heading": "Crafted with Respect for Nature and Tradition",
-            "story": "<p>日本の抹茶は、単なる飲み物ではなく、土地の自然や職人の技、そして長い時間の積み重ねによって育まれてきた文化そのものです。私たちは、その背景にある価値を正しく理解し、表面的な流行やイメージだけで消費される存在にはしたくないと考えています。</p><p>原料となる茶葉は、産地や栽培環境によって香りや旨味が大きく異なります。私たちは品質の高さだけでなく、「なぜこの抹茶なのか」という理由を大切にし、その土地の風土や製法に敬意を払いながら、本来の魅力が最大限に引き出されるかを基準に選定しています。</p><p>また、伝統を守ることだけが正解だとは考えていません。抹茶が現代のライフスタイルに溶け込むためには、科学的な視点や品質管理も欠かせません。成分分析や製造工程の検証を重ね、安心して日常に取り入れられる品質を追求しています。</p><p>忙しい毎日の中で、一杯の抹茶を点てる時間は、心と身体を静かに整えるひとときになります。特別な知識や形式がなくても、自分のペースで味わえること。それこそが、現代における新しい日本のラグジュアリーだと私たちは考えています。</p><p>伝統と革新、そのどちらにも偏ることなく、日本の抹茶が持つ本質的な価値を、世界へ丁寧に届けていく。それが、このブランドに込めた私たちの想いです。<br/><br/>また、伝統を守ることだけが正解だとは考えていません。抹茶が現代のライフスタイルに自然に溶け込むためには、科学的な視点や品質管理も欠かせない要素です。成分分析や製造工程の検証を重ねることで、安心して日常に取り入れられる品質を追求しています。</p><p>忙しい毎日の中で、一杯の抹茶を点てる時間は、心と身体を静かに整えるひとときになります。特別な知識や形式がなくても、自分のペースで味わえること。それこそが、現代における新しい日本のラグジュアリーだと私たちは考えています。<br/><br/>伝統と革新、そのどちらにも偏ることなく、日本の抹茶が持つ本質的な価値を、世界へ丁寧に届けていく。それが、このブランドに込めた私たちの想いです。</p><p></p><p></p>",
+            "text_heading": "Not a trend. Not a beauty trick. Japan-grown matcha—made for balance.",
+            "text_jp": "流行ではなく、本質を。",
+            "story": "<p><strong>No shortcuts. Stone-ground in the traditional way—refined for consistency you can trust.<br/>We source authentic, Japan-grown matcha from Uji, Kyoto, and Shizuoka chosen for aroma, umami, and a clean finish.<br/>Then we protect it with modern quality standards—so every cup feels calm, consistent, and trustworthy.</strong></p>",
+            "reverse": false
+          }
+        },
+        "brand_story_HnDb6F": {
+          "type": "brand_story",
+          "settings": {
+            "text_heading": "Beyond Trends, Back to Balance",
+            "text_jp": "流行ではなく、本質を。",
+            "story": "<p><strong>Matcha is often framed as a beauty shortcut. We don’t see it that way.For us, matcha is a daily practice—quiet, consistent, and grounded in the body’s rhythm.Beauty isn’t the goal. It’s what happens when balance is protected.</strong></p>",
+            "reverse": false
+          }
+        },
+        "brand_story_DAfBnd": {
+          "type": "brand_story",
+          "settings": {
+            "text_heading": "Why Japan-grown matcha from Uji, Kyoto",
+            "text_jp": "受け継がれてきたものを、毎日の一杯へ。",
+            "story": "<p><strong>Our matcha begins in Uji, Kyoto—one of Japan’s most respected tea regions, shaped by generations of craftsmanship.But origin isn’t a label for us. It’s a standard.We choose Uji because the leaf, the climate, and the expertise behind it create a taste that feels clean, deep, and composed—aroma, umami, and a finish that stays elegant.We use stone-ground matcha—slowly milled to preserve aroma, texture, and a clean, refined finish.</strong></p>",
+            "reverse": false
+          }
+        },
+        "brand_story_3rqwim": {
+          "type": "brand_story",
+          "settings": {
+            "text_heading": "Selection With a Reason",
+            "text_jp": "「なぜこの抹茶なのか」を大切に。",
+            "story": "<p><strong>Tea leaves change with harvest, region, and growing conditions. That is exactly why we select with intention.<br/>We look for matcha that expresses its origin honestly—<br/>not overly bitter, not artificially “loud,” but quietly structured and naturally rich.</strong></p><p><strong>We select for:• A clean, layered taste• Balanced umami and gentle bitterness• A calm aroma and smooth finish• Integrity of origin and consistent quality</strong></p>",
+            "reverse": false
+          }
+        },
+        "brand_story_tcbqBH": {
+          "type": "brand_story",
+          "settings": {
+            "text_heading": "Craft Meets Modern Standards",
+            "text_jp": "伝統は守る。品質は守り抜く。",
+            "story": "<p><strong>We respect tradition—but we don’t rely on tradition alone.<br/>To fit modern life, matcha needs reliability: the kind of quality you can trust every day.<br/>That’s why we treat quality as a process, not a promise.<br/>We refine, verify, and protect what the leaf already carries—so every cup feels consistent, calm, and safe to return to.</strong></p>",
+            "reverse": false
+          }
+        },
+        "brand_story_btqMhD": {
+          "type": "brand_story",
+          "settings": {
+            "text_heading": "The Ritual, Reimagined",
+            "text_jp": "向き合うための器。",
+            "story": "<p><strong>In a fast day, whisking matcha can become a small reset.No perfect form required. No special knowledge needed.Just a few minutes where attention returns to your hands, your breath, and your pace.A quiet ritual isn’t luxury because it’s rare.It’s luxury because it’s available—every day.</strong></p>",
+            "reverse": false
+          }
+        },
+        "brand_story_HPytqC": {
+          "type": "brand_story",
+          "settings": {
+            "text_heading": "Our Promise",
+            "text_jp": "できることだけを、正確に。",
+            "story": "<p><strong>We won’t sell matcha as hype, or as a fantasy.We choose the real leaf, protect it with standards, and offer it as a daily practice of balance—with respect for origin, integrity in craft, and honesty in what we claim.</strong></p>",
             "reverse": false
           }
         }
       },
       "block_order": [
-        "brand_story_EtVJwc"
+        "brand_story_EtVJwc",
+        "brand_story_HnDb6F",
+        "brand_story_DAfBnd",
+        "brand_story_3rqwim",
+        "brand_story_tcbqBH",
+        "brand_story_btqMhD",
+        "brand_story_HPytqC"
       ],
       "name": "Brand-story",
       "settings": {
         "heading": "BRAND STORY",
-        "subheading": "Our Story"
+        "subheading": "Our Story",
+        "inv_heading": "Invitation",
+        "inv_tag_ja": "",
+        "inv_text": "<p>If you’re looking for a beauty trick, we may not be the right brand.</p><p>But if you want something real—rooted in Japan-grown matcha, refined with care, and built for daily rhythm—welcome.</p>",
+        "cta_1_label": "Explore Our Matcha →",
+        "cta_1_url": "#jm-diagnosis",
+        "cta_2_label": "Learn About Our Craft →",
+        "cta_2_url": "shopify://pages/about"
       }
     },
     "jm_spacer_sc_J8eb9c": {

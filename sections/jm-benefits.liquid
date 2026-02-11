@@ -12,6 +12,12 @@
             {{ section.settings.subheading }}
           </p>
         {% endif %}
+
+          {% if section.settings.sub_jp != blank %}
+          <p class="jm-section__subJp">
+            {{ section.settings.sub_jp }}
+          </p>
+        {% endif %}
       </div>
 
       {% if section.settings.image != blank %}
@@ -29,9 +35,9 @@
           <div class="jm-benefits__column">
             <div class="jm-benefits__columnInner">
               <h3 class="jm-benefits__columnTitle">{{ block.settings.title }}</h3>
-              <div class="jm-benefits__columnText rte">
-                {{ block.settings.text }}
-              </div>
+              <h4 class="jm-benefits__columnTitle-jp">{{ block.settings.sub-jp }}</h4>
+
+              <div class="jm-benefits__columnText rte">{{ block.settings.text }}</div>
             </div>
           </div>
         {% endfor %}
@@ -52,6 +58,12 @@
       "id": "heading",
       "label": "Section Title",
       "default": "Beauty Begins from Within"
+    },
+      {
+      "type": "text",
+      "id": "sub_jp",
+      "label": "JP Title",
+      "default": "美しさは、内側のバランスから。"
     },
     {
       "type": "text",
@@ -81,6 +93,12 @@
           "id": "title",
           "label": "Title",
           "default": "Antioxidants"
+        },
+        {
+          "type": "text",
+          "id": "sub-jp",
+          "label": "Title(JP)",
+          "default": "抗酸化"
         },
         {
           "type": "richtext",
