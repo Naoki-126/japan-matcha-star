@@ -18,6 +18,12 @@
             {{ section.settings.subheading }}
           </p>
         {% endif %}
+        {% if section.settings.sub_jp != blank %}
+          <p class="jm-section__subJp">
+            {{ section.settings.sub_jp }}
+          </p>
+        {% endif %}
+
       </div>
 
       {% if section.settings.text != blank %}
@@ -66,6 +72,11 @@
       "id": "subheading",
       "label": "Subheading",
       "default": "A balance of tradition, purity, and modern excellence."
+    },
+    {
+      "type": "text",
+      "id": "sub_jp",
+      "label": "JP Title",
     },
     {
       "type": "richtext",

@@ -93,8 +93,9 @@
       ],
       "name": "Matcha Concepts",
       "settings": {
-        "heading": "肌に、美しさを。 心に、静けさを。",
-        "subheading": "Beauty for the skin. Calm for the mind.",
+        "heading": "Beauty for the skin. Peace for the mind",
+        "subheading": "肌に、美しさを。 心に、静けさを。",
+        "sub_jp": "",
         "text": "<p>Redefining matcha as inner beauty</p>"
       }
     },
@@ -103,7 +104,7 @@
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "MATCHA LINEUP",
+        "title": "MATCHA Lineup",
         "heading_size": "h0",
         "description": "<p>Pure. Authentic. Japan-made.<br/></p>",
         "show_description": false,
@@ -203,8 +204,8 @@
       "name": "Benefits",
       "settings": {
         "heading": "Beauty Begins from Within",
-        "sub_jp": "美しさは、内側のバランスから。",
         "subheading": "A balance of tradition, purity, and modern excellence.",
+        "sub_jp": "美しさは、内側のバランスから。",
         "image": "shopify://shop_images/morning-sun.jpg",
         "sub_title": "Nature-powered beauty from Japan"
       }
@@ -288,8 +289,9 @@
       ],
       "name": "Brand-story",
       "settings": {
-        "heading": "BRAND STORY",
+        "heading": "Brand Story",
         "subheading": "Our Story",
+        "sub_jp": "",
         "inv_heading": "Invitation",
         "inv_tag_ja": "",
         "inv_text": "<p>If you’re looking for a beauty trick, we may not be the right brand.</p><p>But if you want something real—rooted in Japan-grown matcha, refined with care, and built for daily rhythm—welcome.</p>",

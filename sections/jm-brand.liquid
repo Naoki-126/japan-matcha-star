@@ -13,6 +13,11 @@
             {{ section.settings.subheading }}
           </p>
         {% endif %}
+        {% if section.settings.sub_jp != blank %}
+          <p class="jm-section__subJp">
+            {{ section.settings.sub_jp }}
+          </p>
+        {% endif %}
       </div>
 
       {% for block in section.blocks %}
@@ -115,6 +120,11 @@
       "id": "subheading",
       "label": "Subheading",
       "default": "Our Story"
+    },
+    {
+      "type": "text",
+      "id": "sub_jp",
+      "label": "JP Title",
     },
     {
       "type": "header",

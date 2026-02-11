@@ -25,7 +25,7 @@
       "type": "jm-made",
       "name": "産地紹介（Origin）",
       "settings": {
-        "ttl": "ORIGIN OF MATCHA",
+        "ttl": "Origin of MATCHA",
         "subttl": "受け継がれてきたもの",
         "text": "<p>matcha doesn’t grow just anywhere. it requires a rare balance — cool mountain air, clean water, morning fog, and land shaped by time rather than speed.<br/>japan offers more than ideal conditions. it offers continuity.<br/><br/>for generations, tea farmers have refined their craft through quiet repetition — shading the leaves to guide their character, waiting for the precise moment of harvest, and stone grinding slowly, with patience and restraint.<br/><br/>this is not mass production. it is cultivation.<br/>at matcha star japan, we preserve that origin — not as nostalgia, but as a living standard.</p><p><br/>every cup carries the character of its land, the precision of human hands, and the calm strength that defines japanese craftsmanship. <br/></p>",
         "image": "shopify://shop_images/ridge.jpg"
@@ -75,7 +75,7 @@
       ],
       "name": "Science",
       "settings": {
-        "heading": "WHY MATCHA WORKS",
+        "heading": "Why MATCHA Works",
         "subheading": "Support, not stimulation. Rhythm, not rush. ",
         "intro_bullet_1": "calm focus",
         "intro_bullet_2": "clean energy",
@@ -87,7 +87,7 @@
       "type": "jm-craft",
       "name": "Craft & Philosophy",
       "settings": {
-        "heading": "CRAFT & PHILOSOPHY",
+        "heading": "Craft & Philosophy",
         "sub_jp": "美しさは結果である",
         "subheading": "our craft exists to protect what history told us — balance, restraint, and integrity.",
         "image": "shopify://shop_images/craft.jpg",
@@ -127,7 +127,7 @@
       ],
       "name": "mission",
       "settings": {
-        "heading": "OUR MISSION",
+        "heading": "Our Mission",
         "subheading": "return to balance — beauty follows",
         "image": "shopify://shop_images/IMG_2429.jpg"
       }
@@ -170,7 +170,7 @@
       ],
       "name": "Matcha History（抹茶の歴史）",
       "settings": {
-        "heading": "THE HISTORY OF MATCHA",
+        "heading": "The History of MATCHA",
         "subheading": "Tradition refined by time."
       }
     },
