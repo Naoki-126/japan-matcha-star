@@ -31,24 +31,48 @@
 
           {% if block.settings.text_heading != blank or block.settings.story != blank %}
             <div class="jm-brand__text">
+              <div class="jm-brand__block">
+                {% if block.settings.text_heading != blank %}
+                  <h3 class="jm-brand__textTitle">
+                    {{ block.settings.text_heading }}
+                  </h3>
+                {% endif %}
 
-              {% if block.settings.text_heading != blank %}
-                <h3 class="jm-brand__textTitle">
-                  {{ block.settings.text_heading }}
-                </h3>
-              {% endif %}
+                {% if block.settings.text_jp != blank %}
+                  <h3 class="jm-brand__textJp">
+                    {{ block.settings.text_jp }}
+                  </h3>
+                {% endif %}
 
-              {% if block.settings.text_jp != blank %}
-                <h3 class="jm-brand__textJp">
-                  {{ block.settings.text_jp }}
-                </h3>
-              {% endif %}
+                {% if block.settings.story != blank %}
+                  <div class="jm-brand__story rte">
+                    {{ block.settings.story | newline_to_br }}
+                  </div>
+                {% endif %}
 
-              {% if block.settings.story != blank %}
-                <div class="jm-brand__story rte">
-                  {{ block.settings.story | newline_to_br }}
-                </div>
-              {% endif %}
+              </div>
+              
+              <div class="jm-brand__block">
+                {% if block.settings.text_heading-2 != blank %}
+                  <h3 class="jm-brand__textTitle">
+                    {{ block.settings.text_heading-2 }}
+                  </h3>
+                {% endif %}
+
+                {% if block.settings.text_jp-2 != blank %}
+                  <h3 class="jm-brand__textJp">
+                    {{ block.settings.text_jp-2 }}
+                  </h3>
+                {% endif %}
+
+                {% if block.settings.story-2 != blank %}
+                  <div class="jm-brand__story rte">
+                    {{ block.settings.story-2 | newline_to_br }}
+                  </div>
+                {% endif %}
+              </div>
+
+
 
             </div>
           {% endif %}
@@ -194,6 +218,21 @@
         {
           "type": "richtext",
           "id": "story",
+          "label": "Story Text"
+        },
+        {
+          "type": "text",
+          "id": "text_heading-2",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "text_jp-2",
+          "label": "Heading(JP)"
+        },
+        {
+          "type": "richtext",
+          "id": "story-2",
           "label": "Story Text"
         },
         {

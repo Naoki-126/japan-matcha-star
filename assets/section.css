@@ -195,12 +195,15 @@
   margin: 48px auto 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 48px;
 }
 
 .jm-brand__inner.is-reverse {
   flex-direction: row-reverse;
+}
+
+.jm-brand__inner + .jm-brand__inner {
+  margin-top: 100px;
 }
 
 .jm-brand__image {
@@ -218,6 +221,10 @@
 
 .jm-brand__text {
   width: 50%;
+}
+
+.jm-brand__block + .jm-brand__block {
+  padding-top: 60px;
 }
 
 .jm-brand__textTitle {
@@ -302,6 +309,17 @@
     flex-direction: column;
     gap: 24px;
   }
+
+  .jm-brand__inner.is-reverse {
+    margin-top: 36px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .jm-brand__inner + .jm-brand__inner {
+    margin-top: 60px;
+  }
+
   .jm-brand__image {
     width: 100%;
     aspect-ratio: 3 / 4;
@@ -501,7 +519,7 @@
 }
 
 #jm-diagnosis {
-  scroll-margin-top: 90px; 
+  scroll-margin-top: 90px;
 }
 
 /* responsive
