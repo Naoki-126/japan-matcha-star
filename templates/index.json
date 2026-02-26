@@ -159,13 +159,13 @@
         "result_cta": "View product",
         "organic_title": "Organic Matcha",
         "organic_text": "A clean and dependable organic matcha, perfect for daily recipes and mindful choices.",
-        "organic_link": "",
+        "organic_link": "shopify://products/yuuki_ceremonial",
         "premium_title": "Premium Ceremonial Matcha",
         "premium_text": "A refined ceremonial matcha with clear aroma and deep umami, best enjoyed straight.",
-        "premium_link": "",
+        "premium_link": "shopify://products/platinum_class_ceremonial",
         "ceremonial_title": "Ceremonial Matcha",
         "ceremonial_text": "A balanced ceremonial matcha that performs beautifully both straight and in recipes.",
-        "ceremonial_link": ""
+        "ceremonial_link": "shopify://products/ceremonial"
       }
     },
     "jm_benefits_sc_Pc8mm3": {
