@@ -66,7 +66,7 @@
           "type": "concept",
           "settings": {
             "title": "",
-            "description": "<p>Japan Matcha Star reimagines matcha as more than a drink. Inspired by the stillness of Japanese tea culture and refined through modern beauty science, our matcha is crafted to support both appearance and inner balance.</p>"
+            "description": "<p>Japan Matcha Star reimagines matcha as more than a drink.Inspired by the stillness of Japanese tea culture and refined through modern beauty science,our matcha is crafted to support both appearance and inner balance.</p>"
           }
         },
         "concept_PMgd9Q": {
@@ -94,7 +94,7 @@
       "name": "Matcha Concepts",
       "settings": {
         "heading": "Beauty for the skin. Peace for the mind",
-        "subheading": "肌に、美しさを。 心に、静けさを。",
+        "subheading": "肌に、美しさを。心に、静けさを。",
         "sub_jp": "",
         "text": "<p>Redefining matcha as inner beauty</p>"
       }
