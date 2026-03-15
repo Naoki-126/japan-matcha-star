@@ -2850,6 +2850,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__submenu.list-menu {
   padding: 1rem 0;
+  background: #fff;
 }
 
 .header__submenu .header__submenu {
