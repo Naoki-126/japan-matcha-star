@@ -460,11 +460,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding-right: 20px;
 }
 
 .policies li::before {
   content: '\00B7';
   padding: 0 0.8rem;
+  content: none;
 }
 
 .policies li a {
