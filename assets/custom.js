@@ -6,70 +6,124 @@ document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("jm-popup");
   if (!popup) return;
 
-  const homeOnly = popup.dataset.homeOnly === "true";
-  const isHome = popup.dataset.isHome === "true";
+  const teaser = document.getElementById("jm-popup-teaser");
+  const teaserBtn = teaser ? teaser.querySelector(".jm-popup-teaser__btn") : null;
 
-  if (homeOnly && !isHome) {
-    return;
-  }
-
-  let isSuccessShown = false; // ★ success表示中フラグ
-
-  // ① 既に登録済みなら何もしない
-  if (localStorage.getItem("jmPopupRegistered") === "true") {
-    return;
-  }
+  const registeredKey = "jmPopupRegistered";
+  const closedKey = "jmPopupClosed";
 
   const form = document.getElementById("jm-popupForm");
   const success = document.getElementById("jm-popupSuccess");
-  const closeBtns = popup.querySelectorAll(
-    ".jm-popup__close, #jm-popupAfterSuccess"
-  );
+  const closeBtns = popup.querySelectorAll(".jm-popup__close, #jm-popupAfterSuccess");
   const overlay = popup.querySelector(".jm-popup__overlay");
 
-  // ② 遅延表示
-  const delay = parseInt(popup.dataset.delay || 2, 10) * 1000;
-  setTimeout(() => {
-    if (isSuccessShown) return; // ★ success中は再表示しない
+  function isRegistered() {
+    return localStorage.getItem(registeredKey) === "true";
+  }
 
+  function isClosed() {
+    return localStorage.getItem(closedKey) === "true";
+  }
+
+  function openPopup() {
+    if (isRegistered()) return;
     popup.setAttribute("aria-hidden", "false");
-    popup.style.display = "block";
-  }, delay);
+    popup.classList.add("is-active");
+  }
 
-  // ③ 閉じる（popup / success 共通）
+  function closePopup(markClosed = false) {
+    popup.setAttribute("aria-hidden", "true");
+    popup.classList.remove("is-active");
+
+    if (markClosed) {
+      localStorage.setItem(closedKey, "true");
+    }
+  }
+
+  function showTeaser() {
+    if (!teaser) return;
+    if (isRegistered()) return;
+    teaser.classList.add("is-active");
+  }
+
+  function hideTeaser() {
+    if (!teaser) return;
+    teaser.classList.remove("is-active");
+  }
+
+  // 登録済みなら全部出さない
+  if (isRegistered()) {
+    closePopup(false);
+    hideTeaser();
+    return;
+  }
+
+  // teaser は表示
+  showTeaser();
+
+  // 初回のみ popup 自動表示
+  if (!isClosed()) {
+    const delay = parseInt(popup.dataset.delay || 2, 10) * 1000;
+    setTimeout(() => {
+      if (!isRegistered() && !isClosed()) {
+        openPopup();
+      }
+    }, delay);
+  }
+
+  // teaserクリック時は常に popup を開ける
+  if (teaserBtn) {
+    teaserBtn.addEventListener("click", () => {
+      openPopup();
+    });
+  }
+
+  // 閉じるボタン
   closeBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      popup.setAttribute("aria-hidden", "true");
-      popup.style.display = "none";
+      closePopup(true);
 
-      // successも閉じる
       if (success) {
         success.style.display = "none";
       }
 
-      isSuccessShown = false;
+      if (form) {
+        form.style.display = "flex";
+      }
     });
   });
 
-  overlay.addEventListener("click", () => {
-    if (isSuccessShown) return; // ★ success表示中は閉じさせない
+  // overlayクリックでも閉じる
+  if (overlay) {
+    overlay.addEventListener("click", () => {
+      closePopup(true);
 
-    popup.setAttribute("aria-hidden", "true");
-    popup.style.display = "none";
-  });
+      if (success) {
+        success.style.display = "none";
+      }
 
-  // ④ フォーム送信
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+      if (form) {
+        form.style.display = "flex";
+      }
+    });
+  }
 
-    form.style.display = "none";
-    success.style.display = "block";
+  // フォーム送信
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    isSuccessShown = true; // ★ 閉じるまで表示固定
+      form.style.display = "none";
 
-    // ★ 登録済みフラグ（本番用）
-    localStorage.setItem("jmPopupRegistered", "true");
-  });
+      if (success) {
+        success.style.display = "block";
+      }
+
+      localStorage.setItem(registeredKey, "true");
+      localStorage.removeItem(closedKey);
+      hideTeaser();
+    });
+  }
 });
 
 /* FAQ
